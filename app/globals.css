@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 48, 29, 51;
+  --background-end-rgb: 32, 29, 52;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb)))
+    rgb(var(--background-start-rgb));
+}
+
+a {
+  @apply font-bold text-white;
+}
+
+.power-underline {
+  @apply text-slate-300 underline decoration-accent decoration-2 underline-offset-2;
+}
