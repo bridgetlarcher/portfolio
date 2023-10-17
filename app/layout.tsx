@@ -7,9 +7,33 @@ const roboto = Roboto({
   weight: ['400', '500', '700', '900'],
 })
 
+const title = 'Bridget Larcher | Developer, Designer, Problem Solver'
+const description =
+  'Frontend developer, designer, and problem solver. With a passion for user-centric innovation and a proven track record of leading high-impact user experience projects, I thrive on creating and shipping projects that wow people.'
+
 export const metadata: Metadata = {
-  title: 'Bridget Larcher | Developer, Designer, Problem Solver',
-  description: 'Bridget Larcher | Developer, Designer',
+  metadataBase: new URL('https://www.bridgetlarcher.com/'),
+  title: title,
+  description: description,
+  keywords: [
+    'Bridget Larcher',
+    'Bridget',
+    'Larcher',
+    'Web development',
+    'Developer',
+    'Frontend development',
+    'UI/UX Design',
+    'Design',
+    'Portfolio',
+  ],
+  openGraph: {
+    type: 'website',
+    url: 'https://www.bridgetlarcher.com/',
+    title: title,
+    description: description,
+    siteName: title,
+    images: '/og.png',
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

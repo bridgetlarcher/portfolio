@@ -14,10 +14,6 @@ const config: Config = {
       xl: '1440px',
     },
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
       animation: {
         text: 'text 5s ease infinite',
       },
@@ -45,7 +41,7 @@ const config: Config = {
           600: '#5217A4',
           700: '#201D34',
         },
-        secondary: '#301D33',
+        secondary: '#13262e',
         accent: '#6CD4FF',
       },
     },
