@@ -10,7 +10,7 @@ export const projects: ProjectItem[] = [
   {
     title: 'Stats of Our Own',
     description:
-      "A weekend project derived from frustration surrounding a writing site's frustrating stats page. With this app, writers can visualize hits, kudos, and bookmarks in an interactive chart.",
+      "A weekend project derived from frustration surrounding a writing site's frustrating stats page. With this app, writers can visualize hits, kudos, and bookmarks in an interactive graph and a sortable chart. Any user on the website 'An Archive of Our Own' can be looked up!",
     img: '/stats-of-our-own.png',
     link: 'https://stats-of-our-own.vercel.app/',
     pills: [
@@ -35,7 +35,7 @@ export const projects: ProjectItem[] = [
   {
     title: 'Budget Tracker',
     description:
-      "I gathered with a group of coworkers at Capital One to participate in an 'Innovation Day'— a workday-long hackathon to create a meaningful solution to a need that customers have.\n\nOur team decided to focus on the need for customers to budget their spending habits without having to leave the app. Using the data from their previous transactions, while giving them the option to set budgets based on this data, would be a useful tool for customers across the board.",
+      "I gathered with a group of coworkers at Capital One to participate in an 'Innovation Day'— a workday-long hackathon to create a meaningful solution to a need that customers have. Our team decided to focus on the need for customers to budget their spending habits without needing to leave the app.",
     img: '/budget-tracker.png',
     link: 'https://projects.invisionapp.com/share/DJ104OCMSW2A#/screens/444153411_ASU',
     pills: ['Figma', 'Mural', 'InVision'],

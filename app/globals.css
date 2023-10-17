@@ -21,11 +21,11 @@ body {
 }
 
 a {
-  @apply font-bold text-slate-300 transition ease-in-out hover:text-white;
+  @apply font-bold text-slate-300 transition duration-300 ease-in-out hover:text-white;
 }
 
 .power-underline {
-  @apply text-slate-300 underline decoration-accent decoration-2 underline-offset-2;
+  @apply underline decoration-accent decoration-2 underline-offset-2;
 }
 
 .social-media-button {

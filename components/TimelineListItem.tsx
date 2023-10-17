@@ -13,11 +13,11 @@ export function TimelineListItem({ item }: Props) {
       <time className="mb-1 text-sm font-normal leading-none">{item.dates}</time>
       {item.link ? (
         <div>
-          <a href={item.link} target="_blank" className="inline-flex flex-row items-center gap-2">
-            <h3 className="text-lg">
+          <a href={item.link} target="_blank">
+            <h3 className="mr-2 inline text-lg">
               {item.title} @ {item.employer}
             </h3>
-            <OpenInNewIcon fontSize="small" />
+            <OpenInNewIcon fontSize="inherit" className="text-sm" />
           </a>
         </div>
       ) : (
