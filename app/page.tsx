@@ -9,8 +9,8 @@ import { SectionTitle } from '@/components/SectionTitle'
 import { TimelineListItem } from '@/components/TimelineListItem'
 import { ProjectListItem } from '@/components/ProjectListItem'
 
-import { projects } from './projects'
-import { workExperience } from './timeline'
+import { projects } from '../types/projects'
+import { workExperience } from '../types/timeline'
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState<string>('')

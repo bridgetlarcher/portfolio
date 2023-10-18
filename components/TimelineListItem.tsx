@@ -1,6 +1,6 @@
 import OpenInNewIcon from '@mui/icons-material/OpenInNew'
 import { Pill } from './Pill'
-import { TimelineItem } from '@/app/timeline'
+import { TimelineItem } from '@/types/timeline'
 
 type Props = {
   item: TimelineItem

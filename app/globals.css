@@ -25,7 +25,7 @@ a {
 }
 
 .power-underline {
-  @apply underline decoration-accent decoration-2 underline-offset-2;
+  @apply underline decoration-accent/40 decoration-2 underline-offset-2;
 }
 
 .social-media-button {
