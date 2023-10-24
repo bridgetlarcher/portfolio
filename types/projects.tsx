@@ -10,7 +10,7 @@ export const projects: ProjectItem[] = [
   {
     title: 'Stats of Our Own',
     description:
-      "A weekend project derived from frustration surrounding a writing site's frustrating stats page. With this app, writers can visualize hits, kudos, and bookmarks in an interactive graph and a sortable chart. Any user on the website 'An Archive of Our Own' can be looked up!",
+      "A weekend project derived from frustration surrounding a writing site's stats page. With this app, writers can visualize hits, kudos, and bookmarks in an interactive graph and a sortable chart. Any user on the website 'An Archive of Our Own' can be looked up!",
     img: '/stats-of-our-own.png',
     link: 'https://stats-of-our-own.vercel.app/',
     pills: [

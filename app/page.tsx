@@ -39,7 +39,7 @@ export default function Home() {
   return (
     <div className="relative flex flex-col gap-4 scroll-smooth px-6 lg:flex-row lg:p-0">
       <aside className="flex pt-12 lg:sticky lg:left-0 lg:top-0 lg:h-screen lg:justify-end lg:p-12 lg:text-right xl:flex-shrink xl:p-24">
-        <div className="flex flex-col gap-5 lg:w-[37vw] lg:items-end xl:w-[450px]">
+        <section className="flex flex-col gap-5 lg:w-[37vw] lg:items-end xl:w-[450px]">
           <div className="flex gap-4 lg:justify-end">
             <a href="https://www.linkedin.com/in/bridgetlarcher/">
               <LinkedIn fontSize="large" className="social-media-button" />
@@ -71,7 +71,7 @@ export default function Home() {
                   href="#section-about"
                   className={`${
                     activeSection === 'section-about' ? activeNavStyle : inactiveNavStyle
-                  } inline-block border-r-2 p-4`}
+                  } inline-block border-r-2 p-4 no-underline`}
                 >
                   About
                 </a>
@@ -81,7 +81,7 @@ export default function Home() {
                   href="#section-work"
                   className={`${
                     activeSection === 'section-work' ? activeNavStyle : inactiveNavStyle
-                  } inline-block border-r-2 p-4`}
+                  } inline-block border-r-2 p-4 no-underline`}
                 >
                   Work Experience
                 </a>
@@ -91,14 +91,14 @@ export default function Home() {
                   href="#section-projects"
                   className={`${
                     activeSection === 'section-projects' ? activeNavStyle : inactiveNavStyle
-                  } inline-block border-r-2 p-4`}
+                  } inline-block border-r-2 p-4 no-underline`}
                 >
                   Projects
                 </a>
               </li>
             </ul>
           </nav>
-        </div>
+        </section>
       </aside>
       <main className="flex flex-col gap-8 pb-12 pt-8 lg:w-[50vw] xl:flex-grow xl:px-36 xl:pt-24">
         <section id="section-about">
