@@ -8,6 +8,14 @@ export interface ProjectItem {
 
 export const projects: ProjectItem[] = [
   {
+    title: 'Clair',
+    description:
+      'Leads the design and development efforts of Clair, the permier clinical AI reference. This includes both the web experience and the mobile apps.',
+    img: '/clair.png',
+    link: 'https://www.askclair.ai/',
+    pills: ['Figma', 'React', 'Gatsby', 'Typescript'],
+  },
+  {
     title: 'Stats of Our Own',
     description:
       "A weekend project derived from frustration surrounding a writing site's stats page. With this app, writers can visualize hits, kudos, and bookmarks in an interactive graph and a sortable chart. Any user on the website 'An Archive of Our Own' can be looked up!",
@@ -24,14 +32,6 @@ export const projects: ProjectItem[] = [
       'Flask',
       'Vercel',
     ],
-  },
-  {
-    title: 'Multilingual Video Support',
-    description:
-      'At Tinyhood, we wanted to extend our site to be able to host users of different lingual backgrounds. Using Next.js, React, and the HLS player, I developed a solution so that a user could switch languages in-player.',
-    img: '/multilingual-video-support.png',
-    link: 'https://www.tinyhood.com/',
-    pills: ['React', 'Next.js', 'HLS.js'],
   },
   {
     title: 'Budget Tracker',

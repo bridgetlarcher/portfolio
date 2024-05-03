@@ -9,6 +9,15 @@ export interface TimelineItem {
 
 export const workExperience: TimelineItem[] = [
   {
+    dates: 'November 2023 - Present',
+    title: 'Lead UI/UX Developer',
+    employer: 'CaryHealth',
+    link: 'https://www.cary.health',
+    pills: ['React', 'Gatsby', 'Figma', 'TypeScript', 'ClickUp', 'FontAwesome'],
+    description:
+      'Serves as the head of UI/UX and front-end efforts, driving the design and development of our products. Oversees several designers and front-end developers, providing support and guidance on multiple high-impact user experience projects at a time.',
+  },
+  {
     dates: 'September 2022 – October 2023',
     title: 'Lead Frontend Engineer',
     employer: 'Tinyhood',
