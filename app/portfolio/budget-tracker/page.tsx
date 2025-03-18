@@ -139,13 +139,6 @@ export default function Page() {
           also be interested in seeing patterns in those transactions. This way, the customer is
           able to view, track, and manage their finances all within one place.{' '}
         </span>
-        <span className="text-xl font-bold">
-          ✨ View a prototype of this experience{' '}
-          <a href="https://projects.invisionapp.com/share/DJ104OCMSW2A#/screens/444153411_ASU">
-            here
-          </a>
-          !
-        </span>
       </section>
       <section className="flex flex-col gap-6">
         <SectionTitle title="Outcomes" />

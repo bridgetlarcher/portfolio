@@ -126,19 +126,23 @@ export default function Home() {
               <a href="https://www.mitre.org/" target="_blank">
                 government agency
               </a>
-              , and an{' '}
+              , and a handful of startups (
               <a href="https://www.tinyhood.com/" target="_blank">
-                ultra-small startup
+                1
               </a>
-              .
+              ,{' '}
+              <a href="https://www.cary.health/" target="_blank">
+                2
+              </a>
+              ).
             </span>
             <span>
               In my spare time, I'm usually gaming, writing, or hanging out with my two cats.
             </span>
             <span>
-              Interested? View my full resume{' '}
+              Want to learn more? View my full resume{' '}
               <a
-                href="https://drive.google.com/file/d/1IDFKdb3-aDFqFBfx4bAP9JGA9CwApnBc/view?usp=sharing"
+                href="https://drive.google.com/file/d/1dwGp4EjusWOrMxKAsSGcrmAE092Ly6bG/view?usp=sharing"
                 target="_blank"
               >
                 here

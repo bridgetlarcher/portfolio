@@ -13,9 +13,9 @@ export const workExperience: TimelineItem[] = [
     title: 'Lead UI/UX Developer',
     employer: 'CaryHealth',
     link: 'https://www.cary.health',
-    pills: ['React', 'Gatsby', 'Figma', 'TypeScript', 'ClickUp', 'FontAwesome'],
+    pills: ['Leadership', 'Product Management', 'React', 'Gatsby', 'Figma', 'TypeScript'],
     description:
-      'Serves as the head of UI/UX and front-end efforts, driving the design and development of our products. Oversees several designers and front-end developers, providing support and guidance on multiple high-impact user experience projects at a time.',
+      'Leads the product design and development of multiple high-impact tools at CaryHealth, spanning the product, design, and tech sectors and overseeing teams of talented designers and developers.',
   },
   {
     dates: 'September 2022 – October 2023',
@@ -24,7 +24,7 @@ export const workExperience: TimelineItem[] = [
     link: 'https://www.tinyhood.com/',
     pills: ['React', 'Next.js', 'Figma', 'TypeScript', 'Linear', 'Axios'],
     description:
-      'Spearheaded efforts as the sole front-end developer, collaborating with cross-functional teams to streamline the user’s experience. Led multiple high-impact user experience projects, including the integration of multi-lingual support into the site’s video player, improving accessibility and user engagement while maintaining ease of use.',
+      'Spearheaded efforts as the sole front-end developer, collaborating with cross-functional teams to streamline the user’s experience. Led multiple high-impact user experience projects, including the integration of multi-lingual support into the site’s video player and the implementation of an A/B testing framework into the front-end code base.',
   },
   {
     dates: 'April 2021 – September 2022',

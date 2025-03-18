@@ -8,30 +8,20 @@ export interface ProjectItem {
 
 export const projects: ProjectItem[] = [
   {
+    title: 'CaryHealth Brand Identity',
+    description:
+      "Lead the direction of design and development of CaryHealth's brand identity, including its own brand site, logos, and marketing materials.",
+    img: '/caryhealth-brand/site-homepage-slice.png',
+    link: '/portfolio/caryhealth-brand',
+    pills: ['Marketing', 'Product Management', 'Figma', 'Webflow'],
+  },
+  {
     title: 'Clair',
     description:
       'Leads the design and development efforts of Clair, the permier clinical AI reference. This includes both the web experience and the mobile apps.',
     img: '/clair.png',
     link: 'https://www.askclair.ai/',
-    pills: ['Figma', 'React', 'Gatsby', 'Typescript'],
-  },
-  {
-    title: 'Stats of Our Own',
-    description:
-      "A weekend project derived from frustration surrounding a writing site's stats page. With this app, writers can visualize hits, kudos, and bookmarks in an interactive graph and a sortable chart. Any user on the website 'An Archive of Our Own' can be looked up!",
-    img: '/stats-of-our-own.png',
-    link: 'https://stats-of-our-own.vercel.app/',
-    pills: [
-      'React',
-      'Next.js',
-      'MaterialUI',
-      'TailwindCSS',
-      'Charts.js',
-      'TypeScript',
-      'Python',
-      'Flask',
-      'Vercel',
-    ],
+    pills: ['Figma', 'React', 'Gatsby', 'Typescript', 'Product Management'],
   },
   {
     title: 'Budget Tracker',
@@ -39,7 +29,7 @@ export const projects: ProjectItem[] = [
       "I gathered with a group of coworkers at Capital One to participate in an 'Innovation Day'— a workday-long hackathon to create a meaningful solution to a need that customers have. Our team decided to focus on the need for customers to budget their spending habits without needing to leave the app.",
     img: '/budget-tracker/key.png',
     link: '/portfolio/budget-tracker',
-    pills: ['Figma', 'Mural', 'InVision'],
+    pills: ['Innovation Design', 'Figma', 'Mural'],
   },
   {
     title: 'Capital One Auto Enroll',

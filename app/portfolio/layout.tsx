@@ -15,7 +15,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body
         className={`${roboto.className} relative flex min-h-screen flex-col leading-relaxed text-slate-400`}
       >
-        <nav className="sticky top-0 flex w-full items-center justify-between px-4 py-3 backdrop-blur-md lg:px-24">
+        <nav className="sticky top-0 flex w-full items-center justify-between px-4 py-3 backdrop-blur-md lg:px-24 lg:backdrop-blur-none">
           <a href="/#section-projects">
             <ArrowBack fontSize="large" />
           </a>
