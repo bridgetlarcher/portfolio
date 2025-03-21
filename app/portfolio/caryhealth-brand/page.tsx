@@ -85,9 +85,6 @@ export default function Page() {
           and Webflow’s templates section to compile a mood board that seamlessly combined the
           identities of all of our products into one space.
         </span>
-        <div className="relative h-[400px] w-full">
-          <Image src="/caryhealth-brand/mood-board.jpg" alt="" className="object-contain" fill />
-        </div>
         <span>
           We ended up finding a few descriptive words that fit our current suite of products well:
         </span>
