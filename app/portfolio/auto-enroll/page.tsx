@@ -1,5 +1,5 @@
 import { PortfolioItem } from '@/components/PortfolioItem'
-import { SectionTitle } from '@/components/SectionTitle'
+import { SectionHeader } from '@/components/SectionHeader'
 import Image from 'next/image'
 
 export default function Page() {
@@ -9,7 +9,7 @@ export default function Page() {
       summary="Developed a feature to automatically enroll existing Capital One customers who are signing up for a new card."
     >
       <section className="flex flex-col gap-6">
-        <SectionTitle title="Objectives" />
+        <SectionHeader text="Objectives" />
         <span>
           We found that customers were being asked for redundant information when signing up for a
           credit card. Specifically, after logging into their account and applying for a card,
@@ -59,7 +59,7 @@ export default function Page() {
         </span>
       </section>
       <section className="flex flex-col gap-6">
-        <SectionTitle title="The Approach" />
+        <SectionHeader text="The Approach" />
         <div className="flex flex-col-reverse gap-6 md:flex-row">
           <div className="flex flex-col gap-6 md:w-[48%]">
             <span>
@@ -96,7 +96,7 @@ export default function Page() {
                 fill
               />
             </div>
-            <span className="text-sm italic">
+            <span className="caption">
               Above is the finalized design for when a customer is successfully Auto Enrolled. After
               clicking the "Continue Online Setup" button, they are redirected to their account.
             </span>
@@ -104,7 +104,7 @@ export default function Page() {
         </div>
       </section>
       <section className="flex flex-col gap-6">
-        <SectionTitle title="Outcomes" />
+        <SectionHeader text="Outcomes" />
         <span>
           My job was to develop the Auto Enroll experience and monitor its success. The main
           Javascript frameworks that I used to write this experience included (but were not limited

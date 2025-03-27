@@ -2,6 +2,7 @@
   "name": "portfolio",
   "version": "1.1.0",
   "private": true,
+  "license": "UNLICENSED",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -15,7 +16,7 @@
     "@mui/material": "^5.14.13",
     "@vercel/analytics": "^1.1.1",
     "@vercel/speed-insights": "^1.0.2",
-    "next": "13.5.4",
+    "next": "^15.2.4",
     "react": "^18",
     "react-dom": "^18"
   },

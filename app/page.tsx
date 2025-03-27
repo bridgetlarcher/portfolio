@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 import { GitHub, LinkedIn } from '@mui/icons-material'
 
-import { SectionTitle } from '@/components/SectionTitle'
+import { SectionHeader } from '@/components/SectionHeader'
 import { TimelineListItem } from '@/components/TimelineListItem'
 import { ProjectListItem } from '@/components/ProjectListItem'
 
@@ -102,7 +102,7 @@ export default function Home() {
       </aside>
       <main className="flex flex-col gap-8 pb-12 pt-8 lg:w-[50vw] xl:flex-grow xl:px-36 xl:pt-24">
         <section id="section-about">
-          <SectionTitle title="About" />
+          <SectionHeader text="About" />
           <div className="flex flex-col gap-4 px-4">
             <span>
               Back in the early 2000s, before my teenage years, I was{' '}
@@ -152,7 +152,7 @@ export default function Home() {
           </div>
         </section>
         <section id="section-work">
-          <SectionTitle title="Work Experience" />
+          <SectionHeader text="Work Experience" />
           <div className="flex flex-col gap-4 px-4">
             <ol className="relative border-l border-gray-700">
               {workExperience.map((workItem) => (
@@ -162,7 +162,7 @@ export default function Home() {
           </div>
         </section>
         <section id="section-projects">
-          <SectionTitle title="Projects" />
+          <SectionHeader text="Projects" />
           <div className="flex flex-col items-center gap-4 px-4 xl:flex-row xl:flex-wrap xl:items-start xl:justify-center">
             {projects.map((project) => (
               <ProjectListItem key={project.title} item={project} />

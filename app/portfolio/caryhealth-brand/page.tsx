@@ -1,6 +1,5 @@
 import { PortfolioItem } from '@/components/PortfolioItem'
-import { SectionTitle } from '@/components/SectionTitle'
-import Image from 'next/image'
+import { SectionHeader } from '@/components/SectionHeader'
 
 export default function Page() {
   return (
@@ -16,7 +15,6 @@ export default function Page() {
           </a>{' '}
           😉)
         </span>
-        <SectionTitle title="Objectives" />
         <span>
           A central goal for CaryHealth’s 2025 year could be summed up by one word: sales.{' '}
           <span className="power-underline">
@@ -32,6 +30,7 @@ export default function Page() {
           lead the team, I took the initiative to dive into the world of marketing, a realm in which
           I had little prior experience!
         </span>
+        <SectionHeader text="The Problem" />
         <span>
           Our problem was this:{' '}
           <span className="power-underline">
@@ -43,42 +42,52 @@ export default function Page() {
           we were showcasing a shell of a site rather than a company with innovative healthcare
           solutions.
         </span>
+        <SectionHeader text="Objectives" />
+
         <span>
           As a result of these problems, we set aside our main objectives for the three months we
           had before 2025:
         </span>
-        <span>
-          <ol className="ml-8 list-decimal">
-            <li>
-              <span className="font-bold">A brand identity</span>: First and foremost, we needed to
-              tack down a distinctive way for us to present ourselves. Are we happy? Serious?
-              Playful? Is our brand loud and colorful, or thoughtful and deliberate? Once we found
-              our footing here, the transition into #2 and #3 would be seamless.
-            </li>
-            <li>
-              <span className="font-bold">A brand site facelift</span>: Without a clear identity, we
-              found our current site to be a mix of text and imagery that didn't fit the bill. Once
-              we found our brand's niche, we needed to upgrade the site to reflect the colors,
-              descriptive words, and feeling of those newfound brand guidelines. (See below for a
-              sneak peek of “before” and “after” photos!)
-            </li>
-            <li>
-              <span className="font-bold">A shiny logo suite</span>: There are currently five
-              products the company has built out so far, some of which had mismatching logos and
-              others with no logos at all. Our goal was to align our products in such a way that
-              followed our brand guidelines while allowing each of them a bit of breathing room to
-              showcase their own unique flare. This was to be the metaphorical cherry on top of the
-              brand suite cupcake.
-            </li>
-          </ol>
-        </span>
+        <div className="ml-8 flex flex-col gap-5 lg:flex-row">
+          <div className="flex flex-col items-center justify-center gap-3">
+            <img className="h-[50px]" src="/icons/design-system.png" />
+            <span className="text-center text-lg font-bold">A Brand Identity</span>
+            <span>
+              First and foremost, we needed to tack down a distinctive way for us to present
+              ourselves. Are we happy? Serious? Playful? Is our brand loud and colorful, or
+              thoughtful and deliberate? Once we found our footing here, the transition into #2 and
+              #3 would be seamless.
+            </span>
+          </div>
+          <div className="flex flex-col items-center justify-center gap-3">
+            <img className="h-[50px]" src="/icons/landing-page.png" />
+            <span className="text-center text-lg font-bold">A Brand Site Facelift</span>
+            <span>
+              Without a clear identity, we found our current site to be a mix of text and imagery
+              that didn't fit the bill. Once we found our brand's niche, we needed to upgrade the
+              site to reflect the colors, descriptive words, and feeling of those newfound brand
+              guidelines. (See below for a sneak peek of “before” and “after” photos!)
+            </span>
+          </div>
+          <div className="flex flex-col items-center justify-center gap-3">
+            <img className="h-[50px]" src="/icons/ui.png" />
+            <span className="text-center text-lg font-bold">A Shiny Logo Suite</span>
+            <span>
+              There are currently five products the company has built out so far, some of which had
+              mismatching logos and others with no logos at all. Our goal was to align our products
+              in such a way that followed our brand guidelines while allowing each of them a bit of
+              breathing room to showcase their own unique flare. This was to be the metaphorical
+              cherry on top of the brand suite cupcake.
+            </span>
+          </div>
+        </div>
         <span>
           With these three objectives in mind and only three months to accomplish such tasks, we
           wasted no time in finding the right approach.
         </span>
       </section>
       <section className="flex flex-col gap-6">
-        <SectionTitle title="The Approach" />
+        <SectionHeader text="The Approach" />
         <span>
           Our marketing designer and I approached our brand identity issue first with an abundance
           of research. In order to find the fastest route to success, we searched through Dribbble
@@ -114,25 +123,28 @@ export default function Page() {
           fell into place seamlessly afterward—each of our products has a distinctive look, feel,
           and use case to them, so we inherently had all we needed to be successful.
         </span>
-        <div className="relative h-[400px] w-full">
-          <Image
-            src="/caryhealth-brand/hero-iteration1.png"
-            alt=""
-            className="object-contain"
-            fill
-          />
+        <div className="flex flex-row justify-center gap-6">
+          <div className="flex w-2/3 flex-col gap-2">
+            <img src="/caryhealth-brand/hero-iteration1.png" className="w-full rounded-xl" />
+            <span className="caption text-center">
+              Our first iteration of a homepage hero with our new logo suite in place.
+            </span>
+          </div>
+          <div className="flex w-1/3 flex-col gap-6">
+            <span>
+              After a few tweaks, we decided to shift this first hero design down the page in favor
+              of a less eye-intensive graphic flow.
+            </span>
+            <span>
+              Though this was the case, we did find ourselves successful in another aspect: the
+              techy feel of the flowchart-esque design in tandem with the rounded corners and
+              distinctive colors of our products peeking through gave us an idea of how “playful”,
+              “clean”, and “technical” could work together amicably.
+            </span>
+            <span>This was our way forward!</span>
+          </div>
         </div>
-        <span className="caption">
-          Our first iteration of a homepage hero with our new logo suite in place.
-        </span>
-        <span>
-          After a few tweaks, we decided to shift this first hero design down the page in favor of a
-          less eye-intensive graphic flow. Though this was the case, we did find ourselves
-          successful in another aspect: the techy feel of the flowchart-esque design in tandem with
-          the rounded corners and distinctive colors of our products peeking through gave us an idea
-          of how “playful”, “clean”, and “technical” could work together amicably. This was our way
-          forward!
-        </span>
+
         <span>
           For the first iteration of our new brand site, we decided to focus the most attention on
           our homepage and product pages. The most time and effort went into each of these pages,
@@ -148,14 +160,14 @@ export default function Page() {
         </span>
       </section>
       <section className="flex flex-col gap-6">
-        <SectionTitle title="Outcomes" />
+        <SectionHeader text="Outcomes" />
         <span>
           Our brand identity exercise opened up doors for us that previously seemed impossible to
           crack. With the creation of our logo suite and brand site revamp, we have the context we
           need to showcase our products the way they deserve to be shown.
         </span>
-        <div className="relative h-[300px] w-full">
-          <Image src="/caryhealth-brand/logo-suite.png" alt="" className="object-contain" fill />
+        <div className="flex w-full justify-center">
+          <img src="/caryhealth-brand/logo-suite.png" className="w-1/2" />
         </div>
         <span>
           Our logo suite combines the unity we so desired from our brand identity with the unique
@@ -163,19 +175,12 @@ export default function Page() {
           unique color scheme; this allowed us to utilize these colors to add to the "playful" theme
           we agreed upon!
         </span>
-        <div className="relative h-[800px] w-full">
-          <Image src="/caryhealth-brand/before-after.png" alt="" className="object-contain" fill />
-        </div>
+        <img src="/caryhealth-brand/before-after.png" alt="" className="w-full" />
         <span>
-          Above, you can see before and after screenshots of the hero sections of our homepage (top)
-          and a few of our product pages (bottom).
-        </span>
-        <span>
-          It’s a bit selfish, but I purposefully kept this image a bit on the small side—I think
-          that it’s an interesting exercise to compare the before and after from far away. On the
-          left, not much can be gathered from the generic imagery used other than the fact that the
-          user is looking at a healthcare company’s website. On the right, though, especially on our
-          product pages, you get a small taste of what we’re about.
+          On the left, not much can be gathered from the generic imagery used other than the fact
+          that the user is looking at a healthcare company’s website. The names of the products are
+          also drowned out among all of the other text on the page. On the right, though, especially
+          on our product pages, you get a small taste of what we’re about.
         </span>
         <span>
           <span className="power-underline">

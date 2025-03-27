@@ -1,5 +1,5 @@
 import { PortfolioItem } from '@/components/PortfolioItem'
-import { SectionTitle } from '@/components/SectionTitle'
+import { SectionHeader } from '@/components/SectionHeader'
 import Image from 'next/image'
 
 export default function Page() {
@@ -9,7 +9,7 @@ export default function Page() {
       summary="Designed a feature during a company hackathon to help customers track their spending habits and budget their finances through Capital One."
     >
       <section className="flex flex-col gap-6">
-        <SectionTitle title="Objectives" />
+        <SectionHeader text="Objectives" />
         <span>
           I gathered with a group of coworkers at Capital One to participate in an 'Innovation Day'—
           a workday-long hackathon to create a meaningful solution to a need that customers have.
@@ -50,7 +50,7 @@ export default function Page() {
         </span>
       </section>
       <section className="flex flex-col gap-6">
-        <SectionTitle title="The Approach" />
+        <SectionHeader text="The Approach" />
         <span className="power-underline">
           After setting our objectives, because of our time constraint, we decided to focus on two
           main portions of our feature that we must complete.
@@ -63,7 +63,7 @@ export default function Page() {
             <div className="relative h-[600px] w-full">
               <Image src="/budget-tracker/1.png" alt="" className="object-contain" fill />
             </div>
-            <span className="text-sm italic">
+            <span className="caption">
               After a customer enrolls a card, they are shown the Account Setup modal above. We
               decided to add the 'Set Spending Preferences' portion at the bottom.
             </span>
@@ -72,7 +72,7 @@ export default function Page() {
             <div className="relative h-[600px] w-full">
               <Image src="/budget-tracker/2.png" alt="" className="object-contain" fill />
             </div>
-            <span className="text-sm italic">
+            <span className="caption">
               After tapping 'Set Spending Preferences', the customer is able to set their budget and
               track different types of transactions.
             </span>
@@ -111,7 +111,7 @@ export default function Page() {
             <div className="relative h-[600px] w-full">
               <Image src="/budget-tracker/3.png" alt="" className="object-contain" fill />
             </div>
-            <span className="text-sm italic">
+            <span className="caption">
               When the customer views their card transactions, we show them a graph of their
               spending habits based on their current balance. They can click 'Show More' to view the
               screen to the right.
@@ -121,7 +121,7 @@ export default function Page() {
             <div className="relative h-[600px] w-full">
               <Image src="/budget-tracker/key.png" alt="" className="object-contain" fill />
             </div>
-            <span className="text-sm italic">
+            <span className="caption">
               After clicking on the 'Show More' button, the customer is able to see a detailed
               breakdown of how they've spent based on their budget. At the top, the customer can
               click 'Change Your Spend View' to view their spending habits over different periods of
@@ -141,7 +141,7 @@ export default function Page() {
         </span>
       </section>
       <section className="flex flex-col gap-6">
-        <SectionTitle title="Outcomes" />
+        <SectionHeader text="Outcomes" />
         <span>
           Being a developer-transitioned-designer, I understand the gap between "I want this cool
           feature" and "this cool feature is feasible".{' '}
