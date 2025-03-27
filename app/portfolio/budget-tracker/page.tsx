@@ -8,8 +8,8 @@ export default function Page() {
       title="Budget Tracker"
       summary="Designed a feature during a company hackathon to help customers track their spending habits and budget their finances through Capital One."
     >
-      <section className="flex flex-col gap-6">
-        <SectionHeader text="Objectives" />
+      <SectionHeader text="Objectives" />
+      <section className="portfolio-section">
         <span>
           I gathered with a group of coworkers at Capital One to participate in an 'Innovation Day'—
           a workday-long hackathon to create a meaningful solution to a need that customers have.
@@ -49,8 +49,8 @@ export default function Page() {
           </ol>
         </span>
       </section>
-      <section className="flex flex-col gap-6">
-        <SectionHeader text="The Approach" />
+      <SectionHeader text="The Approach" />
+      <section className="portfolio-section">
         <span className="power-underline">
           After setting our objectives, because of our time constraint, we decided to focus on two
           main portions of our feature that we must complete.
@@ -58,20 +58,16 @@ export default function Page() {
         <span className="text-xl font-semibold">
           'Must' 1: We must onboard customers to Budget Tracker in an efficient, seamless way.
         </span>
-        <div className="flex flex-col gap-6 md:flex-row">
+        <div className="portfolio-section md:flex-row">
           <div className="flex flex-col justify-center gap-4 md:w-[48%]">
-            <div className="relative h-[600px] w-full">
-              <Image src="/budget-tracker/1.png" alt="" className="object-contain" fill />
-            </div>
+            <img src="/budget-tracker/1.png" />
             <span className="caption">
               After a customer enrolls a card, they are shown the Account Setup modal above. We
               decided to add the 'Set Spending Preferences' portion at the bottom.
             </span>
           </div>
           <div className="flex flex-col justify-center gap-4 md:w-[48%]">
-            <div className="relative h-[600px] w-full">
-              <Image src="/budget-tracker/2.png" alt="" className="object-contain" fill />
-            </div>
+            <img src="/budget-tracker/2.png" />
             <span className="caption">
               After tapping 'Set Spending Preferences', the customer is able to set their budget and
               track different types of transactions.
@@ -106,11 +102,9 @@ export default function Page() {
           'Must' 2: We must allow customers to track their spending patterns so that they can adjust
           those habits.
         </span>
-        <div className="flex flex-col gap-6 md:flex-row">
+        <div className="portfolio-section md:flex-row">
           <div className="flex flex-col justify-center gap-4 md:w-[48%]">
-            <div className="relative h-[600px] w-full">
-              <Image src="/budget-tracker/3.png" alt="" className="object-contain" fill />
-            </div>
+            <img src="/budget-tracker/3.png" />
             <span className="caption">
               When the customer views their card transactions, we show them a graph of their
               spending habits based on their current balance. They can click 'Show More' to view the
@@ -118,9 +112,7 @@ export default function Page() {
             </span>
           </div>
           <div className="flex flex-col justify-center gap-4 md:w-[48%]">
-            <div className="relative h-[600px] w-full">
-              <Image src="/budget-tracker/key.png" alt="" className="object-contain" fill />
-            </div>
+            <img src="/budget-tracker/key.png" />
             <span className="caption">
               After clicking on the 'Show More' button, the customer is able to see a detailed
               breakdown of how they've spent based on their budget. At the top, the customer can
@@ -140,8 +132,8 @@ export default function Page() {
           able to view, track, and manage their finances all within one place.{' '}
         </span>
       </section>
-      <section className="flex flex-col gap-6">
-        <SectionHeader text="Outcomes" />
+      <SectionHeader text="Outcomes" />
+      <section className="portfolio-section">
         <span>
           Being a developer-transitioned-designer, I understand the gap between "I want this cool
           feature" and "this cool feature is feasible".{' '}

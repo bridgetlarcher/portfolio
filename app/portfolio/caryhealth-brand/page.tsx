@@ -7,7 +7,7 @@ export default function Page() {
       title="CaryHealth Brand Identity"
       summary="Lead the direction of design and development of CaryHealth's brand identity, including its own brand site, logos, and marketing materials."
     >
-      <section className="flex flex-col gap-6">
+      <section className="portfolio-section">
         <span>
           (Want a sneak peek of the final brand site? I get it! You can check it out{' '}
           <a href="https://www.cary.health/" target="_blank">
@@ -30,7 +30,9 @@ export default function Page() {
           lead the team, I took the initiative to dive into the world of marketing, a realm in which
           I had little prior experience!
         </span>
-        <SectionHeader text="The Problem" />
+      </section>
+      <SectionHeader text="The Problem" />
+      <section className="portfolio-section">
         <span>
           Our problem was this:{' '}
           <span className="power-underline">
@@ -42,8 +44,9 @@ export default function Page() {
           we were showcasing a shell of a site rather than a company with innovative healthcare
           solutions.
         </span>
-        <SectionHeader text="Objectives" />
-
+      </section>
+      <SectionHeader text="Objectives" />
+      <section className="portfolio-section">
         <span>
           As a result of these problems, we set aside our main objectives for the three months we
           had before 2025:
@@ -86,8 +89,8 @@ export default function Page() {
           wasted no time in finding the right approach.
         </span>
       </section>
-      <section className="flex flex-col gap-6">
-        <SectionHeader text="The Approach" />
+      <SectionHeader text="The Approach" />
+      <section className="portfolio-section">
         <span>
           Our marketing designer and I approached our brand identity issue first with an abundance
           of research. In order to find the fastest route to success, we searched through Dribbble
@@ -123,14 +126,14 @@ export default function Page() {
           fell into place seamlessly afterward—each of our products has a distinctive look, feel,
           and use case to them, so we inherently had all we needed to be successful.
         </span>
-        <div className="flex flex-row justify-center gap-6">
-          <div className="flex w-2/3 flex-col gap-2">
+        <div className="portfolio-image flex flex-col items-center justify-center gap-6 lg:flex-row">
+          <div className="flex flex-col gap-2 lg:w-2/3">
             <img src="/caryhealth-brand/hero-iteration1.png" className="w-full rounded-xl" />
             <span className="caption text-center">
               Our first iteration of a homepage hero with our new logo suite in place.
             </span>
           </div>
-          <div className="flex w-1/3 flex-col gap-6">
+          <div className="flex flex-col gap-6 lg:w-1/3">
             <span>
               After a few tweaks, we decided to shift this first hero design down the page in favor
               of a less eye-intensive graphic flow.
@@ -159,14 +162,14 @@ export default function Page() {
           pleased!
         </span>
       </section>
-      <section className="flex flex-col gap-6">
-        <SectionHeader text="Outcomes" />
+      <SectionHeader text="Outcomes" />
+      <section className="portfolio-section">
         <span>
           Our brand identity exercise opened up doors for us that previously seemed impossible to
           crack. With the creation of our logo suite and brand site revamp, we have the context we
           need to showcase our products the way they deserve to be shown.
         </span>
-        <div className="flex w-full justify-center">
+        <div className="portfolio-image flex justify-center">
           <img src="/caryhealth-brand/logo-suite.png" className="w-1/2" />
         </div>
         <span>
@@ -175,7 +178,9 @@ export default function Page() {
           unique color scheme; this allowed us to utilize these colors to add to the "playful" theme
           we agreed upon!
         </span>
-        <img src="/caryhealth-brand/before-after.png" alt="" className="w-full" />
+        <div className="portfolio-image">
+          <img src="/caryhealth-brand/before-after.png" alt="" className="w-full" />
+        </div>
         <span>
           On the left, not much can be gathered from the generic imagery used other than the fact
           that the user is looking at a healthcare company’s website. The names of the products are

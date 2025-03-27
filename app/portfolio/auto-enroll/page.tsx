@@ -8,8 +8,8 @@ export default function Page() {
       title="Auto Enroll"
       summary="Developed a feature to automatically enroll existing Capital One customers who are signing up for a new card."
     >
-      <section className="flex flex-col gap-6">
-        <SectionHeader text="Objectives" />
+      <SectionHeader text="Objectives" />
+      <section className="portfolio-section">
         <span>
           We found that customers were being asked for redundant information when signing up for a
           credit card. Specifically, after logging into their account and applying for a card,
@@ -58,10 +58,10 @@ export default function Page() {
           Great! <span className="font-bold">But this experience leaves much to be desired.</span>
         </span>
       </section>
-      <section className="flex flex-col gap-6">
-        <SectionHeader text="The Approach" />
-        <div className="flex flex-col-reverse gap-6 md:flex-row">
-          <div className="flex flex-col gap-6 md:w-[48%]">
+      <SectionHeader text="The Approach" />
+      <section className="portfolio-section">
+        <div className="portfolio-image flex flex-col-reverse gap-6 md:flex-row">
+          <div className="flex flex-col gap-6 md:w-1/2">
             <span>
               I met with my product partners to outline a design strategy based on our objectives.
               When existing customers are logged into their account, and want to apply for another
@@ -87,15 +87,11 @@ export default function Page() {
               </ol>
             </span>
           </div>
-          <div className="flex flex-col justify-center gap-4 md:w-[48%]">
-            <div className="relative h-[300px] w-full md:h-[400px]">
-              <Image
-                src="/auto-enroll/key.png"
-                alt="The auto enroll page. Users see this when they successfully Auto Enroll."
-                className="object-contain"
-                fill
-              />
-            </div>
+          <div className="flex flex-col items-center justify-center gap-4 md:w-1/2">
+            <img
+              src="/auto-enroll/key.png"
+              alt="The auto enroll page. Users see this when they successfully Auto Enroll."
+            />
             <span className="caption">
               Above is the finalized design for when a customer is successfully Auto Enrolled. After
               clicking the "Continue Online Setup" button, they are redirected to their account.
@@ -103,8 +99,8 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section className="flex flex-col gap-6">
-        <SectionHeader text="Outcomes" />
+      <SectionHeader text="Outcomes" />
+      <section className="portfolio-section">
         <span>
           My job was to develop the Auto Enroll experience and monitor its success. The main
           Javascript frameworks that I used to write this experience included (but were not limited
@@ -116,12 +112,10 @@ export default function Page() {
           still keeping them in-the-know about the Auto Enroll process. We talked about how the path
           the user takes through the experience and how we can enhance it end-to-end.
         </span>
-        <div className="relative h-[300px] w-full lg:h-[450px]">
-          <Image
+        <div className="portfolio-image">
+          <img
             src="/auto-enroll/outcomes.png"
             alt="Outcomes. At the top is the old experience, where users spent 13 minutes applying for a card. At the bottom is the auto enroll experience, which saved customers 6 minutes applying."
-            className="object-contain"
-            fill
           />
         </div>
         <span>

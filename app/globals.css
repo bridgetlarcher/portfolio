@@ -39,3 +39,11 @@ a {
 .caption {
   @apply text-sm font-light italic;
 }
+
+.portfolio-section {
+  @apply flex flex-col gap-6 md:mx-20;
+}
+
+.portfolio-image {
+  @apply md:-mx-20;
+}
