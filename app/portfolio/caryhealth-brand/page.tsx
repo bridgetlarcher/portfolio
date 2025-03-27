@@ -126,14 +126,14 @@ export default function Page() {
           fell into place seamlessly afterward—each of our products has a distinctive look, feel,
           and use case to them, so we inherently had all we needed to be successful.
         </span>
-        <div className="portfolio-image flex flex-col items-center justify-center gap-6 lg:flex-row">
-          <div className="flex flex-col gap-2 lg:w-2/3">
+        <div className="portfolio-image flex flex-col items-center justify-center gap-6 md:flex-row">
+          <div className="flex flex-col gap-2 md:w-2/3">
             <img src="/caryhealth-brand/hero-iteration1.png" className="w-full rounded-xl" />
             <span className="caption text-center">
               Our first iteration of a homepage hero with our new logo suite in place.
             </span>
           </div>
-          <div className="flex flex-col gap-6 lg:w-1/3">
+          <div className="flex flex-col gap-6 md:w-1/3">
             <span>
               After a few tweaks, we decided to shift this first hero design down the page in favor
               of a less eye-intensive graphic flow.
