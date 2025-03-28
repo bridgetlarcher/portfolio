@@ -3,10 +3,7 @@ import { SectionHeader } from '@/components/SectionHeader'
 
 export default function Page() {
   return (
-    <PortfolioItem
-      title="CaryHealth Brand Identity"
-      summary="Lead the direction of design and development of CaryHealth's brand identity, including its own brand site, logos, and marketing materials."
-    >
+    <PortfolioItem>
       <section className="portfolio-section">
         <span>
           (Want a sneak peek of the final brand site? I get it! You can check it out{' '}
@@ -51,36 +48,50 @@ export default function Page() {
           As a result of these problems, we set aside our main objectives for the three months we
           had before 2025:
         </span>
-        <div className="ml-8 flex flex-col gap-5 lg:flex-row">
-          <div className="flex flex-col items-center justify-center gap-3">
-            <img className="h-[50px]" src="/icons/design-system.png" />
+        <div className="flex flex-col gap-5 lg:flex-row">
+          <div className="flex flex-col gap-3 lg:w-1/3">
+            <span className="flex justify-center">
+              <img className="h-[50px]" src="/icons/design-system.png" />
+            </span>
             <span className="text-center text-lg font-bold">A Brand Identity</span>
             <span>
               First and foremost, we needed to tack down a distinctive way for us to present
-              ourselves. Are we happy? Serious? Playful? Is our brand loud and colorful, or
-              thoughtful and deliberate? Once we found our footing here, the transition into #2 and
-              #3 would be seamless.
+              ourselves.
+            </span>
+            <span>Are we happy? Serious? Playful?</span>
+            <span>
+              Is our brand loud and colorful, or thoughtful and deliberate? Once we found our
+              footing here, the transition into #2 and #3 would be seamless.
             </span>
           </div>
-          <div className="flex flex-col items-center justify-center gap-3">
-            <img className="h-[50px]" src="/icons/landing-page.png" />
+          <div className="flex flex-col gap-3 lg:w-1/3">
+            <span className="flex justify-center">
+              <img className="h-[50px]" src="/icons/landing-page.png" />
+            </span>
             <span className="text-center text-lg font-bold">A Brand Site Facelift</span>
             <span>
               Without a clear identity, we found our current site to be a mix of text and imagery
-              that didn't fit the bill. Once we found our brand's niche, we needed to upgrade the
-              site to reflect the colors, descriptive words, and feeling of those newfound brand
-              guidelines. (See below for a sneak peek of “before” and “after” photos!)
+              that didn't fit the bill.
+            </span>
+            <span>
+              Once we found our brand's niche, we needed to upgrade the site to reflect the colors,
+              descriptive words, and feeling of those newfound brand guidelines. (See below for a
+              sneak peek of “before” and “after” photos!)
             </span>
           </div>
-          <div className="flex flex-col items-center justify-center gap-3">
-            <img className="h-[50px]" src="/icons/ui.png" />
+          <div className="flex flex-col gap-3 lg:w-1/3">
+            <span className="flex justify-center">
+              <img className="h-[50px]" src="/icons/ui.png" />
+            </span>
             <span className="text-center text-lg font-bold">A Shiny Logo Suite</span>
             <span>
               There are currently five products the company has built out so far, some of which had
-              mismatching logos and others with no logos at all. Our goal was to align our products
-              in such a way that followed our brand guidelines while allowing each of them a bit of
-              breathing room to showcase their own unique flare. This was to be the metaphorical
-              cherry on top of the brand suite cupcake.
+              mismatching logos and others with no logos at all.
+            </span>
+            <span>
+              Our goal was to align our products in such a way that followed our brand guidelines
+              while allowing each of them a bit of breathing room to showcase their own unique
+              flare. This was to be the metaphorical cherry on top of the brand suite cupcake.
             </span>
           </div>
         </div>
@@ -170,7 +181,7 @@ export default function Page() {
           need to showcase our products the way they deserve to be shown.
         </span>
         <div className="portfolio-image flex justify-center">
-          <img src="/caryhealth-brand/logo-suite.png" className="w-1/2" />
+          <img src="/caryhealth-brand/logo-suite.png" className="md:w-1/2" />
         </div>
         <span>
           Our logo suite combines the unity we so desired from our brand identity with the unique

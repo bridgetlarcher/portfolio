@@ -4,10 +4,7 @@ import Image from 'next/image'
 
 export default function Page() {
   return (
-    <PortfolioItem
-      title="Auto Enroll"
-      summary="Developed a feature to automatically enroll existing Capital One customers who are signing up for a new card."
-    >
+    <PortfolioItem>
       <SectionHeader text="Objectives" />
       <section className="portfolio-section">
         <span>
@@ -41,14 +38,14 @@ export default function Page() {
         <span>
           You land on the application page and see that you're required to input your full name,
           date of birth, email address... the works.{' '}
-          <span className="power-underline italic">
+          <span className="font-bold italic">
             Why can't Capital One just see that I'm logged in already?,
           </span>{' '}
           you think, filling out the unnecessarily blank fields.
         </span>
         <span>
           You submit, and you get approved. Yay! Capital One redirects you to a login page—{' '}
-          <span className="power-underline italic">
+          <span className="font-bold italic">
             Why can't Capital One just see that I'm logged in already?
           </span>
           , you think... again. You log in, <span className="italic">again</span>, begrudgingly.
@@ -104,7 +101,7 @@ export default function Page() {
         <span>
           My job was to develop the Auto Enroll experience and monitor its success. The main
           Javascript frameworks that I used to write this experience included (but were not limited
-          to) <span className="power-underline">React, Node.js, and Jest.</span>
+          to) <span className="font-bold">React, Node.js, and Jest.</span>
         </span>
         <span>
           While developing this experience, I collaborated with Design to ensure that we captured
@@ -120,19 +117,19 @@ export default function Page() {
         </div>
         <span>
           After writing and monitoring the experience that I created, we noticed a large uptick in
-          customers who <span className="power-underline">completed their enrollment</span>. We have
-          a percentile of customers who fall off after they get approved, which Auto Enroll helped
+          customers who <span className="font-bold">completed their enrollment</span>. We have a
+          percentile of customers who fall off after they get approved, which Auto Enroll helped
           mitigate.
         </span>
         <span>
           We also noticed that the average customer's application to completion time{' '}
-          <span className="power-underline">improved from 13 minutes to 6 minutes</span> with Auto
-          Enroll. About 5-10% of customers who enroll with Capital One see this experience.
+          <span className="font-bold">improved from 13 minutes to 6 minutes</span> with Auto Enroll.
+          About 5-10% of customers who enroll with Capital One see this experience.
         </span>
         <span>
           Overall, the addition of Auto Enroll was a massive success across the org. I am proud to
-          have developed this <span className="power-underline">groundbreaking</span> feature that
-          has touched millions of customers!
+          have developed this <span className="font-bold">groundbreaking</span> feature that has
+          touched millions of customers!
         </span>
       </section>
     </PortfolioItem>

@@ -28,7 +28,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             />
           </a>
         </nav>
-        <main className="flex flex-col gap-8 px-12 pb-24 pt-6 lg:px-40 xl:px-96">{children}</main>
+        <main className="flex flex-col gap-8 px-12 pb-24 pt-6 lg:px-40 xl:px-80">{children}</main>
       </body>
     </html>
   )

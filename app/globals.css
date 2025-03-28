@@ -25,7 +25,11 @@ a {
 }
 
 .power-underline {
-  @apply underline decoration-accent/40 decoration-2 underline-offset-2;
+  @apply underline decoration-accent/20 decoration-2 underline-offset-2;
+}
+
+.power-bold {
+  @apply font-bold text-slate-300;
 }
 
 .social-media-button {
@@ -41,9 +45,9 @@ a {
 }
 
 .portfolio-section {
-  @apply flex flex-col gap-6 md:mx-20;
+  @apply flex flex-col gap-6 md:mx-20 lg:mx-10;
 }
 
 .portfolio-image {
-  @apply md:-mx-20;
+  @apply md:-mx-20 lg:-mx-10;
 }

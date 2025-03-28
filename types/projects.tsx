@@ -13,7 +13,7 @@ export const projects: ProjectItem[] = [
       "Lead the direction of design and development of CaryHealth's brand identity, including its own brand site, logos, and marketing materials.",
     img: '/caryhealth-brand/site-homepage-slice.png',
     link: '/portfolio/caryhealth-brand',
-    pills: ['Marketing', 'Product Management', 'Figma', 'Webflow'],
+    pills: ['Strategy', 'Marketing Design', 'Product Management', 'Figma', 'Webflow'],
   },
   {
     title: 'Clair',
@@ -29,7 +29,7 @@ export const projects: ProjectItem[] = [
       "I gathered with a group of coworkers at Capital One to participate in an 'Innovation Day'— a workday-long hackathon to create a meaningful solution to a need that customers have. Our team decided to focus on the need for customers to budget their spending habits without needing to leave the app.",
     img: '/budget-tracker/key.png',
     link: '/portfolio/budget-tracker',
-    pills: ['Innovation Design', 'Figma', 'Mural'],
+    pills: ['UI/UX Design', 'Figma', 'Mural'],
   },
   {
     title: 'Capital One Auto Enroll',

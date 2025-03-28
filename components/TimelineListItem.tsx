@@ -25,7 +25,7 @@ export function TimelineListItem({ item }: Props) {
       )}
       <p className="text-slate-400">{item.description}</p>
       <div className="mt-2 flex flex-row flex-wrap gap-2">
-        {item.pills.map((pill) => (
+        {item.responsibilities.map((pill) => (
           <Pill key={pill} text={pill} />
         ))}
       </div>

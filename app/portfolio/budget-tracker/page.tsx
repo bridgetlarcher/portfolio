@@ -4,10 +4,7 @@ import Image from 'next/image'
 
 export default function Page() {
   return (
-    <PortfolioItem
-      title="Budget Tracker"
-      summary="Designed a feature during a company hackathon to help customers track their spending habits and budget their finances through Capital One."
-    >
+    <PortfolioItem>
       <SectionHeader text="Objectives" />
       <section className="portfolio-section">
         <span>
@@ -16,7 +13,7 @@ export default function Page() {
         </span>
         <span>
           Our team decided to focus on the need for customers to{' '}
-          <span className="power-underline">
+          <span className="font-bold">
             budget their spending habits without having to leave the app
           </span>
           . Using the data from their previous transactions, while giving them the option to set
@@ -51,7 +48,7 @@ export default function Page() {
       </section>
       <SectionHeader text="The Approach" />
       <section className="portfolio-section">
-        <span className="power-underline">
+        <span className="font-bold">
           After setting our objectives, because of our time constraint, we decided to focus on two
           main portions of our feature that we must complete.
         </span>
@@ -88,7 +85,7 @@ export default function Page() {
         <span>
           With this piece of the feature, we allow the customer to set their own custom budget based
           on their credit limit.{' '}
-          <span className="power-underline">
+          <span className="font-bold">
             Our goal was to give the customer as much leeway as possible to tailor their budget to
             their needs.
           </span>
@@ -137,7 +134,7 @@ export default function Page() {
         <span>
           Being a developer-transitioned-designer, I understand the gap between "I want this cool
           feature" and "this cool feature is feasible".{' '}
-          <span className="power-underline">
+          <span className="font-bold">
             Bridging that gap between development and design is key to creating (both!) a cool,
             feasible feature.
           </span>
@@ -153,7 +150,7 @@ export default function Page() {
           Working as a developer has allowed me to feel out the small details of a feature, and
           working as a designer has helped me retain the bigger picture and keep asking "why?". Over
           the few hours that we worked on Budget Tracker,{' '}
-          <span className="power-underline">
+          <span className="font-bold">
             I was able to exercise both of those abilities while still keeping others' ideas in
             mind.
           </span>
