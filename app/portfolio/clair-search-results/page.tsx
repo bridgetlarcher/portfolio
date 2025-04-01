@@ -38,7 +38,7 @@ export default function Page() {
         </span>
 
         <div className="portfolio-image flex flex-col items-center justify-center gap-6 md:flex-row">
-          <div className="flex flex-col gap-6 md:w-1/2">
+          <div className="2xl:w-1/3 flex flex-col gap-6 md:w-1/2">
             <span>
               <ul className="ml-8 list-decimal">
                 <li>
@@ -61,7 +61,7 @@ export default function Page() {
               </ul>
             </span>
           </div>
-          <div className="flex flex-col gap-2 md:w-1/2">
+          <div className="2xl:w-2/3 flex flex-col gap-2 md:w-1/2">
             <img src="/clair-search-results/old-clair.png" className="w-full rounded-xl" />
             <span className="caption">
               Our old search results experience. Notice the long lines of text that users would have
