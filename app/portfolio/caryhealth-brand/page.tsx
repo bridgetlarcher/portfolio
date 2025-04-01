@@ -48,8 +48,8 @@ export default function Page() {
           As a result of these problems, we set aside our main objectives for the three months we
           had before 2025:
         </span>
-        <div className="flex flex-col gap-5 lg:flex-row">
-          <div className="flex flex-col gap-3 lg:w-1/3">
+        <div className="flex flex-col gap-5">
+          <div className="flex flex-col gap-3">
             <span className="flex justify-center">
               <img className="h-[50px]" src="/icons/design-system.png" />
             </span>
@@ -64,7 +64,7 @@ export default function Page() {
               footing here, the transition into #2 and #3 would be seamless.
             </span>
           </div>
-          <div className="flex flex-col gap-3 lg:w-1/3">
+          <div className="flex flex-col gap-3">
             <span className="flex justify-center">
               <img className="h-[50px]" src="/icons/landing-page.png" />
             </span>
@@ -79,7 +79,7 @@ export default function Page() {
               sneak peek of “before” and “after” photos!)
             </span>
           </div>
-          <div className="flex flex-col gap-3 lg:w-1/3">
+          <div className="flex flex-col gap-3">
             <span className="flex justify-center">
               <img className="h-[50px]" src="/icons/ui.png" />
             </span>

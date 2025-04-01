@@ -15,7 +15,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body
         className={`${roboto.className} relative flex min-h-screen flex-col leading-relaxed text-slate-400`}
       >
-        <nav className="sticky top-0 flex w-full items-center justify-between px-4 py-3 backdrop-blur-md lg:px-24 lg:backdrop-blur-none">
+        <nav className="sticky top-0 z-10 flex w-full items-center justify-between px-4 py-3 backdrop-blur-sm lg:px-24 lg:backdrop-blur-none">
           <a href="/#section-projects">
             <ArrowBack fontSize="large" />
           </a>
@@ -28,7 +28,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             />
           </a>
         </nav>
-        <main className="flex flex-col gap-8 px-12 pb-24 pt-6 lg:px-40 xl:px-80">{children}</main>
+        <main className="2xl:px-[30rem] flex flex-col gap-8 px-12 pb-24 pt-6 lg:px-40 xl:px-80">
+          {children}
+        </main>
+        <footer className="flex flex-col gap-2 p-8 text-center">
+          <span>
+            Designed in Figma. Developed in Next.js and TailwindCSS. Deployed with Vercel.
+          </span>
+          <span>
+            All with love by{' '}
+            <a href="https://www.linkedin.com/in/bridgetlarcher/">Bridget Larcher</a>.
+          </span>
+        </footer>
       </body>
     </html>
   )

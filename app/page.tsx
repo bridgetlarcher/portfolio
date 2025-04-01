@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
 
-import { GitHub, LinkedIn } from '@mui/icons-material'
+import { GitHub, LinkedIn, Description } from '@mui/icons-material'
 
 import { SectionHeader } from '@/components/SectionHeader'
 import { TimelineListItem } from '@/components/TimelineListItem'
@@ -41,11 +41,17 @@ export default function Home() {
       <aside className="flex pt-12 lg:sticky lg:left-0 lg:top-0 lg:h-screen lg:justify-end lg:p-12 lg:text-right xl:flex-shrink xl:p-24">
         <section className="flex flex-col gap-5 lg:w-[37vw] lg:items-end xl:w-[450px]">
           <div className="flex gap-4 lg:justify-end">
-            <a href="https://www.linkedin.com/in/bridgetlarcher/">
+            <a href="https://github.com/bridgetlarcher" target="_blank">
+              <GitHub fontSize="large" className="social-media-button" />
+            </a>
+            <a href="https://www.linkedin.com/in/bridgetlarcher/" target="_blank">
               <LinkedIn fontSize="large" className="social-media-button" />
             </a>
-            <a href="https://github.com/bridgetlarcher">
-              <GitHub fontSize="large" className="social-media-button" />
+            <a
+              href="https://drive.google.com/file/d/1xtOJGz4zfhEnKD3CTncCOwOSrIWjE8eh/view?usp=sharing"
+              target="_blank"
+            >
+              <Description fontSize="large" className="social-media-button" />
             </a>
           </div>
           <span className="flex items-center gap-4 lg:justify-end">
@@ -142,7 +148,7 @@ export default function Home() {
             <span>
               Want to learn more? View my full resume{' '}
               <a
-                href="https://drive.google.com/file/d/1dwGp4EjusWOrMxKAsSGcrmAE092Ly6bG/view?usp=sharing"
+                href="https://drive.google.com/file/d/1xtOJGz4zfhEnKD3CTncCOwOSrIWjE8eh/view?usp=sharing"
                 target="_blank"
               >
                 here
@@ -169,8 +175,14 @@ export default function Home() {
             ))}
           </div>
         </section>
-        <footer className="mt-8">
-          Designed in Figma. Developed in Next.js and TailwindCSS. Deployed with Vercel.
+        <footer className="mt-8 flex flex-col gap-2 text-center">
+          <span>
+            Designed in Figma. Developed in Next.js and TailwindCSS. Deployed with Vercel.
+          </span>
+          <span>
+            All with love by{' '}
+            <a href="https://www.linkedin.com/in/bridgetlarcher/">Bridget Larcher</a>.
+          </span>
         </footer>
       </main>
     </div>

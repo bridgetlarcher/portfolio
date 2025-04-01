@@ -24,7 +24,7 @@ export const workExperience: TimelineItem[] = [
     ],
     tools: ['React', 'Gatsby', 'Figma', 'TypeScript', 'ClickUp'],
     description:
-      'Leads the product design and development of multiple high-impact tools at CaryHealth, spanning the product, design, and tech sectors and overseeing teams of talented designers and developers.',
+      'Leads the product design and development of multiple high-impact tools at CaryHealth, spanning the product, design, and tech sectors and overseeing teams of talented designers and developers. Drives the product design and development of Clair, a clinical AI product within the CaryHealth suite, guiding product direction and user experience implementation.',
   },
   {
     dates: 'September 2022 – October 2023',
