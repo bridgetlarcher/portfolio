@@ -48,7 +48,7 @@ export default function Home() {
               <LinkedIn fontSize="large" className="social-media-button" />
             </a>
             <a
-              href="https://drive.google.com/file/d/1xtOJGz4zfhEnKD3CTncCOwOSrIWjE8eh/view?usp=sharing"
+              href="https://drive.google.com/file/d/1cN9ttDXtCY-S4NtpSLEVjTfP2sSZoskc/view?usp=sharing"
               target="_blank"
             >
               <Description fontSize="large" className="social-media-button" />
@@ -148,7 +148,7 @@ export default function Home() {
             <span>
               Want to learn more? View my full resume{' '}
               <a
-                href="https://drive.google.com/file/d/1xtOJGz4zfhEnKD3CTncCOwOSrIWjE8eh/view?usp=sharing"
+                href="https://drive.google.com/file/d/1cN9ttDXtCY-S4NtpSLEVjTfP2sSZoskc/view?usp=sharing"
                 target="_blank"
               >
                 here
