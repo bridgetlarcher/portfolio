@@ -11,7 +11,7 @@ export interface TimelineItem {
 export const workExperience: TimelineItem[] = [
   {
     dates: 'November 2023 - Present',
-    title: 'Lead UI/UX Developer',
+    title: 'Manager of User Experiences',
     employer: 'CaryHealth',
     link: 'https://www.cary.health',
     responsibilities: [
