@@ -47,10 +47,7 @@ export default function Home() {
             <a href="https://www.linkedin.com/in/bridgetlarcher/" target="_blank">
               <LinkedIn fontSize="large" className="social-media-button" />
             </a>
-            <a
-              href="https://drive.google.com/file/d/1mNtP7A6HkqkSipwUDeMOqSCeUNY_sfta/view?usp=sharing"
-              target="_blank"
-            >
+            <a href={process.env.RESUME} target="_blank">
               <Description fontSize="large" className="social-media-button" />
             </a>
           </div>
@@ -147,10 +144,7 @@ export default function Home() {
             </span>
             <span>
               Want to learn more? View my full resume{' '}
-              <a
-                href="https://drive.google.com/file/d/1mNtP7A6HkqkSipwUDeMOqSCeUNY_sfta/view?usp=sharing"
-                target="_blank"
-              >
+              <a href={process.env.RESUME} target="_blank">
                 here
               </a>
               !
