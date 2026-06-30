@@ -10,9 +10,9 @@ const roboto = Roboto({
   weight: ['400', '500', '700', '900'],
 })
 
-const title = 'Bridget Larcher | Developer, Designer, Problem Solver'
+const title = 'Bridget Larcher | Product Designer & Front-End Engineer'
 const description =
-  'Frontend developer, designer, and problem solver. With a passion for user-centric innovation and a proven track record of leading high-impact user experience projects, I thrive on creating and shipping projects that wow people.'
+  "Product designer and front-end engineer who takes user-facing products from research through production code. Founded a startup's design function from zero and shipped features that move real metrics."
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.bridgetlarcher.com/'),
@@ -22,11 +22,18 @@ export const metadata: Metadata = {
     'Bridget Larcher',
     'Bridget',
     'Larcher',
-    'Web development',
-    'Developer',
-    'Frontend development',
+    'Product Designer',
+    'Staff Product Designer',
+    'UX Designer',
+    'UX/Product Design Manager',
+    'Design Manager',
+    'Design Engineering',
+    'Design Systems',
     'UI/UX Design',
-    'Design',
+    'Front-End Engineer',
+    'React',
+    'TypeScript',
+    'Figma',
     'Portfolio',
   ],
   openGraph: {
@@ -42,7 +49,11 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={`${roboto.className} leading-relaxed text-slate-400`}>{children}</body>
+      <body
+        className={`${roboto.className} relative flex min-h-screen flex-col leading-relaxed text-slate-400`}
+      >
+        {children}
+      </body>
       <Analytics />
       <SpeedInsights />
     </html>

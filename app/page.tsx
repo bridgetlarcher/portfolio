@@ -61,12 +61,16 @@ export default function Home() {
             <span className="text-2xl">—</span>
             <h1 className="gradient-text text-center lg:text-4xl">Bridget Larcher</h1>
           </span>
-          <span>Frontend developer, designer, and problem solver.</span>
           <span>
-            With a passion for <span className="power-underline">user-centric innovation</span> and
-            a proven track record of leading high-impact user experience projects, I thrive on
-            creating and shipping <span className="power-underline">projects that wow people</span>.
+            Product designer and front-end engineer with a soft spot for the messy middle, where
+            design becomes real code.
           </span>
+          <span>
+            I built a startup's entire design function from the ground up: hired the team, created
+            the brand, and stood up the product design system, then shipped a self-initiated feature
+            that increased signups 34% and cut drop-off 10%.
+          </span>
+
           <nav className="hidden text-center text-xs uppercase lg:flex">
             <ul className="flex flex-col items-end">
               <li className="mr-2">

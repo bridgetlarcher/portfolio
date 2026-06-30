@@ -22,10 +22,10 @@ export default function Page() {
           best market our products.
         </span>
         <span>
-          This initiative included hiring a marketing designer and Webflow developer, both of which
-          I helped vet from a user experience fit perspective. In the interim of hiring a manager to
-          lead the team, I took the initiative to dive into the world of marketing, a realm in which
-          I had little prior experience!
+          I helped vet the marketing designer and Webflow developer we brought on, screening for
+          user-experience fit. Before we'd hired a marketing manager to lead the team, I stepped in
+          to direct the brand work myself -- adjacent to my core craft, but exactly the kind of
+          ambiguous, no-owner problem I like to take on.
         </span>
       </section>
       <SectionHeader text="The Problem" />
@@ -37,9 +37,9 @@ export default function Page() {
           </span>{' '}
           The site leaned heavily on AI imagery, which failed to showcase the nuances and use cases
           of our products as well as we wanted. Even beyond the imagery, the look and feel of the
-          site didn't hit the nail on the head: it felt cold, rigid, and unwelcoming. It was as if
-          we were showcasing a shell of a site rather than a company with innovative healthcare
-          solutions.
+          site didn't fit our desired brand direction: it felt cold, rigid, and unwelcoming. It was
+          as if we were showcasing a shell of a site rather than a company with innovative
+          healthcare solutions.
         </span>
       </section>
       <SectionHeader text="Objectives" />
@@ -91,7 +91,7 @@ export default function Page() {
             <span>
               Our goal was to align our products in such a way that followed our brand guidelines
               while allowing each of them a bit of breathing room to showcase their own unique
-              flare. This was to be the metaphorical cherry on top of the brand suite cupcake.
+              flare. This was the finishing piece of the suite.
             </span>
           </div>
         </div>
@@ -128,13 +128,13 @@ export default function Page() {
           </ul>
         </span>
         <span>
-          Using these three words, we designed a proof of concept—the main hero section of the
-          homepage—to see if we hit the nail on the head or missed the mark.
+          Using these three words, we designed a proof of concept — the main hero section of the
+          homepage — to see if the direction held up.
         </span>
         <span>
           At the same time, we took our three keywords and played with a few ideas for our logo
           suite. We settled upon a logo for our first product, Clair, and it was a hit! The suite
-          fell into place seamlessly afterward—each of our products has a distinctive look, feel,
+          fell into place seamlessly afterward -- each of our products has a distinctive look, feel,
           and use case to them, so we inherently had all we needed to be successful.
         </span>
         <div className="portfolio-image flex flex-col items-center justify-center gap-6 md:flex-row">
@@ -168,10 +168,7 @@ export default function Page() {
             looks and feels in a way that didn’t feel disjointed with the rest of the site.
           </span>
         </span>
-        <span>
-          Come January was our first shipment of our new brand site, and we couldn’t be more
-          pleased!
-        </span>
+        <span>We shipped the first version of the new brand site that January.</span>
       </section>
       <SectionHeader text="Outcomes" />
       <section className="portfolio-section">
@@ -186,8 +183,8 @@ export default function Page() {
         <span>
           Our logo suite combines the unity we so desired from our brand identity with the unique
           feel that each of our products harnesses. We were lucky in that each product has its own
-          unique color scheme; this allowed us to utilize these colors to add to the "playful" theme
-          we agreed upon!
+          unique color scheme; this allowed us to utilize these colors to reinforce the "playful"
+          theme.
         </span>
         <div className="portfolio-image">
           <img src="/caryhealth-brand/before-after.png" alt="" className="w-full" />
@@ -208,14 +205,18 @@ export default function Page() {
           before jumping to conclusions that wouldn’t fit our brand.
         </span>
         <span>
-          I thoroughly enjoyed this exercise in bringing five very different products together to
-          form one brand identity.{' '}
+          Bringing five very different products under one identity was the part I enjoyed most.{' '}
           <span className="power-underline">
-            How a company presents itself externally can easily make or break not only how it’s
-            viewed by others, but also (and sometimes more importantly!) how it sells.
+            How a company presents itself can make or break not just how it's seen, but how it
+            sells.
           </span>{' '}
-          Seeing CaryHealth flourish because of our brand exercise has opened my eyes to how a
-          company can shine with a little bit of design and development!
+          The rebrand landed: we heard unprompted compliments on the new brand and site from people
+          we met at conferences, and the identity finally gave sales the materials it had been
+          missing -- decks, one-pagers, trade-show backdrops, social graphics, even merch.
+        </span>
+        <span>
+          Brand, it turned out, was product work, not decoration. I thoroughly enjoyed this exercise
+          in bringing five very different products together to form one brand identity.
         </span>
         <span>
           And of course, the grand reveal! You can check it out CaryHealth's brand site{' '}

@@ -2,10 +2,10 @@ export interface TimelineItem {
   dates: string
   title: string
   employer: string
-  description: string
+  description?: string
   link?: string
-  responsibilities: string[]
-  tools: string[]
+  responsibilities?: string[]
+  tools?: string[]
 }
 
 export const workExperience: TimelineItem[] = [
@@ -17,14 +17,15 @@ export const workExperience: TimelineItem[] = [
     responsibilities: [
       'Leadership',
       'Strategy',
-      'Front-End Development',
+      'Design Systems',
       'Product Design',
-      'Marketing',
+      'Front-End Development',
+      'Brand',
       'Product Management',
     ],
     tools: ['React', 'Gatsby', 'Figma', 'TypeScript', 'ClickUp'],
     description:
-      'Leads the product design and development of multiple high-impact tools at CaryHealth, spanning the product, design, and tech sectors and overseeing teams of talented designers and developers. Drives the product design and development of Clair, a clinical AI product within the CaryHealth suite, guiding product direction and user experience implementation.',
+      "Founded the design function from zero and stood up a five-person team of designers and front-end developers, now running regular 1:1s and performance reviews. Designed and built the company's design system and brand, drove the codebase to a shared component library and monorepos, and shipped a self-initiated feature for Clair, the clinical AI copilot, increasing signups 34% and reducing drop-off 10%.",
   },
   {
     dates: 'September 2022 – October 2023',
@@ -34,7 +35,7 @@ export const workExperience: TimelineItem[] = [
     responsibilities: ['Front-End Development', 'Leadership', 'Product Design'],
     tools: ['React', 'Next.js', 'Figma', 'TypeScript', 'Linear', 'Axios'],
     description:
-      'Spearheaded efforts as the sole front-end developer, collaborating with cross-functional teams to streamline the user’s experience. Led multiple high-impact user experience projects, including the integration of multi-lingual support into the site’s video player and the implementation of an A/B testing framework into the front-end code base.',
+      'Sole front-end developer driving growth through UI/UX. Built multilingual support for the video player, launching Spanish to reach roughly 14% of customers on an architecture that adds any language from an audio track. Led accessibility improvements to WCAG AA and championed company-wide adoption of A/B testing to validate marketing and product decisions.',
   },
   {
     dates: 'April 2021 – September 2022',
@@ -49,7 +50,7 @@ export const workExperience: TimelineItem[] = [
     ],
     tools: ['Vue', 'Nuxt', 'SASS', 'Adobe XD', 'Mural', 'GitLab', 'Axios', 'Salesforce'],
     description:
-      'Wore the hats of tech lead, front-end developer, UI/UX designer, and scrum master on a daily basis. Spanned the UX research, UI design, and front-end development spectrum on multiple ‘start up’ projects at a time.',
+      'Served as tech lead, front-end developer, UI/UX designer, and scrum master across multiple concurrent startup-style initiatives for a U.S. government sponsor (specifics restricted under security clearance). Drove end-to-end product development across UX research, UI design, and front-end implementation.',
   },
   {
     dates: 'July 2017 – April 2021',
@@ -59,7 +60,7 @@ export const workExperience: TimelineItem[] = [
     responsibilities: ['Front-End Development', 'DevOps'],
     tools: ['React', 'AWS', 'Docker', 'Jira', 'Jenkins', 'Jest'],
     description:
-      "Built front and backend features on Capital One's credit card enrollment flow, reaching millions of customers per day. Created a feature to automatically enroll existing Capital One customers who are signing up for a new card, saving customers an average of 7 minutes when applying.",
+      "Built front-end and back-end features for Capital One's credit-card enrollment platform, which reached millions of customers a day. Led an auto-enrollment feature used by roughly 10% of enrolling customers, cutting the average application time from 13 minutes to 6.",
   },
   {
     dates: 'August 2016 – May 2017',
@@ -68,8 +69,7 @@ export const workExperience: TimelineItem[] = [
     link: 'https://www.vthacks.com/',
     responsibilities: ['UI/UX Design', 'Graphic Design', 'Leadership'],
     tools: ['Photoshop'],
-    description:
-      'Led a team of designers to ideate on and create designs for Virginia Tech’s 2017 hackathon. Created designs for the VTHacks website, responsive webapp, and prospectus.',
+    // description: 'Led a team of designers to ideate on and create designs for Virginia Tech’s 2017 hackathon. Created designs for the VTHacks website, responsive webapp, and prospectus.',
   },
   {
     dates: 'June 2016 – August 2016',
@@ -78,7 +78,7 @@ export const workExperience: TimelineItem[] = [
     link: 'https://www.willowtreeapps.com/',
     responsibilities: ['Front-End Development'],
     tools: ['React', 'JavaScript'],
-    description: 'Developed end-to-end features on several webapps.',
+    // description: 'Developed end-to-end features on several webapps.',
   },
   {
     dates: 'June 2015 – August 2015',
@@ -87,7 +87,6 @@ export const workExperience: TimelineItem[] = [
     link: 'https://www.brightspot.com/',
     responsibilities: ['Front-End Development'],
     tools: ['JavaScript', 'JSTL', 'CSS', 'HTML'],
-    description:
-      'Developed features on the 2015 Special Olympics official website like the front landing page and results page.',
+    // description: 'Developed features on the 2015 Special Olympics official website like the front landing page and results page.',
   },
 ]

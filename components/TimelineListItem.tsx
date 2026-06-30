@@ -23,11 +23,10 @@ export function TimelineListItem({ item }: Props) {
       ) : (
         <h3 className="text-lg font-semibold text-slate-200">{item.title}</h3>
       )}
-      <p className="text-slate-400">{item.description}</p>
+      {item.description && <p className="text-slate-400">{item.description}</p>}
       <div className="mt-2 flex flex-row flex-wrap gap-2">
-        {item.responsibilities.map((pill) => (
-          <Pill key={pill} text={pill} />
-        ))}
+        {item.responsibilities &&
+          item.responsibilities.map((pill) => <Pill key={pill} text={pill} />)}
       </div>
     </li>
   )

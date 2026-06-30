@@ -14,7 +14,7 @@ export default function Page() {
           accessible to the general public and easy to retrieve without digging for answers.
         </span>
         <span>
-          The user experience is simple—ask a question and receive a search result. This search
+          The user experience is simple -- ask a question and receive a search result. This search
           result itself is divided into three sections: an answer, a more in-depth summary of the
           references used in the search result, and of course, the references themselves. This way,
           the user can take as little or as much as they want, catering to both professionals and
@@ -38,12 +38,12 @@ export default function Page() {
         </span>
 
         <div className="portfolio-image flex flex-col items-center justify-center gap-6 md:flex-row">
-          <div className="2xl:w-1/3 flex flex-col gap-6 md:w-1/2">
+          <div className="flex flex-col gap-6 md:w-1/2 2xl:w-1/3">
             <span>
               <ul className="ml-8 list-decimal">
                 <li>
                   <span className="font-bold">Major Layout Shift</span>: Our API doesn’t come back
-                  with a search result immediately—as to be expected! Within our original design,
+                  with a search result immediately — as to be expected! Within our original design,
                   though, we didn’t capture well enough the different UI states that come with
                   multiple levels of loading.
                 </li>
@@ -61,7 +61,7 @@ export default function Page() {
               </ul>
             </span>
           </div>
-          <div className="2xl:w-2/3 flex flex-col gap-2 md:w-1/2">
+          <div className="flex flex-col gap-2 md:w-1/2 2xl:w-2/3">
             <img src="/clair-search-results/old-clair.png" className="w-full rounded-xl" />
             <span className="caption">
               Our old search results experience. Notice the long lines of text that users would have
@@ -105,7 +105,7 @@ export default function Page() {
               <ul className="ml-8 list-disc">
                 <li>
                   This way, users can exit their Google tab and stay on Clair for any necessary
-                  definitions!
+                  definitions.
                 </li>
               </ul>
             </li>
@@ -131,8 +131,8 @@ export default function Page() {
 
         <img src="/clair-search-results/new-clair.png" className="w-full" />
         <span className="caption">
-          Our designer’s amazing UI (Solution to #3, “Vertical & Horizontal Exhaustion”) with my
-          follow-up questions and tooltip keyword initiatives added to the mix.
+          The new layout from our designer (Solution to #3, “Vertical & Horizontal Exhaustion”) with
+          my follow-up questions and tooltip keyword initiatives added to the mix.
         </span>
         <span>
           The Problem “Vertical & Horizontal Exhaustion” was a tricky one. In order to decrease on
@@ -142,7 +142,7 @@ export default function Page() {
           this not only shows the user that these sections exist, but also gives them a quick
           navigation tool to use.
         </span>
-        <span>Above, you can also see the Tooltip Keywords and Follow-Up questions in action!</span>
+        <span>Above, you can also see the Tooltip Keywords and Follow-Up questions in action.</span>
         <div className="flex justify-center gap-3">
           <img src="/clair-search-results/new-clair-unauth-form.png" className="flex w-2/3" />
           <img src="/clair-search-results/new-clair-unauth-sidebar.png" className="flex w-1/3" />
@@ -165,11 +165,11 @@ export default function Page() {
           </span>
           This was not only apparent within the search result itself, but also in the sidebar in the
           image above. Loading skeletons fit the bill perfectly for the smaller pieces of data on
-          the sidebar—there’s a lot of data over there, and utilizing these placeholders kept data
+          the sidebar — there’s a lot of data over there, and utilizing these placeholders kept data
           from popping out of nowhere. Spinners for the larger sections were chosen to give the user
           a more sophisticated visual of exactly what section was loading in.
         </span>
-        <span>See the below video for a visual of how I tackled our layout shift issue!</span>
+        <span>See the below video for a visual of how I tackled our layout shift issue.</span>
       </section>
       <SectionHeader text="Outcomes" />
       <section className="portfolio-section">
@@ -186,7 +186,7 @@ export default function Page() {
             title="Bridget Larcher | Clair Search Results Revamp"
           ></iframe>
         </div>
-        <script src="https://player.vimeo.com/api/player.js"></script>
+        <script src="https://player.vimeo.com/api/player.js" async></script>
         <span>
           The above video shows and authenticated user’s experience. When asking a question, the
           page populates sequentially, utilizing skeletons and spinners to cater to the amount of
@@ -194,19 +194,20 @@ export default function Page() {
           allowing the user a one-stop shop for the information they need.
         </span>
         <span>
-          This effort was very rewarding—it was one of my first efforts at CaryHealth where I took
-          an idea from its nativity to design, then to development, and then to production entirely
-          on my own. This fact made conversations more streamlined and tasks more efficient, and as
-          a result, we were able to ship far more quickly.
+          This was the first effort at CaryHealth I owned end to end: concept to design to
+          development to production, entirely on my own. This fact made conversations more
+          streamlined and tasks more efficient, and as a result, we were able to ship far more
+          quickly.
         </span>
         <span className="power-underline">
           Our overhaul of the search results section was a major success; free plan signup increased
           34% over the next two months and drop off from the search result page decreased about 10%.
-          This meant that those who visited stayed!
+          This meant that those who visited stayed.
         </span>
         <span>
-          I’m very thankful for the chance to work on this initiative—Clair is an awesome tool that
-          I use in my daily life (WebMD, who?), and having a part in its fruition is a treat!
+          I’m very thankful for the chance to work on this initiative — Clair is an awesome tool
+          that I use in my daily life (WebMD, who?), and owning a piece of it end to end is the kind
+          of work I want more of.
         </span>
         <span>
           Check out Clair{' '}
