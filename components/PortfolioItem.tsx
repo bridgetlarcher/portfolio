@@ -18,11 +18,9 @@ export function PortfolioItem({ children }: Props) {
           {project?.pills.map((pill) => <Pill key={pill} text={pill} />)}
         </div>
       </div>
-      <h2>
-        <blockquote className="border-l-2 border-slate-500 px-4 py-2 italic">
-          {project?.description}
-        </blockquote>
-      </h2>
+      <blockquote className="border-l-2 border-slate-500 px-4 py-2 italic">
+        <p>{project?.description}</p>
+      </blockquote>
       {children}
     </>
   )

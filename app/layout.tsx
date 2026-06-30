@@ -52,10 +52,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body
         className={`${roboto.className} relative flex min-h-screen flex-col leading-relaxed text-slate-400`}
       >
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded focus:bg-white focus:px-4 focus:py-2 focus:text-black"
+        >
+          Skip to main content
+        </a>
         {children}
+        <Analytics />
+        <SpeedInsights />
       </body>
-      <Analytics />
-      <SpeedInsights />
     </html>
   )
 }

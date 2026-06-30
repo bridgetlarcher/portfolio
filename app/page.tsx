@@ -39,16 +39,26 @@ export default function Home() {
   return (
     <div className="relative flex flex-col gap-4 scroll-smooth px-6 lg:flex-row lg:p-0">
       <aside className="flex pt-12 lg:sticky lg:left-0 lg:top-0 lg:h-screen lg:justify-end lg:p-12 lg:text-right xl:flex-shrink xl:p-24">
-        <section className="flex flex-col gap-5 lg:w-[37vw] lg:items-end xl:w-[450px]">
+        <section className="flex flex-col gap-5 lg:w-[37vw] lg:items-end xl:w-[450px]" aria-label="Profile">
           <div className="flex gap-4 lg:justify-end">
-            <a href="https://github.com/bridgetlarcher" target="_blank">
-              <GitHub fontSize="large" className="social-media-button" />
+            <a
+              href="https://github.com/bridgetlarcher"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub profile"
+            >
+              <GitHub fontSize="large" className="social-media-button" aria-hidden="true" />
             </a>
-            <a href="https://www.linkedin.com/in/bridgetlarcher/" target="_blank">
-              <LinkedIn fontSize="large" className="social-media-button" />
+            <a
+              href="https://www.linkedin.com/in/bridgetlarcher/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn profile"
+            >
+              <LinkedIn fontSize="large" className="social-media-button" aria-hidden="true" />
             </a>
-            <a href={process.env.RESUME} target="_blank">
-              <Description fontSize="large" className="social-media-button" />
+            <a href={process.env.RESUME} target="_blank" rel="noopener noreferrer" aria-label="Resume">
+              <Description fontSize="large" className="social-media-button" aria-hidden="true" />
             </a>
           </div>
           <span className="flex items-center gap-4 lg:justify-end">
@@ -58,24 +68,25 @@ export default function Home() {
               width={60}
               height={60}
             />
-            <span className="text-2xl">—</span>
+            <span className="text-2xl" aria-hidden="true">—</span>
             <h1 className="gradient-text text-center lg:text-4xl">Bridget Larcher</h1>
           </span>
-          <span>
+          <p>
             Product designer and front-end engineer with a soft spot for the messy middle, where
             design becomes real code.
-          </span>
-          <span>
+          </p>
+          <p>
             I built a startup's entire design function from the ground up: hired the team, created
             the brand, and stood up the product design system, then shipped a self-initiated feature
             that increased signups 34% and cut drop-off 10%.
-          </span>
+          </p>
 
-          <nav className="hidden text-center text-xs uppercase lg:flex">
+          <nav className="hidden text-center text-xs uppercase lg:flex" aria-label="Page sections">
             <ul className="flex flex-col items-end">
               <li className="mr-2">
                 <a
                   href="#section-about"
+                  aria-current={activeSection === 'section-about' ? 'true' : undefined}
                   className={`${
                     activeSection === 'section-about' ? activeNavStyle : inactiveNavStyle
                   } inline-block border-r-2 p-4 no-underline`}
@@ -86,6 +97,7 @@ export default function Home() {
               <li className="mr-2">
                 <a
                   href="#section-work"
+                  aria-current={activeSection === 'section-work' ? 'true' : undefined}
                   className={`${
                     activeSection === 'section-work' ? activeNavStyle : inactiveNavStyle
                   } inline-block border-r-2 p-4 no-underline`}
@@ -96,6 +108,7 @@ export default function Home() {
               <li className="mr-2">
                 <a
                   href="#section-projects"
+                  aria-current={activeSection === 'section-projects' ? 'true' : undefined}
                   className={`${
                     activeSection === 'section-projects' ? activeNavStyle : inactiveNavStyle
                   } inline-block border-r-2 p-4 no-underline`}
@@ -107,52 +120,52 @@ export default function Home() {
           </nav>
         </section>
       </aside>
-      <main className="flex flex-col gap-8 pb-12 pt-8 lg:w-[50vw] xl:flex-grow xl:px-36 xl:pt-24">
+      <main id="main-content" className="flex flex-col gap-8 pb-12 pt-8 lg:w-[50vw] xl:flex-grow xl:px-36 xl:pt-24">
         <section id="section-about">
           <SectionHeader text="About" />
           <div className="flex flex-col gap-4 px-4">
-            <span>
+            <p>
               Back in the early 2000s, before my teenage years, I was{' '}
               <span className="italic">obsessed</span> with a game called Neopets. I spent all of my
               free time creating rudimentary graphics and copying code by hand (I had no clue what
               CTRL+C and CTRL+V were). As I grew into my teenage years, I asked for Photoshop for my
               thirteenth birthday and committed myself to learning the ropes of web design and
               development through hands-on experience.
-            </span>
-            <span>
+            </p>
+            <p>
               Now, after years of experience as a frontend developer and designer, I've built and
               shipped web applications for people and companies of all sorts, like a{' '}
-              <a href="https://www.capitalone.com/" target="_blank">
+              <a href="https://www.capitalone.com/" target="_blank" rel="noopener noreferrer">
                 fortune-500 corporation
               </a>
               , a{' '}
-              <a href="https://vthacks.com/" target="_blank">
+              <a href="https://vthacks.com/" target="_blank" rel="noopener noreferrer">
                 student-led hackathon
               </a>
               , a{' '}
-              <a href="https://www.mitre.org/" target="_blank">
+              <a href="https://www.mitre.org/" target="_blank" rel="noopener noreferrer">
                 government agency
               </a>
               , and a handful of startups (
-              <a href="https://www.tinyhood.com/" target="_blank">
+              <a href="https://www.tinyhood.com/" target="_blank" rel="noopener noreferrer">
                 1
               </a>
               ,{' '}
-              <a href="https://www.cary.health/" target="_blank">
+              <a href="https://www.cary.health/" target="_blank" rel="noopener noreferrer">
                 2
               </a>
               ).
-            </span>
-            <span>
+            </p>
+            <p>
               In my spare time, I'm usually gaming, writing, or hanging out with my two cats.
-            </span>
-            <span>
+            </p>
+            <p>
               Want to learn more? View my full resume{' '}
-              <a href={process.env.RESUME} target="_blank">
+              <a href={process.env.RESUME} target="_blank" rel="noopener noreferrer">
                 here
               </a>
               !
-            </span>
+            </p>
           </div>
         </section>
         <section id="section-work">
@@ -179,7 +192,7 @@ export default function Home() {
           </span>
           <span>
             All with love by{' '}
-            <a href="https://www.linkedin.com/in/bridgetlarcher/">Bridget Larcher</a>.
+            <a href="https://www.linkedin.com/in/bridgetlarcher/" rel="noopener noreferrer">Bridget Larcher</a>.
           </span>
         </footer>
       </main>

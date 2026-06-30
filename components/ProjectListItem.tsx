@@ -11,10 +11,10 @@ export function ProjectListItem({ item }: Props) {
   return (
     <div className="flex flex-col gap-4 px-2 py-4 md:flex-row xl:w-[675px] xl:gap-6">
       <div className="relative h-[125px] cursor-pointer md:w-[125px] xl:w-[175px] xl:justify-center">
-        <a href={item.link} target="_blank">
+        <a href={item.link} target="_blank" rel="noopener noreferrer" tabIndex={-1} aria-hidden="true">
           <Image
             src={item.img}
-            alt={`Preview for ${item.title}`}
+            alt=""
             fill
             className="rounded-md object-cover"
           />
@@ -22,9 +22,9 @@ export function ProjectListItem({ item }: Props) {
       </div>
       <div className="flex flex-col flex-wrap gap-2 px-2 md:w-[300px] md:px-0 xl:w-[300px] xl:flex-grow">
         <div>
-          <a href={item.link} target="_blank">
+          <a href={item.link} target="_blank" rel="noopener noreferrer">
             <h3 className="mr-2 inline text-lg">{item.title}</h3>
-            <OpenInNewIcon fontSize="inherit" className="text-sm" />
+            <OpenInNewIcon fontSize="inherit" className="text-sm" aria-hidden="true" />
           </a>
         </div>
         <span>{item.description}</span>
