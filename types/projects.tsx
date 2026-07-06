@@ -18,7 +18,7 @@ export const projects: ProjectItem[] = [
   {
     title: 'Clair Search Results Revamp',
     description:
-      "Designed and developed an end-to-end revamp of Clair's clinical search interface, focusing on signup incentives and loading states. Increased free-plan signups 34% and reduced drop-off 10%.",
+      "Proposed, designed, and built an end-to-end revamp of Clair's clinical search interface, focused on signup incentive and loading states. Free-plan signups rose 34% and drop-off fell 10%.",
     img: '/clair.png',
     link: '/portfolio/clair-search-results',
     pills: ['Product Design', 'Front-End Development', 'UX Research', 'Strategy', 'React', 'Figma'],

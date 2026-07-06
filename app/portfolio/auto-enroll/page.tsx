@@ -69,8 +69,8 @@ export default function Page() {
               <li>
                 <span className="font-bold">Prefill</span>: A feature that appears on an existing
                 customer's credit card application page. When clicked, it prefills some of the
-                customer's information to avoid replication. This solution also reduces
-                application time while increasing submission rates.
+                customer's information to avoid replication. This solution also reduces application
+                time while increasing submission rates.
               </li>
               <li>
                 <span className="font-bold">Auto Enroll</span>: When an existing customer prefills
@@ -108,7 +108,7 @@ export default function Page() {
         <div className="portfolio-image">
           <img
             src="/auto-enroll/outcomes.png"
-            alt="Outcomes. At the top is the old experience, where users spent 13 minutes applying for a card. At the bottom is the auto enroll experience, which saved customers 6 minutes applying."
+            alt="Outcomes. At the top is the old experience, where users spent 13 minutes applying for a card. At the bottom is the auto enroll experience, which saved customers 7 minutes applying."
           />
         </div>
         <p>
@@ -120,7 +120,7 @@ export default function Page() {
         <p>
           We also noticed that the average customer's application to completion time{' '}
           <span className="font-bold">improved from 13 minutes to 6 minutes</span> with Auto Enroll.
-          About 5-10% of customers who enroll with Capital One see this experience.
+          About 10% of customers who enroll with Capital One see this experience.
         </p>
         <p>
           Overall, the addition of Auto Enroll was a massive success across the org. I am proud to

@@ -9,7 +9,10 @@ type Props = {
 export function TimelineListItem({ item }: Props) {
   return (
     <li className="mb-10 ml-4 last:mb-0">
-      <div className="absolute -left-1.5 mt-1.5 h-3 w-3 rounded-full border border-slate-900 bg-gray-700" aria-hidden="true"></div>
+      <div
+        className="absolute -left-1.5 mt-1.5 h-3 w-3 rounded-full border border-slate-900 bg-gray-700"
+        aria-hidden="true"
+      ></div>
       <time className="mb-1 text-sm font-normal leading-none">{item.dates}</time>
       {item.link ? (
         <div>
@@ -23,6 +26,7 @@ export function TimelineListItem({ item }: Props) {
       ) : (
         <h3 className="text-lg font-semibold text-slate-200">{item.title}</h3>
       )}
+      {item.promotedFrom && <p className="italic text-slate-400">Previously {item.promotedFrom}</p>}
       {item.description && <p className="text-slate-400">{item.description}</p>}
       <div className="mt-2 flex flex-row flex-wrap gap-2">
         {item.responsibilities &&

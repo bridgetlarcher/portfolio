@@ -47,15 +47,14 @@ export default function Page() {
                 multiple levels of loading.
               </li>
               <li>
-                <span className="font-bold">A Lack of Signup Incentive</span>: To drive outcomes,
-                we needed to add more free-tier perks as well as market them to unauthenticated
-                users.
+                <span className="font-bold">A Lack of Signup Incentive</span>: To drive outcomes, we
+                needed to add more free-tier perks as well as market them to unauthenticated users.
               </li>
               <li>
                 <span className="font-bold">Vertical & Horizontal Exhaustion</span>: There are two
                 things a user hates: having to scroll too much and having to read across a large
-                horizontal space such as a desktop screen. Unfortunately, both of these issues
-                were prevalent in our original design.
+                horizontal space such as a desktop screen. Unfortunately, both of these issues were
+                prevalent in our original design.
               </li>
             </ul>
           </div>
@@ -115,14 +114,14 @@ export default function Page() {
             </ul>
           </li>
           <li>
-            <span className="font-bold">Follow-Up Questions</span>: When authenticated users
-            search, a few follow-up questions appear that add depth to the user's search. Upon
-            clicking one of these follow-up questions, a new tab will populate its search result.
+            <span className="font-bold">Follow-Up Questions</span>: When authenticated users search,
+            a few follow-up questions appear that add depth to the user's search. Upon clicking one
+            of these follow-up questions, a new tab will populate its search result.
             <ul className="ml-8 list-disc">
               <li>
-                Both professionals and non-professionals can utilize this feature to dig deep into
-                a topic. This is helpful when the user isn't 100% sure what to search for when
-                they query Clair.
+                Both professionals and non-professionals can utilize this feature to dig deep into a
+                topic. This is helpful when the user isn't 100% sure what to search for when they
+                query Clair.
               </li>
             </ul>
           </li>
@@ -210,10 +209,10 @@ export default function Page() {
           allowing the user a one-stop shop for the information they need.
         </p>
         <p>
-          This was the first effort at CaryHealth I owned end to end: concept to design to
-          development to production, entirely on my own. This fact made conversations more
-          streamlined and tasks more efficient, and as a result, we were able to ship far more
-          quickly.
+          This was the first effort at CaryHealth I took from concept to production myself: my
+          proposal, my designs for the signup and loading experiences, and every line of the
+          front-end code. This fact made conversations more streamlined and tasks more efficient,
+          and as a result, we were able to ship far more quickly.
         </p>
         <p className="power-underline">
           Our overhaul of the search results section was a major success; free plan signup increased

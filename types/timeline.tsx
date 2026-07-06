@@ -1,6 +1,7 @@
 export interface TimelineItem {
   dates: string
   title: string
+  promotedFrom?: string
   employer: string
   description?: string
   link?: string
@@ -12,6 +13,7 @@ export const workExperience: TimelineItem[] = [
   {
     dates: 'November 2023 - Present',
     title: 'Manager of User Experiences',
+    promotedFrom: 'UI/UX Lead Developer',
     employer: 'CaryHealth',
     link: 'https://www.cary.health',
     responsibilities: [
@@ -25,11 +27,11 @@ export const workExperience: TimelineItem[] = [
     ],
     tools: ['React', 'Gatsby', 'Figma', 'TypeScript', 'ClickUp'],
     description:
-      "Founded the design function from zero and stood up a five-person team of designers and front-end developers, now running regular 1:1s and performance reviews. Designed and built the company's design system and brand, drove the codebase to a shared component library and monorepos, and shipped a self-initiated feature for Clair, the clinical AI copilot, increasing signups 34% and reducing drop-off 10%.",
+      "Founded the design function from zero and stood up a five-person team of designers and front-end developers, now running regular 1:1s and performance reviews. Architected and led the company's design system and built its brand, drove the codebase to a shared component library and monorepos, and shipped a self-initiated feature for Clair, the clinical AI copilot, increasing signups 34% and reducing drop-off 10%.",
   },
   {
     dates: 'September 2022 – October 2023',
-    title: 'Lead Frontend Engineer',
+    title: 'Senior Front-end Engineer',
     employer: 'Tinyhood',
     link: 'https://www.tinyhood.com/',
     responsibilities: ['Front-End Development', 'Leadership', 'Product Design'],
@@ -54,7 +56,8 @@ export const workExperience: TimelineItem[] = [
   },
   {
     dates: 'July 2017 – April 2021',
-    title: 'Senior Software Engineer',
+    title: 'Senior Associate, Software Engineer',
+    promotedFrom: 'Software Engineer',
     employer: 'Capital One',
     link: 'https://www.capitalone.com/',
     responsibilities: ['Front-End Development', 'DevOps'],
