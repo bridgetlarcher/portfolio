@@ -40,8 +40,14 @@ export default function Home() {
     { id: 'section-projects', label: 'Projects' },
   ]
 
+  const handleNavClick = (event: React.MouseEvent<HTMLAnchorElement>, id: string) => {
+    event.preventDefault()
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
+    history.pushState(null, '', `#${id}`)
+  }
+
   return (
-    <div className="relative flex flex-col gap-4 scroll-smooth px-6 lg:flex-row lg:p-0">
+    <div className="relative flex flex-col gap-4 px-6 lg:flex-row lg:p-0">
       <aside className="flex pt-12 lg:sticky lg:left-0 lg:top-0 lg:h-screen lg:p-12 xl:flex-shrink xl:p-24">
         <section className="flex flex-col gap-5 lg:w-[37vw] xl:w-[450px]" aria-label="Profile">
           <span className="flex items-center gap-4">
@@ -107,6 +113,7 @@ export default function Home() {
                   <li key={navItem.id}>
                     <a
                       href={`#${navItem.id}`}
+                      onClick={(event) => handleNavClick(event, navItem.id)}
                       aria-current={isActive ? 'true' : undefined}
                       className={`inline-flex items-center gap-3 py-2 tracking-[.15em] no-underline ${
                         isActive

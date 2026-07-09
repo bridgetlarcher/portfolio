@@ -8,11 +8,6 @@
   --background-end-rgb: 19, 38, 46;
 }
 
-@layer base {
-  html {
-    @apply scroll-smooth;
-  }
-}
 
 body {
   color: rgb(var(--foreground-rgb));
