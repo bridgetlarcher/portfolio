@@ -1,10 +1,9 @@
-import { PortfolioItem } from '@/components/PortfolioItem'
 import { SectionHeader } from '@/components/SectionHeader'
 import Image from 'next/image'
 
 export default function Page() {
   return (
-    <PortfolioItem>
+    <>
       <SectionHeader text="Objectives" />
       <section className="portfolio-section">
         <p>
@@ -81,9 +80,11 @@ export default function Page() {
             </ol>
           </div>
           <div className="flex flex-col items-center justify-center gap-4 md:w-1/2">
-            <img
+            <Image
               src="/auto-enroll/key.png"
               alt="The auto enroll page. Users see this when they successfully Auto Enroll."
+              width={860}
+              height={706}
             />
             <span className="caption">
               Above is the finalized design for when a customer is successfully Auto Enrolled. After
@@ -106,9 +107,11 @@ export default function Page() {
           the user takes through the experience and how we can enhance it end-to-end.
         </p>
         <div className="portfolio-image">
-          <img
+          <Image
             src="/auto-enroll/outcomes.png"
             alt="Outcomes. At the top is the old experience, where users spent 13 minutes applying for a card. At the bottom is the auto enroll experience, which saved customers 7 minutes applying."
+            width={1046}
+            height={575}
           />
         </div>
         <p>
@@ -128,6 +131,6 @@ export default function Page() {
           touched millions of customers!
         </p>
       </section>
-    </PortfolioItem>
+    </>
   )
 }

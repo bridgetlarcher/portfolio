@@ -55,3 +55,15 @@ a {
 .portfolio-image {
   @apply md:-mx-20;
 }
+
+.subtitle {
+  @apply pt-1 text-xs uppercase tracking-[.08em] text-slate-400;
+}
+
+.nav-button-sm {
+  @apply inline-flex rounded-lg border border-slate-400/30 p-2.5 text-slate-300 no-underline transition duration-300 ease-in-out hover:border-accent/50 hover:text-accent;
+}
+
+.nav-button-lg {
+  @apply inline-flex items-center gap-2.5 rounded-lg bg-accent px-6 py-3 text-[15px] font-bold text-secondary no-underline transition duration-300 ease-in-out hover:bg-accent/70;
+}

@@ -1,9 +1,10 @@
-import { PortfolioItem } from '@/components/PortfolioItem'
 import { SectionHeader } from '@/components/SectionHeader'
+import { StatCard } from '@/components/StatCard'
+import Image from 'next/image'
 
 export default function Page() {
   return (
-    <PortfolioItem>
+    <>
       <section className="portfolio-section">
         <p>
           At CaryHealth, we have a product called{' '}
@@ -59,10 +60,12 @@ export default function Page() {
             </ul>
           </div>
           <div className="flex flex-col gap-2 md:w-1/2 2xl:w-2/3">
-            <img
+            <Image
               src="/clair-search-results/old-clair.png"
               className="w-full rounded-xl"
               alt="The old Clair search results experience, showing long lines of text spanning across a wide screen and sections that pop into existence without loading indicators."
+              width={2481}
+              height={2336}
             />
             <span className="caption">
               Our old search results experience. Notice the long lines of text that users would have
@@ -86,10 +89,12 @@ export default function Page() {
           Tackling Problems: 'A Lack of Signup Incentive' & 'Vertical & Horizontal Exhaustion'
         </h3>
         <p>To start out, I tacked down some potential ideas for us to incentivize signup:</p>
-        <img
+        <Image
           src="/clair-search-results/ideation-board.png"
           className="rounded-xl"
           alt="Ideation board showing multiple design concepts for incentivizing user signup on Clair."
+          width={3040}
+          height={2464}
         />
         <p>
           Our main objective here was to pick some low-hanging fruit: efforts that would be easy to
@@ -132,10 +137,12 @@ export default function Page() {
         </p>
         <p>All in all, we landed on the below design:</p>
 
-        <img
+        <Image
           src="/clair-search-results/new-clair.png"
           className="w-full"
           alt="The redesigned Clair search results layout featuring a sidebar navigation, tooltip keywords, and follow-up questions."
+          width={2481}
+          height={2955}
         />
         <span className="caption">
           The new layout from our designer (Solution to #3, "Vertical & Horizontal Exhaustion") with
@@ -151,15 +158,19 @@ export default function Page() {
         </p>
         <p>Above, you can also see the Tooltip Keywords and Follow-Up questions in action.</p>
         <div className="flex justify-center gap-3">
-          <img
+          <Image
             src="/clair-search-results/new-clair-unauth-form.png"
             className="flex w-2/3"
             alt="Unauthenticated Clair search result showing a signup prompt with query limit messaging."
+            width={1644}
+            height={1546}
           />
-          <img
+          <Image
             src="/clair-search-results/new-clair-unauth-sidebar.png"
             className="flex w-1/3"
             alt="Unauthenticated Clair sidebar showing signup incentives for free-tier users."
+            width={785}
+            height={1542}
           />
         </div>
         <span className="caption">
@@ -214,6 +225,10 @@ export default function Page() {
           front-end code. This fact made conversations more streamlined and tasks more efficient,
           and as a result, we were able to ship far more quickly.
         </p>
+        <div className="portfolio-image grid grid-cols-1 gap-4 md:grid-cols-2">
+          <StatCard stat="+34%" label="Free plan signups over the next two months" />
+          <StatCard stat="−10%" label="Drop-off from the search result page" />
+        </div>
         <p className="power-underline">
           Our overhaul of the search results section was a major success; free plan signup increased
           34% over the next two months and drop off from the search result page decreased about 10%.
@@ -232,6 +247,6 @@ export default function Page() {
           !
         </p>
       </section>
-    </PortfolioItem>
+    </>
   )
 }

@@ -7,16 +7,14 @@ import { GitHub, LinkedIn, Description } from '@mui/icons-material'
 
 import { SectionHeader } from '@/components/SectionHeader'
 import { TimelineListItem } from '@/components/TimelineListItem'
-import { ProjectListItem } from '@/components/ProjectListItem'
+import { TimelineAsideRow } from '@/components/TimelineAsideRow'
+import { PortfolioListItem } from '@/components/PortfolioListItem'
 
 import { projects } from '../types/projects'
 import { workExperience } from '../types/timeline'
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState<string>('')
-  const activeNavStyle = 'border-accent text-accent '
-  const inactiveNavStyle =
-    'border-transparent transition delay-150 duration-300 ease-in-out hover:text-accent '
 
   useEffect(() => {
     const handleScroll = () => {
@@ -36,91 +34,105 @@ export default function Home() {
     }
   }, [])
 
+  const navItems = [
+    { id: 'section-about', label: 'About' },
+    { id: 'section-work', label: 'Experience' },
+    { id: 'section-projects', label: 'Projects' },
+  ]
+
   return (
     <div className="relative flex flex-col gap-4 scroll-smooth px-6 lg:flex-row lg:p-0">
-      <aside className="flex pt-12 lg:sticky lg:left-0 lg:top-0 lg:h-screen lg:justify-end lg:p-12 lg:text-right xl:flex-shrink xl:p-24">
-        <section className="flex flex-col gap-5 lg:w-[37vw] lg:items-end xl:w-[450px]" aria-label="Profile">
-          <div className="flex gap-4 lg:justify-end">
-            <a
-              href="https://github.com/bridgetlarcher"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="GitHub profile"
-            >
-              <GitHub fontSize="large" className="social-media-button" aria-hidden="true" />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/bridgetlarcher/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="LinkedIn profile"
-            >
-              <LinkedIn fontSize="large" className="social-media-button" aria-hidden="true" />
-            </a>
-            <a href={process.env.RESUME} target="_blank" rel="noopener noreferrer" aria-label="Resume">
-              <Description fontSize="large" className="social-media-button" aria-hidden="true" />
-            </a>
-          </div>
-          <span className="flex items-center gap-4 lg:justify-end">
+      <aside className="flex pt-12 lg:sticky lg:left-0 lg:top-0 lg:h-screen lg:p-12 xl:flex-shrink xl:p-24">
+        <section className="flex flex-col gap-5 lg:w-[37vw] xl:w-[450px]" aria-label="Profile">
+          <span className="flex items-center gap-4">
             <Image
               src="/favicon.png"
               alt="Logo. A backwards 'B' and an 'L' side by side."
               width={60}
               height={60}
             />
-            <span className="text-2xl" aria-hidden="true">—</span>
+            <span className="text-2xl" aria-hidden="true">
+              —
+            </span>
             <h1 className="gradient-text text-center lg:text-4xl">Bridget Larcher</h1>
           </span>
+          <p className="text-xl font-medium text-slate-200">
+            Product Designer &amp; Front-End Engineer
+          </p>
           <p>
             Product designer and front-end engineer with a soft spot for the messy middle, where
-            design becomes real code.
+            design becomes code.
           </p>
           <p>
-            I built a startup's entire design function from the ground up: hired the team, created
-            the brand, and stood up the product design system, then shipped a self-initiated feature
-            that increased signups 34% and cut drop-off 10%.
+            I built a startup's design function from the ground up: the team, the brand, and the
+            design system. Then I shipped a self-initiated feature that increased signups 34% and
+            cut drop-off 10%.
           </p>
 
-          <nav className="hidden text-center text-xs uppercase lg:flex" aria-label="Page sections">
-            <ul className="flex flex-col items-end">
-              <li className="mr-2">
-                <a
-                  href="#section-about"
-                  aria-current={activeSection === 'section-about' ? 'true' : undefined}
-                  className={`${
-                    activeSection === 'section-about' ? activeNavStyle : inactiveNavStyle
-                  } inline-block border-r-2 p-4 no-underline`}
-                >
-                  About
-                </a>
-              </li>
-              <li className="mr-2">
-                <a
-                  href="#section-work"
-                  aria-current={activeSection === 'section-work' ? 'true' : undefined}
-                  className={`${
-                    activeSection === 'section-work' ? activeNavStyle : inactiveNavStyle
-                  } inline-block border-r-2 p-4 no-underline`}
-                >
-                  Work Experience
-                </a>
-              </li>
-              <li className="mr-2">
-                <a
-                  href="#section-projects"
-                  aria-current={activeSection === 'section-projects' ? 'true' : undefined}
-                  className={`${
-                    activeSection === 'section-projects' ? activeNavStyle : inactiveNavStyle
-                  } inline-block border-r-2 p-4 no-underline`}
-                >
-                  Projects
-                </a>
-              </li>
+          <div className="mt-2 flex items-center gap-3.5">
+            <a
+              href={process.env.RESUME}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="nav-button-lg"
+            >
+              <Description fontSize="small" aria-hidden="true" />
+              View Resume
+            </a>
+            <a
+              href="https://github.com/bridgetlarcher"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub profile"
+              className="nav-button-sm"
+            >
+              <GitHub fontSize="medium" aria-hidden="true" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/bridgetlarcher/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn profile"
+              className="nav-button-sm"
+            >
+              <LinkedIn fontSize="medium" aria-hidden="true" />
+            </a>
+          </div>
+
+          <nav className="hidden text-xs uppercase lg:mt-6 lg:flex" aria-label="Page sections">
+            <ul className="flex flex-col gap-1">
+              {navItems.map((navItem) => {
+                const isActive = activeSection === navItem.id
+                return (
+                  <li key={navItem.id}>
+                    <a
+                      href={`#${navItem.id}`}
+                      aria-current={isActive ? 'true' : undefined}
+                      className={`inline-flex items-center gap-3 py-2 tracking-[.15em] no-underline ${
+                        isActive
+                          ? 'text-accent'
+                          : 'text-slate-400 transition delay-150 duration-300 ease-in-out hover:text-accent'
+                      }`}
+                    >
+                      <span
+                        aria-hidden="true"
+                        className={`inline-block h-0.5 transition-all duration-300 ease-in-out ${
+                          isActive ? 'w-12 bg-accent' : 'w-6 bg-slate-600'
+                        }`}
+                      ></span>
+                      {navItem.label}
+                    </a>
+                  </li>
+                )
+              })}
             </ul>
           </nav>
         </section>
       </aside>
-      <main id="main-content" className="flex flex-col gap-8 pb-12 pt-8 lg:w-[50vw] xl:flex-grow xl:px-36 xl:pt-24">
+      <main
+        id="main-content"
+        className="flex flex-col gap-8 pb-12 pt-8 lg:w-[50vw] xl:flex-grow xl:px-36 xl:pt-24"
+      >
         <section id="section-about">
           <SectionHeader text="About" />
           <div className="flex flex-col gap-4 px-4">
@@ -156,33 +168,28 @@ export default function Home() {
               </a>
               ).
             </p>
-            <p>
-              In my spare time, I'm usually gaming, writing, or hanging out with my two cats.
-            </p>
-            <p>
-              Want to learn more? View my full resume{' '}
-              <a href={process.env.RESUME} target="_blank" rel="noopener noreferrer">
-                here
-              </a>
-              !
-            </p>
+            <p>In my spare time, I'm usually gaming, writing, or hanging out with my two cats.</p>
           </div>
         </section>
         <section id="section-work">
-          <SectionHeader text="Work Experience" />
-          <div className="flex flex-col gap-4 px-4">
-            <ol className="relative border-l border-gray-700">
-              {workExperience.map((workItem) => (
+          <SectionHeader text="Experience" />
+          <div className="flex flex-col px-4">
+            {workExperience
+              .filter((workItem) => workItem.type === 'mainExperience')
+              .map((workItem, index) => (
                 <TimelineListItem key={workItem.dates} item={workItem} />
               ))}
-            </ol>
+            <TimelineAsideRow
+              dates="2015 — 2017"
+              items={workExperience.filter((workItem) => workItem.type === 'earlyExperience')}
+            />
           </div>
         </section>
         <section id="section-projects">
           <SectionHeader text="Projects" />
-          <div className="flex flex-col items-center gap-4 px-4 xl:flex-row xl:flex-wrap xl:items-start xl:justify-center">
+          <div className="grid grid-cols-1 gap-6 px-4 md:grid-cols-2">
             {projects.map((project) => (
-              <ProjectListItem key={project.title} item={project} />
+              <PortfolioListItem key={project.title} item={project} />
             ))}
           </div>
         </section>
@@ -192,7 +199,10 @@ export default function Home() {
           </span>
           <span>
             All with love by{' '}
-            <a href="https://www.linkedin.com/in/bridgetlarcher/" rel="noopener noreferrer">Bridget Larcher</a>.
+            <a href="https://www.linkedin.com/in/bridgetlarcher/" rel="noopener noreferrer">
+              Bridget Larcher
+            </a>
+            .
           </span>
         </footer>
       </main>

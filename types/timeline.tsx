@@ -1,5 +1,6 @@
 export interface TimelineItem {
   dates: string
+  type: 'mainExperience' | 'earlyExperience'
   title: string
   promotedFrom?: string
   employer: string
@@ -11,8 +12,9 @@ export interface TimelineItem {
 
 export const workExperience: TimelineItem[] = [
   {
-    dates: 'November 2023 - Present',
+    dates: 'Nov 2023 – Present',
     title: 'Manager of User Experiences',
+    type: 'mainExperience',
     promotedFrom: 'UI/UX Lead Developer',
     employer: 'CaryHealth',
     link: 'https://www.cary.health',
@@ -30,8 +32,9 @@ export const workExperience: TimelineItem[] = [
       "Founded the design function from zero and stood up a five-person team of designers and front-end developers, now running regular 1:1s and performance reviews. Architected and led the company's design system and built its brand, drove the codebase to a shared component library and monorepos, and shipped a self-initiated feature for Clair, the clinical AI copilot, increasing signups 34% and reducing drop-off 10%.",
   },
   {
-    dates: 'September 2022 – October 2023',
-    title: 'Senior Front-end Engineer',
+    dates: 'Sept 2022 – Oct 2023',
+    title: 'Senior Front-End Engineer',
+    type: 'mainExperience',
     employer: 'Tinyhood',
     link: 'https://www.tinyhood.com/',
     responsibilities: ['Front-End Development', 'Leadership', 'Product Design'],
@@ -40,8 +43,9 @@ export const workExperience: TimelineItem[] = [
       'Sole front-end developer driving growth through UI/UX. Built multilingual support for the video player, launching Spanish to reach roughly 14% of customers on an architecture that adds any language from an audio track. Led accessibility improvements to WCAG AA and championed company-wide adoption of A/B testing to validate marketing and product decisions.',
   },
   {
-    dates: 'April 2021 – September 2022',
+    dates: 'Apr 2021 – Sept 2022',
     title: 'UX Engineer',
+    type: 'mainExperience',
     employer: 'MITRE',
     link: 'https://www.mitre.org/',
     responsibilities: [
@@ -55,8 +59,9 @@ export const workExperience: TimelineItem[] = [
       'Served as tech lead, front-end developer, UI/UX designer, and scrum master across multiple concurrent startup-style initiatives for a U.S. government sponsor (specifics restricted under security clearance). Drove end-to-end product development across UX research, UI design, and front-end implementation.',
   },
   {
-    dates: 'July 2017 – April 2021',
+    dates: 'Jul 2017 – Apr 2021',
     title: 'Senior Associate, Software Engineer',
+    type: 'mainExperience',
     promotedFrom: 'Software Engineer',
     employer: 'Capital One',
     link: 'https://www.capitalone.com/',
@@ -66,8 +71,9 @@ export const workExperience: TimelineItem[] = [
       "Built front-end and back-end features for Capital One's credit-card enrollment platform, which reached millions of customers a day. Led an auto-enrollment feature used by roughly 10% of enrolling customers, cutting the average application time from 13 minutes to 6.",
   },
   {
-    dates: 'August 2016 – May 2017',
+    dates: '2015 - 2017',
     title: 'Design Lead',
+    type: 'earlyExperience',
     employer: 'VTHacks',
     link: 'https://www.vthacks.com/',
     responsibilities: ['UI/UX Design', 'Graphic Design', 'Leadership'],
@@ -77,6 +83,7 @@ export const workExperience: TimelineItem[] = [
   {
     dates: 'June 2016 – August 2016',
     title: 'Webapps Intern',
+    type: 'earlyExperience',
     employer: 'WillowTree Apps',
     link: 'https://www.willowtreeapps.com/',
     responsibilities: ['Front-End Development'],
@@ -86,7 +93,8 @@ export const workExperience: TimelineItem[] = [
   {
     dates: 'June 2015 – August 2015',
     title: 'Software Engineer Intern',
-    employer: 'Perfect Sense (now Brightspot)',
+    type: 'earlyExperience',
+    employer: 'Perfect Sense',
     link: 'https://www.brightspot.com/',
     responsibilities: ['Front-End Development'],
     tools: ['JavaScript', 'JSTL', 'CSS', 'HTML'],

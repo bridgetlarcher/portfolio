@@ -1,9 +1,9 @@
-import { PortfolioItem } from '@/components/PortfolioItem'
 import { SectionHeader } from '@/components/SectionHeader'
+import Image from 'next/image'
 
 export default function Page() {
   return (
-    <PortfolioItem>
+    <>
       <section className="portfolio-section">
         <p>
           (Want a sneak peek of the final brand site? I get it! You can check it out{' '}
@@ -51,7 +51,13 @@ export default function Page() {
         <div className="flex flex-col gap-5">
           <div className="flex flex-col gap-3">
             <span className="flex justify-center">
-              <img className="h-[50px]" src="/icons/design-system.png" alt="" />
+              <Image
+                className="h-[50px] w-auto"
+                src="/icons/design-system.png"
+                alt=""
+                width={100}
+                height={80}
+              />
             </span>
             <p className="text-center text-lg font-bold">A Brand Identity</p>
             <p>
@@ -66,7 +72,13 @@ export default function Page() {
           </div>
           <div className="flex flex-col gap-3">
             <span className="flex justify-center">
-              <img className="h-[50px]" src="/icons/landing-page.png" alt="" />
+              <Image
+                className="h-[50px] w-auto"
+                src="/icons/landing-page.png"
+                alt=""
+                width={72}
+                height={80}
+              />
             </span>
             <p className="text-center text-lg font-bold">A Brand Site Facelift</p>
             <p>
@@ -81,7 +93,13 @@ export default function Page() {
           </div>
           <div className="flex flex-col gap-3">
             <span className="flex justify-center">
-              <img className="h-[50px]" src="/icons/ui.png" alt="" />
+              <Image
+                className="h-[50px] w-auto"
+                src="/icons/ui.png"
+                alt=""
+                width={103}
+                height={81}
+              />
             </span>
             <p className="text-center text-lg font-bold">A Shiny Logo Suite</p>
             <p>
@@ -113,8 +131,8 @@ export default function Page() {
         </p>
         <ul className="ml-8 list-decimal">
           <li>
-            <span className="font-bold">"Playful"</span>, alluding to rounded corners and fun
-            colors spanning our products.
+            <span className="font-bold">"Playful"</span>, alluding to rounded corners and fun colors
+            spanning our products.
           </li>
           <li>
             <span className="font-bold">"Clean"</span>, alluding to the sharp use of whites, and
@@ -137,10 +155,12 @@ export default function Page() {
         </p>
         <div className="portfolio-image flex flex-col items-center justify-center gap-6 md:flex-row">
           <div className="flex flex-col gap-2 md:w-2/3">
-            <img
+            <Image
               src="/caryhealth-brand/hero-iteration1.png"
               className="w-full rounded-xl"
               alt="First iteration of the CaryHealth homepage hero with the new logo suite in place."
+              width={2578}
+              height={1400}
             />
             <span className="caption text-center">
               Our first iteration of a homepage hero with our new logo suite in place.
@@ -180,10 +200,12 @@ export default function Page() {
           need to showcase our products the way they deserve to be shown.
         </p>
         <div className="portfolio-image flex justify-center">
-          <img
+          <Image
             src="/caryhealth-brand/logo-suite.png"
             className="md:w-1/2"
             alt="CaryHealth logo suite showing distinctive logos for each of the five products."
+            width={2724}
+            height={525}
           />
         </div>
         <p>
@@ -193,7 +215,13 @@ export default function Page() {
           theme.
         </p>
         <div className="portfolio-image">
-          <img src="/caryhealth-brand/before-after.png" alt="" className="w-full" />
+          <Image
+            src="/caryhealth-brand/before-after.png"
+            alt="Side-by-side comparison of the CaryHealth brand site before and after the rebrand: the old version uses generic imagery with product names lost among other text, while the new version has distinctive, on-brand product pages."
+            className="w-full"
+            width={5922}
+            height={3801}
+          />
         </div>
         <p>
           On the left, not much can be gathered from the generic imagery used other than the fact
@@ -232,6 +260,6 @@ export default function Page() {
           !
         </p>
       </section>
-    </PortfolioItem>
+    </>
   )
 }

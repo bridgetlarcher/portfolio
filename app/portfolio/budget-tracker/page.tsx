@@ -1,10 +1,9 @@
-import { PortfolioItem } from '@/components/PortfolioItem'
 import { SectionHeader } from '@/components/SectionHeader'
 import Image from 'next/image'
 
 export default function Page() {
   return (
-    <PortfolioItem>
+    <>
       <SectionHeader text="Objectives" />
       <section className="portfolio-section">
         <p>
@@ -32,15 +31,15 @@ export default function Page() {
           <li>
             <span className="font-bold">Our feature must be easy to use</span>: With all of the
             informative data that we will be presenting to the customer, we need to make sure the
-            data is presented in a way that's easy to digest. This is pretty self-explanatory;
-            with the data that we have, we don't want to overwhelm and scare the customer.
+            data is presented in a way that's easy to digest. This is pretty self-explanatory; with
+            the data that we have, we don't want to overwhelm and scare the customer.
           </li>
           <li>
             <span className="font-bold">Our feature must be attractive</span>: This objective
             definitely ties in with the previous two. We wanted the customer to have a great
-            experience with Budget Tracker, with eye-catching graphs that also showed important
-            data in an intuitive way. Making our application attractive ties all of the pieces of
-            the puzzle together.
+            experience with Budget Tracker, with eye-catching graphs that also showed important data
+            in an intuitive way. Making our application attractive ties all of the pieces of the
+            puzzle together.
           </li>
         </ol>
       </section>
@@ -55,9 +54,11 @@ export default function Page() {
         </h3>
         <div className="portfolio-section md:flex-row">
           <div className="flex flex-col justify-center gap-4 md:w-[48%]">
-            <img
+            <Image
               src="/budget-tracker/1.png"
               alt="Account Setup modal with a 'Set Spending Preferences' section added at the bottom."
+              width={422}
+              height={813}
             />
             <span className="caption">
               After a customer enrolls a card, they are shown the Account Setup modal above. We
@@ -65,9 +66,11 @@ export default function Page() {
             </span>
           </div>
           <div className="flex flex-col justify-center gap-4 md:w-[48%]">
-            <img
+            <Image
               src="/budget-tracker/2.png"
               alt="Budget preferences screen where customers can set spending budgets by category."
+              width={422}
+              height={813}
             />
             <span className="caption">
               After tapping 'Set Spending Preferences', the customer is able to set their budget and
@@ -105,9 +108,11 @@ export default function Page() {
         </h3>
         <div className="portfolio-section md:flex-row">
           <div className="flex flex-col justify-center gap-4 md:w-[48%]">
-            <img
+            <Image
               src="/budget-tracker/3.png"
               alt="Card transactions view showing a spending habits graph with a 'Show More' button."
+              width={375}
+              height={1142}
             />
             <span className="caption">
               When the customer views their card transactions, we show them a graph of their
@@ -116,9 +121,11 @@ export default function Page() {
             </span>
           </div>
           <div className="flex flex-col justify-center gap-4 md:w-[48%]">
-            <img
+            <Image
               src="/budget-tracker/key.png"
               alt="Detailed spending breakdown screen showing budget categories and a 'Change Your Spend View' toggle."
+              width={580}
+              height={1766}
             />
             <span className="caption">
               After clicking on the 'Show More' button, the customer is able to see a detailed
@@ -171,6 +178,6 @@ export default function Page() {
           a feature that would knock it out of the park if we were given more time!
         </p>
       </section>
-    </PortfolioItem>
+    </>
   )
 }
