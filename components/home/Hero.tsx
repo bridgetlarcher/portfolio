@@ -39,7 +39,11 @@ export function Hero() {
     <header className="relative flex flex-col gap-14 py-10 md:flex-row lg:items-center lg:py-20">
       <div
         aria-hidden="true"
-        className="-z-1 dot-grid absolute bottom-0 right-0 top-0 hidden w-[650px] lg:block"
+        className="bg-primary-800 -z-1 absolute bottom-0 left-[650px] right-0 top-0 hidden rounded-full opacity-15 blur-3xl lg:block"
+      />
+      <div
+        aria-hidden="true"
+        className="-z-1 dot-grid absolute bottom-0 right-0 top-0 hidden w-[700px] lg:block"
       />
       <section className="flex flex-col gap-5" aria-label="Introduction">
         <span className="eyebrow !leading-5">
@@ -51,7 +55,7 @@ export function Hero() {
           Bridget Larcher
         </h1>
         <p className="text-xl font-medium leading-snug text-slate-200 md:text-[22px]">
-          I design product, write the front-end that ships it, and lead the team that does both.
+          I design the product, write the front-end that ships it, and lead the team that does both.
         </p>
         <p>
           Nine years across product design and front-end engineering. Currently the Manager of User
