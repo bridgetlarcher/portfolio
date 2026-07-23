@@ -14,9 +14,6 @@ const slugify = (value: string) =>
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/(^-|-$)/g, '')
 
-// Homepage section: anchored with a scroll offset for the in-page nav.
-// A titled section is named for assistive tech via its visible heading
-// (aria-labelledby), so the label stays in sync with what's on screen.
 export function Section({ type, title, id, className, children }: Props) {
   const headingId = title ? `${id ?? slugify(title)}-heading` : undefined
   return (
@@ -27,7 +24,13 @@ export function Section({ type, title, id, className, children }: Props) {
         className ? ` ${className}` : ''
       }`}
     >
-      {title && <SectionHeader text={title} id={headingId} />}
+      {title && (
+        <SectionHeader
+          text={title}
+          id={headingId}
+          className={type === 'portfolio' ? 'md:-mx-20' : ''}
+        />
+      )}
       {children}
     </section>
   )

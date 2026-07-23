@@ -4,8 +4,8 @@ import { SocialButtons } from '@/components/ui/SocialButtons'
 
 export function Contact() {
   return (
-    <Section id="contact" title="Contact" className="mt-16" type="home">
-      <div className="flex flex-col gap-6 pb-16 pt-6">
+    <Section id="contact" title="Contact" type="home">
+      <div className="flex flex-col gap-6 py-10">
         <TextLink
           href="mailto:bridgetlarcher@gmail.com"
           className="self-start text-lg font-black text-slate-200 sm:text-2xl md:text-[34px]"

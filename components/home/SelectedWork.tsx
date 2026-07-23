@@ -6,7 +6,7 @@ import { projects } from '@/types/projects'
 export function SelectedWork() {
   return (
     <Section id="work" title="Selected Work" type="home">
-      <div className="mt-8 grid grid-cols-1 gap-6">
+      <div className="grid grid-cols-1 gap-6 py-10">
         {projects
           .filter((project) => project.type === 'featured')
           .map((project) => (

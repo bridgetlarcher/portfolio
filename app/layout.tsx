@@ -6,7 +6,6 @@ import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import { TopNav } from '@/components/layout/TopNav'
 import { SiteFooter } from '@/components/layout/SiteFooter'
-import { ScrollToTop } from '@/components/layout/ScrollToTop'
 
 const roboto = Roboto({
   subsets: ['latin'],
@@ -86,7 +85,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <TopNav />
         {children}
         <SiteFooter />
-        <ScrollToTop />
         <Analytics />
         <SpeedInsights />
       </body>

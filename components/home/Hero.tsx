@@ -36,7 +36,7 @@ function StatTeaser({
 
 export function Hero() {
   return (
-    <header className="relative flex flex-col gap-14 pb-16 pt-10 md:flex-row lg:items-center lg:py-20">
+    <header className="relative flex flex-col gap-14 py-10 md:flex-row lg:items-center lg:py-20">
       <div
         aria-hidden="true"
         className="-z-1 dot-grid absolute bottom-0 right-0 top-0 hidden w-[650px] lg:block"

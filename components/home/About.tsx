@@ -11,8 +11,8 @@ const employers = [
 
 export function About() {
   return (
-    <Section id="about" title="About" className="mt-16 lg:mt-20" type="home">
-      <div className="flex flex-col gap-8 py-6 md:flex-row lg:gap-16">
+    <Section id="about" title="About" type="home">
+      <div className="flex flex-col gap-6 py-10 md:flex-row lg:gap-16">
         <div className="flex flex-col gap-4 text-slate-300 md:w-2/3 md:text-lg">
           <p>
             I'm Bridget, a design engineer and design-engineering manager. For nine years I've
