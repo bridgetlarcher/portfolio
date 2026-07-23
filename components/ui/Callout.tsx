@@ -5,18 +5,18 @@ type Props = {
   listNumber?: string
 }
 
-export function EmphasizeText({ header, description, type = 'bar', listNumber }: Props) {
+export function Callout({ header, description, type = 'bar', listNumber }: Props) {
   return (
     <div className="flex flex-row gap-5">
       <div className="flex flex-col">
-        {type === 'bar' && <div className="h-full w-1 bg-accent" />}
+        {type === 'bar' && <div className="h-full w-1 bg-accent-300" />}
         {type === 'list' && listNumber && (
-          <p className="mt-[6px] text-xs font-black text-accent">{listNumber}</p>
+          <p className="text-accent-300 mt-[6px] text-xs font-black">{listNumber}</p>
         )}
       </div>
       <div className="flex flex-col gap-2">
         <p className="text-lg font-bold text-slate-200">{header}</p>
-        {description && description}
+        {description}
       </div>
     </div>
   )

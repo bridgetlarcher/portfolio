@@ -1,48 +1,46 @@
+import { OpenInNew } from '@mui/icons-material'
+import { TextLink } from '@/components/ui/TextLink'
+
 export interface ProjectItem {
+  type: 'featured' | 'card'
   title: string
   description: string
-  img: string
+  eyebrow: string
+  img: { src: string; alt: string }
+  stats?: { stat: string; label: string }[]
+  video?: { href: string; label: string }
+  caption?: string
   link: string
   pills: string[]
+  footnote?: string
   tldr: {
     role: string
     secondaryLabel: string
     secondaryValue: string
     outcomes: string[]
   }
+  additionalActions?: React.ReactNode
 }
 
 export const projects: ProjectItem[] = [
   {
-    title: 'CaryHealth Design System',
-    description:
-      "Designed, architected, and led the build of CaryHealth's design system from zero: a Figma global design system, componentized into a React and TypeScript library and shipped as a private npm package.",
-    img: '/caryhealth-brand/site-homepage-slice.png',
-    link: '/portfolio/caryhealth-design-system',
-    pills: [
-      '0-to-1',
-      'Design Systems',
-      'Figma',
-      'React / Typescript',
-      'Design Tokens',
-      'Claude Design',
-    ],
-    tldr: {
-      role: 'Architected the system; led a designer and engineer through the build.',
-      secondaryLabel: 'Scope',
-      secondaryValue: 'Five client products and an internal platform, one Turborepo monorepo',
-      outcomes: [
-        'Figma to live adoption in ~4 months; now scaling to a second, larger monorepo',
-        'Fixes propagate from one shared library instead of being hand-applied per repo',
-      ],
-    },
-  },
-  {
+    type: 'featured',
     title: 'Clair Search Results Revamp',
     description:
       "Proposed, designed, and built an end-to-end revamp of Clair's clinical search interface, focused on signup incentive and loading states. Free-plan signups rose 34% and drop-off fell 10%.",
-    img: '/clair.png',
+    img: { src: '/clair.png', alt: "Poster frame: Clair's clinical search results interface" },
     link: '/portfolio/clair-search-results',
+    eyebrow: 'Featured · Proposed, designed & built',
+    stats: [
+      { stat: '+34%', label: 'Free plan signups' },
+      { stat: '−10%', label: 'Drop-off' },
+    ],
+    video: {
+      href: 'https://player.vimeo.com/video/1068973155?h=2262c53451&badge=0&autopause=0&player_id=0&app_id=58479',
+      label: 'Watch the video walkthrough of the shipped Clair product (opens in a new tab)',
+    },
+    caption: 'Video walkthrough of the shipped product, end to end.',
+    footnote: '~3 weeks, concept to production.',
     pills: ['UX Research', 'Interaction Design', 'React / Typescript', 'Figma', 'Clinical AI'],
     tldr: {
       role: 'Proposed the feature, designed the signup-incentive and loading experiences, built and shipped the front end solo.',
@@ -50,12 +48,23 @@ export const projects: ProjectItem[] = [
       secondaryValue: '~3 weeks, concept to production',
       outcomes: ['+34% free plan signups', '−10% drop-off'],
     },
+    additionalActions: (
+      <TextLink href="https://askclair.ai" external variant="action">
+        Clair, live <OpenInNew fontSize="inherit" aria-hidden="true" />
+      </TextLink>
+    ),
   },
   {
+    type: 'card',
     title: 'CaryHealth Brand Identity',
     description:
       "Led design and development of CaryHealth's brand from the ground up: the brand site, product logos, and company-wide marketing collateral.",
-    img: '/caryhealth-brand/site-homepage-slice.png',
+    eyebrow: 'Directed',
+
+    img: {
+      src: '/caryhealth-brand/site-homepage-slice.png',
+      alt: "Poster frame: CaryHealth's brand site",
+    },
     link: '/portfolio/caryhealth-brand',
     pills: [
       'Brand Strategy',
@@ -75,10 +84,15 @@ export const projects: ProjectItem[] = [
     },
   },
   {
+    type: 'card',
     title: 'Capital One Auto Enroll',
     description:
       'Built a feature to automatically enroll existing Capital One customers signing up for a new card. Used by roughly 10% of enrolling customers, it cut average application time from 13 minutes to 6.',
-    img: '/auto-enroll/key.png',
+    eyebrow: 'Built',
+    img: {
+      src: '/auto-enroll/key.png',
+      alt: 'Poster frame: The auto enroll page. Users see this when they successfully Auto Enroll.',
+    },
     link: '/portfolio/auto-enroll',
     pills: ['React', 'Axios', 'Jest', 'AWS', 'Docker'],
     tldr: {

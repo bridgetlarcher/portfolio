@@ -1,12 +1,12 @@
-import { EmphasizeText } from '@/components/EmphasizeText'
-import { SectionHeader } from '@/components/SectionHeader'
-import { EmphasizeCard } from '@/components/EmphasizeCard'
+import { Callout } from '@/components/ui/Callout'
+import { Section } from '@/components/ui/Section'
+import { CalloutCard } from '@/components/ui/CalloutCard'
 import Image from 'next/image'
 
 export default function Page() {
   return (
     <>
-      <section className="portfolio-section">
+      <Section type="portfolio">
         <p>
           At CaryHealth, we have a product called{' '}
           <a href="https://askclair.ai/" target="_blank" rel="noopener noreferrer">
@@ -22,7 +22,7 @@ export default function Page() {
           the user can take as little or as much as they want, catering to both professionals and
           non-professionals (like students or parents).
         </p>
-        <EmphasizeText
+        <Callout
           header="With the launch of Clair a few months prior to this effort, we were bullish about
             tightening the user experience to patch any interface hiccups or roadblocks."
         />
@@ -31,15 +31,14 @@ export default function Page() {
           (beyond the current benefit of unlimited queries). This way, we could put ourselves in a
           better position for marketing and sales initiatives in the future.
         </p>
-      </section>
-      <SectionHeader text="The Problem" />
-      <section className="portfolio-section">
+      </Section>
+      <Section title="The Problem" type="portfolio">
         <p>
           There were a few drawbacks of our original search result UI that we had been mulling over
           for a couple of months:
         </p>
 
-        <EmphasizeText
+        <Callout
           header="Major Layout Shift"
           description="Our API doesn't come back
                 with a search result immediately — as to be expected! Within our original design,
@@ -48,14 +47,14 @@ export default function Page() {
           type="list"
           listNumber="01"
         />
-        <EmphasizeText
+        <Callout
           header="A Lack of Signup Incentive"
           description="To drive outcomes, we
                 needed to add more free-tier perks as well as market them to unauthenticated users."
           type="list"
           listNumber="02"
         />
-        <EmphasizeText
+        <Callout
           header="Vertical & Horizontal Exhaustion"
           description="There are two
                 things a user hates: having to scroll too much and having to read across a large
@@ -77,9 +76,8 @@ export default function Page() {
           read across large screens. Loading was also a disjointed experience-sections would pop
           into existence without any indication.
         </span>
-      </section>
-      <SectionHeader text="Approach" />
-      <section className="portfolio-section">
+      </Section>
+      <Section title="Approach" type="portfolio">
         <p>
           With these problems in mind, I worked with my designer to get some solutions set up in
           Figma.{' '}
@@ -88,7 +86,7 @@ export default function Page() {
             of minimizing layout shift and creating motivation around free plan signup.
           </span>
         </p>
-        <EmphasizeText header="Tackling Problems: 'A Lack of Signup Incentive' & 'Vertical & Horizontal Exhaustion'" />
+        <Callout header="Tackling Problems: 'A Lack of Signup Incentive' & 'Vertical & Horizontal Exhaustion'" />
         <p>To start out, I tacked down some potential ideas for us to incentivize signup:</p>
         <Image
           src="/clair-search-results/ideation-board.png"
@@ -109,7 +107,7 @@ export default function Page() {
           After a conversation with leadership, we picked two efforts from the bunch:
         </p>
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-          <EmphasizeText
+          <Callout
             header="Tooltip Keywords"
             description="When authenticated users search,
             the result will populate highlighted words that, when hovered over, provide tooltips
@@ -118,7 +116,7 @@ export default function Page() {
             type="list"
             listNumber="01"
           />
-          <EmphasizeText
+          <Callout
             header="Follow-Up Questions"
             description="When authenticated users search,
             a few follow-up questions appear that add depth to the user's search. Upon clicking one
@@ -178,7 +176,7 @@ export default function Page() {
           right, incentives for signup were added (Solution to #2, "A Lack of Signup Incentive") to
           our current query limit on the left.
         </span>
-        <EmphasizeText header="Tackling Problem: 'Major Layout Shift'" />
+        <Callout header="Tackling Problem: 'Major Layout Shift'" />
         <p>
           With the solutions to issues #2 and #3 designed and approved, all that was left was to
           tackle issue #1: the layout shift apparent with multiple API requests. To add to the
@@ -195,9 +193,8 @@ export default function Page() {
           a more sophisticated visual of exactly what section was loading in.
         </p>
         <p>See the below video for a visual of how I tackled our layout shift issue.</p>
-      </section>
-      <SectionHeader text="Outcomes" />
-      <section className="portfolio-section">
+      </Section>
+      <Section title="Outcomes" type="portfolio">
         <p>
           Upon design approval, I updated the UI and hooked up new APIs for our tooltip keywords and
           follow-up questions. This initiative took three weeks total: two weeks to design and one
@@ -211,7 +208,6 @@ export default function Page() {
             title="Bridget Larcher | Clair Search Results Revamp"
           ></iframe>
         </div>
-        <script src="https://player.vimeo.com/api/player.js" async></script>
         <p>
           The above video shows and authenticated user's experience. When asking a question, the
           page populates sequentially, utilizing skeletons and spinners to cater to the amount of
@@ -225,10 +221,10 @@ export default function Page() {
           and as a result, we were able to ship far more quickly.
         </p>
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-          <EmphasizeCard stat="+34%" label="Free plan signups over the next two months" />
-          <EmphasizeCard stat="−10%" label="Drop-off from the search result page" />
+          <CalloutCard stat="+34%" label="Free plan signups over the next two months" />
+          <CalloutCard stat="−10%" label="Drop-off from the search result page" />
         </div>
-        <EmphasizeText
+        <Callout
           header="
           Our overhaul of the search results section was a major success; free plan signup increased
           34% over the next two months and drop off from the search result page decreased about 10%.
@@ -246,7 +242,7 @@ export default function Page() {
           </a>
           !
         </p>
-      </section>
+      </Section>
     </>
   )
 }

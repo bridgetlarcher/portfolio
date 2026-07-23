@@ -1,12 +1,12 @@
-import { EmphasizeCard } from '@/components/EmphasizeCard'
-import { EmphasizeText } from '@/components/EmphasizeText'
-import { SectionHeader } from '@/components/SectionHeader'
+import { CalloutCard } from '@/components/ui/CalloutCard'
+import { Callout } from '@/components/ui/Callout'
+import { Section } from '@/components/ui/Section'
 import Image from 'next/image'
 
 export default function Page() {
   return (
     <>
-      <section className="portfolio-section">
+      <Section type="portfolio">
         <p>
           (Want a sneak peek of the final brand site? I get it! You can check it out{' '}
           <a href="https://www.cary.health/" target="_blank" rel="noopener noreferrer">
@@ -15,7 +15,7 @@ export default function Page() {
           😉)
         </p>
         <p>A central goal for CaryHealth's 2025 year could be summed up by one word: sales.</p>
-        <EmphasizeText
+        <Callout
           header="In late 2024, we found ourselves in a spot where our products were looking and feeling
             great, but our brand presence was heavily lacking."
         />
@@ -29,9 +29,8 @@ export default function Page() {
           to direct the brand work myself -- adjacent to my core craft, but exactly the kind of
           ambiguous, no-owner problem I like to take on.
         </p>
-      </section>
-      <SectionHeader text="The Problem" />
-      <section className="portfolio-section">
+      </Section>
+      <Section title="The Problem" type="portfolio">
         <p>
           Our problem was this:{' '}
           <span className="power-underline">
@@ -43,14 +42,13 @@ export default function Page() {
           It was as if we were showcasing a shell of a site rather than a company with innovative
           healthcare solutions.
         </p>
-      </section>
-      <SectionHeader text="Objectives" />
-      <section className="portfolio-section">
+      </Section>
+      <Section title="Objectives" type="portfolio">
         <p>
           As a result of these problems, we set aside our main objectives for the three months we
           had before 2025:
         </p>
-        <EmphasizeText
+        <Callout
           header="A Brand Identity"
           description={
             <>
@@ -69,7 +67,7 @@ export default function Page() {
           listNumber="01"
         />
 
-        <EmphasizeText
+        <Callout
           header="A Brand Site Facelift"
           description={
             <>
@@ -87,7 +85,7 @@ export default function Page() {
           type="list"
           listNumber="02"
         />
-        <EmphasizeText
+        <Callout
           header="A Shiny Logo Suite"
           description={
             <>
@@ -109,9 +107,8 @@ export default function Page() {
           With these three objectives in mind and only three months to accomplish such tasks, we
           wasted no time in finding the right approach.
         </p>
-      </section>
-      <SectionHeader text="The Approach" />
-      <section className="portfolio-section">
+      </Section>
+      <Section title="The Approach" type="portfolio">
         <p>
           Our marketing designer and I approached our brand identity issue first with an abundance
           of research. In order to find the fastest route to success, we searched through Dribbble
@@ -122,15 +119,15 @@ export default function Page() {
           We ended up finding a few descriptive words that fit our current suite of products well:
         </p>
         <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
-          <EmphasizeCard
+          <CalloutCard
             header="Playful"
             label="Alluding to rounded corners and fun colors spanning our products."
           />
-          <EmphasizeCard
+          <CalloutCard
             header="Clean"
             label="Alluding to the sharp use of whites, and grays in combination with those playful colors."
           />
-          <EmphasizeCard
+          <CalloutCard
             header="Technical"
             label="Alluding to the distinctive air of professionalism that a healthcare company should have."
           />
@@ -182,9 +179,8 @@ export default function Page() {
           site.
         </p>
         <p>We shipped the first version of the new brand site that January.</p>
-      </section>
-      <SectionHeader text="Outcomes" />
-      <section className="portfolio-section">
+      </Section>
+      <Section title="Outcomes" type="portfolio">
         <p>
           Our brand identity exercise opened up doors for us that previously seemed impossible to
           crack. With the creation of our logo suite and brand site revamp, we have the context we
@@ -235,7 +231,7 @@ export default function Page() {
           Bringing five very different products under one identity was the part I enjoyed most. How
           a company presents itself can make or break not just how it's seen, but how it sells.
         </p>
-        <EmphasizeText
+        <Callout
           header="The rebrand landed!"
           description="We heard unprompted compliments on the new brand and site from people
           we met at conferences, and the identity finally gave sales the materials it had been
@@ -253,7 +249,7 @@ export default function Page() {
           </a>
           !
         </p>
-      </section>
+      </Section>
     </>
   )
 }
