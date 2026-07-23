@@ -5,9 +5,9 @@ const base =
   'inline-flex items-center justify-center rounded-lg font-bold no-underline transition duration-300 ease-in-out'
 
 const variants: Record<ButtonVariant, string> = {
-  solid: 'bg-accent-300 text-accent-950 hover:bg-accent-300/70',
+  solid: 'bg-primary-300 text-primary-950 hover:bg-primary-300/70',
   ghost:
-    'border-slate-400/30 hover:border-accent-300/40 hover:text-accent-300 border text-slate-300',
+    'border-slate-400/30 hover:border-primary-300/40 hover:text-primary-300 border text-slate-300',
 }
 
 const sizes: Record<ButtonSize, string> = {

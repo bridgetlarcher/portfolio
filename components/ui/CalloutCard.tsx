@@ -11,20 +11,20 @@ type Props = {
 export function CalloutCard({ stat, header, label, size = 'lg', className }: Props) {
   return (
     <Card
-      className={`border-hairline bg-surface-card flex flex-col gap-1 ${
+      className={`!border-primary-300/30 flex flex-col gap-1 ${
         size === 'sm' ? 'px-5 py-4' : 'p-6'
       }${className ? ` ${className}` : ''}`}
     >
       {stat && (
         <span
-          className={`text-accent-300 font-black leading-tight ${
+          className={`text-primary-300 font-black leading-tight ${
             size === 'sm' ? 'text-2xl' : 'text-4xl'
           }`}
         >
           {stat}
         </span>
       )}
-      {header && <span className="text-accent-300 text-lg font-bold">{header}</span>}
+      {header && <span className="text-primary-300 text-lg font-bold">{header}</span>}
       {label}
     </Card>
   )

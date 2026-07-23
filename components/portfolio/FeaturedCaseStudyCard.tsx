@@ -32,7 +32,7 @@ export function FeaturedCaseStudyCard({ item }: Props) {
               <CalloutCard
                 key={stat.label}
                 size="sm"
-                className="shadow-glow border-accent-300/30 flex-1"
+                className="shadow-glow border-primary-300/30 flex-1"
                 stat={stat.stat}
                 label={stat.label}
               />
@@ -54,18 +54,18 @@ export function FeaturedCaseStudyCard({ item }: Props) {
             target="_blank"
             rel="noopener noreferrer"
             aria-label={item.video.label}
-            className="hover:bg-accent-900 group relative block overflow-hidden rounded-xl border transition duration-300 ease-in-out"
+            className="hover:bg-primary-900 group relative block overflow-hidden rounded-xl border transition duration-300 ease-in-out"
           >
             {poster}
             <span className="absolute inset-0 flex items-center justify-center">
-              <span className="border-accent-300/40 bg-accent-950/85 text-accent-300 inline-flex items-center gap-3 rounded-full border px-5 py-3 text-sm font-bold">
+              <span className="border-primary-300/40 bg-primary-950/85 text-primary-300 inline-flex items-center gap-3 rounded-full border px-5 py-3 text-sm font-bold">
                 <PlayArrow fontSize="small" aria-hidden="true" />
                 Play walkthrough
               </span>
             </span>
           </a>
         ) : (
-          <div className="border-hairline bg-primary-950 relative overflow-hidden rounded-xl border">
+          <div className="border-hairline bg-secondary-950 relative overflow-hidden rounded-xl border">
             {poster}
           </div>
         )}

@@ -26,9 +26,9 @@ function StatTeaser({
   return (
     <a
       href={href}
-      className="border-primary-800 bg-surface-card hover:bg-surface-card-hover inline-flex flex-wrap items-baseline gap-x-3 gap-y-1 self-start rounded-r-lg border-l-2 px-4 py-3 text-sm no-underline transition duration-300 ease-in-out"
+      className="border-secondary-800 bg-surface-card hover:bg-surface-card-hover inline-flex flex-wrap items-baseline gap-x-3 gap-y-1 self-start rounded-r-lg border-l-2 px-4 py-3 text-sm no-underline transition duration-300 ease-in-out"
     >
-      <span className="text-accent-300 font-bold">{stat}</span>
+      <span className="text-primary-300 font-bold">{stat}</span>
       <span className="text-slate-400">{children}</span>
     </a>
   )
@@ -39,7 +39,7 @@ export function Hero() {
     <header className="relative flex flex-col gap-14 py-10 md:flex-row lg:items-center lg:py-20">
       <div
         aria-hidden="true"
-        className="bg-primary-800 -z-1 absolute bottom-0 left-[650px] right-0 top-0 hidden rounded-full opacity-15 blur-3xl lg:block"
+        className="bg-secondary-800 -z-1 absolute bottom-0 left-[650px] right-0 top-0 hidden rounded-full opacity-15 blur-3xl lg:block"
       />
       <div
         aria-hidden="true"
@@ -73,7 +73,7 @@ export function Hero() {
           <SocialButtons links={['github', 'linkedin']} size="icon" />
         </div>
       </section>
-      <Card className="divide-hairline border-hairline bg-primary-950/90 shadow-glow z-10 divide-y border">
+      <Card className="divide-hairline !bg-secondary-950/90 shadow-glow z-10 divide-y border">
         <Capability label="Design">
           Product design end-to-end: research, prototyping, and high-fidelity UI.
         </Capability>

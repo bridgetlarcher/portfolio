@@ -8,7 +8,7 @@ type Props = {
 
 export function TldrSection({ tldr }: Props) {
   return (
-    <Card className="border-hairline bg-surface-card shadow-glow flex-col gap-4 md:flex">
+    <Card className="shadow-glow flex-col gap-4 md:flex">
       <div
         role="group"
         aria-label="TL;DR"
@@ -26,7 +26,7 @@ export function TldrSection({ tldr }: Props) {
           <span className="subtitle">Outcome</span>
           {tldr.outcomes.map((outcome) => (
             <div key={outcome} className="flex flex-col gap-2">
-              <span className="text-accent-300 flex gap-2 text-sm font-bold">
+              <span className="text-primary-300 flex gap-2 text-sm font-bold">
                 <Star fontSize="inherit" aria-hidden="true" className="mt-1" />
                 {outcome}
               </span>

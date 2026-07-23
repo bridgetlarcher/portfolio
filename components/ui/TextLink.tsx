@@ -9,9 +9,9 @@ type Props = {
 }
 
 const variants = {
-  inline: 'link-underline hover:text-accent-300',
+  inline: 'link-underline hover:text-primary-300',
   action:
-    'link-underline hover:text-accent-300 inline-flex items-center gap-2 text-sm font-bold text-slate-300',
+    'link-underline hover:text-primary-300 inline-flex items-center gap-2 text-sm font-bold text-slate-300',
 }
 
 export function TextLink({ href, children, external, variant = 'inline', className }: Props) {

@@ -4,8 +4,8 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 32, 29, 52; /* primary-950 */
-  --background-end-rgb: 19, 38, 46; /* accent-950 */
+  --background-start-rgb: 32, 29, 52; /* secondary-950 */
+  --background-end-rgb: 19, 38, 46; /* primary-950 */
 }
 
 html {
@@ -36,11 +36,11 @@ a {
 }
 
 :focus-visible {
-  @apply outline-accent-300 outline outline-2 outline-offset-2;
+  @apply outline-primary-300 outline outline-2 outline-offset-2;
 }
 
 .power-underline {
-  @apply decoration-accent-300/20 underline decoration-2 underline-offset-2;
+  @apply decoration-primary-300/20 underline decoration-2 underline-offset-2;
 }
 
 .caption {
@@ -56,7 +56,7 @@ a {
 }
 
 .eyebrow {
-  @apply subtitle text-accent-300;
+  @apply subtitle text-primary-300;
 }
 
 .container-page {
@@ -64,8 +64,8 @@ a {
 }
 
 .link-underline {
-  background: linear-gradient(theme("colors.accent.300"), theme("colors.accent.300")) left bottom /
-    0% 2px no-repeat;
+  background: linear-gradient(theme("colors.primary.300"), theme("colors.primary.300")) left
+    bottom / 0% 2px no-repeat;
   padding-bottom: 3px;
   text-decoration: none;
   transition:

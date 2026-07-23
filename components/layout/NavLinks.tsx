@@ -3,7 +3,7 @@
 import { usePathname } from 'next/navigation'
 
 const linkClass =
-  'hover:text-accent-300 hidden text-xs font-medium uppercase text-slate-400 no-underline transition duration-300 ease-in-out sm:inline'
+  'hover:text-primary-300 hidden text-xs font-medium uppercase text-slate-400 no-underline transition duration-300 ease-in-out sm:inline'
 
 // In-page section links only make sense on the home page. Hide them on
 // /portfolio/* case studies, leaving the TopNav with just the Resume button.
