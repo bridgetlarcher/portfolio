@@ -14,12 +14,56 @@ export interface ProjectItem {
 
 export const projects: ProjectItem[] = [
   {
+    title: 'CaryHealth Design System',
+    description:
+      "Designed, architected, and led the build of CaryHealth's design system from zero: a Figma global design system, componentized into a React and TypeScript library and shipped as a private npm package.",
+    img: '/caryhealth-brand/site-homepage-slice.png',
+    link: '/portfolio/caryhealth-design-system',
+    pills: [
+      '0-to-1',
+      'Design Systems',
+      'Figma',
+      'React / Typescript',
+      'Design Tokens',
+      'Claude Design',
+    ],
+    tldr: {
+      role: 'Architected the system; led a designer and engineer through the build.',
+      secondaryLabel: 'Scope',
+      secondaryValue: 'Five client products and an internal platform, one Turborepo monorepo',
+      outcomes: [
+        'Figma to live adoption in ~4 months; now scaling to a second, larger monorepo',
+        'Fixes propagate from one shared library instead of being hand-applied per repo',
+      ],
+    },
+  },
+  {
+    title: 'Clair Search Results Revamp',
+    description:
+      "Proposed, designed, and built an end-to-end revamp of Clair's clinical search interface, focused on signup incentive and loading states. Free-plan signups rose 34% and drop-off fell 10%.",
+    img: '/clair.png',
+    link: '/portfolio/clair-search-results',
+    pills: ['UX Research', 'Interaction Design', 'React / Typescript', 'Figma', 'Clinical AI'],
+    tldr: {
+      role: 'Proposed the feature, designed the signup-incentive and loading experiences, built and shipped the front end solo.',
+      secondaryLabel: 'Timeline',
+      secondaryValue: '~3 weeks, concept to production',
+      outcomes: ['+34% free plan signups', '−10% drop-off'],
+    },
+  },
+  {
     title: 'CaryHealth Brand Identity',
     description:
       "Led design and development of CaryHealth's brand from the ground up: the brand site, product logos, and company-wide marketing collateral.",
     img: '/caryhealth-brand/site-homepage-slice.png',
     link: '/portfolio/caryhealth-brand',
-    pills: ['Strategy', 'Brand Identity', 'Figma', 'Webflow'],
+    pills: [
+      'Brand Strategy',
+      'Creative Direction',
+      'Brand Identity',
+      '0-to-1',
+      'Design Leadership',
+    ],
     tldr: {
       role: 'Initiated the brand, hired the team, and directed every deliverable from strategy through the shipped brand site.',
       secondaryLabel: 'Scope',
@@ -30,34 +74,6 @@ export const projects: ProjectItem[] = [
       ],
     },
   },
-  {
-    title: 'Clair Search Results Revamp',
-    description:
-      "Proposed, designed, and built an end-to-end revamp of Clair's clinical search interface, focused on signup incentive and loading states. Free-plan signups rose 34% and drop-off fell 10%.",
-    img: '/clair.png',
-    link: '/portfolio/clair-search-results',
-    pills: ['Product Design', 'Front-End Development', 'UX Research', 'Strategy', 'React', 'Figma'],
-    tldr: {
-      role: 'Proposed the feature, designed the signup-incentive and loading experiences, built and shipped the front end solo.',
-      secondaryLabel: 'Timeline',
-      secondaryValue: '~3 weeks, concept to production',
-      outcomes: ['+34% free plan signups', '−10% drop-off'],
-    },
-  },
-  // {
-  //   title: 'Budget Tracker',
-  //   description:
-  //     "Gathered with a group of coworkers at Capital One to participate in an 'Innovation Day'— a workday-long hackathon to create a meaningful solution to a need that customers have. Our team decided to focus on the need for customers to budget their spending habits without needing to leave the app.",
-  //   img: '/budget-tracker/key.png',
-  //   link: '/portfolio/budget-tracker',
-  //   pills: ['UI/UX Design', 'Figma', 'Mural'],
-  //   tldr: {
-  //     role: 'Designer-developer — visualized team ideas live in Figma',
-  //     secondaryLabel: 'Timeline',
-  //     secondaryValue: "One workday — 'Innovation Day' hackathon",
-  //     outcomes: ['End-to-end in-app budgeting concept'],
-  //   },
-  // },
   {
     title: 'Capital One Auto Enroll',
     description:

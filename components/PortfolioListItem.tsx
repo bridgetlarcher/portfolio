@@ -14,7 +14,13 @@ export function PortfolioListItem({ item }: Props) {
       className="group flex flex-col overflow-hidden rounded-xl border border-white/[.08] bg-white/[.04] font-normal text-slate-400 no-underline transition duration-300 ease-in-out hover:border-accent/40"
     >
       <div className="relative h-[190px] w-full">
-        <Image src={item.img} alt="" fill className="object-cover" />
+        <Image
+          src={item.img}
+          alt=""
+          fill
+          className="object-cover"
+          sizes="(min-width: 768px) 50vw, 100vw"
+        />
       </div>
       <div className="flex flex-col gap-2 p-5">
         <span className="text-lg font-bold leading-tight text-slate-200">{item.title}</span>

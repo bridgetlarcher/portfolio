@@ -3,20 +3,16 @@ import { Star } from '@mui/icons-material'
 
 type Props = {
   tldr: ProjectItem['tldr']
-  description?: ProjectItem['description']
 }
 
-export function TldrSection({ tldr, description }: Props) {
+export function TldrSection({ tldr }: Props) {
   return (
     <div
-      className="flex-col gap-4 rounded-xl border border-white/[.1] bg-white/[.04] p-6 md:flex lg:p-8"
+      className="flex-col gap-4 rounded-xl border border-white/[.1] bg-white/[.04] p-6 md:flex"
       role="group"
       aria-label="TL;DR"
     >
-      <blockquote className="border-l-2 border-slate-500 px-4 py-2 italic">
-        <p className="text-slate-300">{description}</p>
-      </blockquote>
-      <div className="mt-3 grid grid-cols-1 gap-3 sm:grid-cols-2 md:mt-0 md:grid-cols-3 md:gap-6">
+      <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 md:mt-0 md:grid-cols-3 md:gap-6">
         <div className="flex flex-col gap-2">
           <span className="subtitle">Role</span>
           <span className="text-sm text-slate-300">{tldr.role}</span>

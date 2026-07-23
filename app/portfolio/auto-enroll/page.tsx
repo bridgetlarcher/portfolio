@@ -1,3 +1,5 @@
+import { EmphasizeCard } from '@/components/EmphasizeCard'
+import { EmphasizeText } from '@/components/EmphasizeText'
 import { SectionHeader } from '@/components/SectionHeader'
 import Image from 'next/image'
 
@@ -27,7 +29,7 @@ export default function Page() {
           business— streamlining the application and enrollment process would be both satisfying for
           customers and reduce the amount of time between application and account setup.
         </p>
-        <p className="text-xl font-semibold">Let's imagine a scenario... ☁️</p>
+        <EmphasizeText header="Let's imagine a scenario... ☁️" />
         <p>
           Say you're signing up for a new credit card through a bank that you're very happy with
           already. You're logged into your account and go to apply for a new card.
@@ -64,20 +66,24 @@ export default function Page() {
               satisfying customers while increasing our enrollment rates.
             </p>
             <p>We settled on a few features to rid customers of these pain points:</p>
-            <ol className="ml-8 list-decimal">
-              <li>
-                <span className="font-bold">Prefill</span>: A feature that appears on an existing
+            <EmphasizeText
+              header="Prefill"
+              description="A feature that appears on an existing
                 customer's credit card application page. When clicked, it prefills some of the
                 customer's information to avoid replication. This solution also reduces application
-                time while increasing submission rates.
-              </li>
-              <li>
-                <span className="font-bold">Auto Enroll</span>: When an existing customer prefills
+                time while increasing submission rates."
+              type="list"
+              listNumber="01"
+            />
+            <EmphasizeText
+              header="Auto Enroll"
+              description="When an existing customer prefills
                 their application, they qualify to be auto enrolled. On approval, we automatically
                 enroll their new credit card. This helps customize and streamline the customer's
-                experience.
-              </li>
-            </ol>
+                experience."
+              type="list"
+              listNumber="02"
+            />
           </div>
           <div className="flex flex-col items-center justify-center gap-4 md:w-1/2">
             <Image
@@ -85,6 +91,7 @@ export default function Page() {
               alt="The auto enroll page. Users see this when they successfully Auto Enroll."
               width={860}
               height={706}
+              sizes="(min-width: 768px) 50vw, 100vw"
             />
             <span className="caption">
               Above is the finalized design for when a customer is successfully Auto Enrolled. After
@@ -112,23 +119,27 @@ export default function Page() {
             alt="Outcomes. At the top is the old experience, where users spent 13 minutes applying for a card. At the bottom is the auto enroll experience, which saved customers 7 minutes applying."
             width={1046}
             height={575}
+            sizes="100vw"
           />
         </div>
         <p>
           After writing and monitoring the experience that I created, we noticed a large uptick in
-          customers who <span className="font-bold">completed their enrollment</span>. We have a
-          percentile of customers who fall off after they get approved, which Auto Enroll helped
-          mitigate.
+          customers who completed their enrollment. We have a percentile of customers who fall off
+          after they get approved, which Auto Enroll helped mitigate.
         </p>
-        <p>
-          We also noticed that the average customer's application to completion time{' '}
-          <span className="font-bold">improved from 13 minutes to 6 minutes</span> with Auto Enroll.
-          About 10% of customers who enroll with Capital One see this experience.
-        </p>
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+          <EmphasizeCard stat="13 → 6 min" label="Average application time" />
+          <EmphasizeCard stat="~10%" label="Enrolling customers reached" />
+        </div>
+        <EmphasizeText
+          header="
+          We also noticed that the average customer's application to completion time
+          improved from 13 minutes to 6 minutes with Auto Enroll.
+          About 10% of customers who enroll with Capital One see this experience."
+        />
         <p>
           Overall, the addition of Auto Enroll was a massive success across the org. I am proud to
-          have developed this <span className="font-bold">groundbreaking</span> feature that has
-          touched millions of customers!
+          have developed this groundbreaking feature that has touched millions of customers!
         </p>
       </section>
     </>

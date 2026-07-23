@@ -36,11 +36,12 @@ export default function PortfolioLayout({ children }: { children: React.ReactNod
       >
         <div className="flex flex-col gap-4">
           <h1 className="text-4xl font-bold text-slate-200">{project?.title}</h1>
+          <span className="text-md text-slate-300">{project?.description}</span>
           <div className="flex flex-row flex-wrap gap-2">
             {project?.pills.map((pill) => <Pill key={pill} text={pill} />)}
           </div>
         </div>
-        {project?.tldr && <TldrSection tldr={project.tldr} description={project.description} />}
+        {project?.tldr && <TldrSection tldr={project.tldr} />}
         {children}
       </main>
       <footer className="flex flex-col gap-2 p-8 text-center">

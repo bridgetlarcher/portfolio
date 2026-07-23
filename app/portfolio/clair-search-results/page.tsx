@@ -1,5 +1,6 @@
+import { EmphasizeText } from '@/components/EmphasizeText'
 import { SectionHeader } from '@/components/SectionHeader'
-import { StatCard } from '@/components/StatCard'
+import { EmphasizeCard } from '@/components/EmphasizeCard'
 import Image from 'next/image'
 
 export default function Page() {
@@ -21,11 +22,11 @@ export default function Page() {
           the user can take as little or as much as they want, catering to both professionals and
           non-professionals (like students or parents).
         </p>
+        <EmphasizeText
+          header="With the launch of Clair a few months prior to this effort, we were bullish about
+            tightening the user experience to patch any interface hiccups or roadblocks."
+        />
         <p>
-          <span className="power-underline">
-            With the launch of Clair a few months prior to this effort, we were bullish about
-            tightening the user experience to patch any interface hiccups or roadblocks.
-          </span>{' '}
           We also wanted to add more areas of motivation for the user to sign up for a free account
           (beyond the current benefit of unlimited queries). This way, we could put ourselves in a
           better position for marketing and sales initiatives in the future.
@@ -38,42 +39,44 @@ export default function Page() {
           for a couple of months:
         </p>
 
-        <div className="portfolio-image flex flex-col items-center justify-center gap-6 md:flex-row">
-          <div className="flex flex-col gap-6 md:w-1/2 2xl:w-1/3">
-            <ul className="ml-8 list-decimal">
-              <li>
-                <span className="font-bold">Major Layout Shift</span>: Our API doesn't come back
+        <EmphasizeText
+          header="Major Layout Shift"
+          description="Our API doesn't come back
                 with a search result immediately — as to be expected! Within our original design,
                 though, we didn't capture well enough the different UI states that come with
-                multiple levels of loading.
-              </li>
-              <li>
-                <span className="font-bold">A Lack of Signup Incentive</span>: To drive outcomes, we
-                needed to add more free-tier perks as well as market them to unauthenticated users.
-              </li>
-              <li>
-                <span className="font-bold">Vertical & Horizontal Exhaustion</span>: There are two
+                multiple levels of loading."
+          type="list"
+          listNumber="01"
+        />
+        <EmphasizeText
+          header="A Lack of Signup Incentive"
+          description="To drive outcomes, we
+                needed to add more free-tier perks as well as market them to unauthenticated users."
+          type="list"
+          listNumber="02"
+        />
+        <EmphasizeText
+          header="Vertical & Horizontal Exhaustion"
+          description="There are two
                 things a user hates: having to scroll too much and having to read across a large
                 horizontal space such as a desktop screen. Unfortunately, both of these issues were
-                prevalent in our original design.
-              </li>
-            </ul>
-          </div>
-          <div className="flex flex-col gap-2 md:w-1/2 2xl:w-2/3">
-            <Image
-              src="/clair-search-results/old-clair.png"
-              className="w-full rounded-xl"
-              alt="The old Clair search results experience, showing long lines of text spanning across a wide screen and sections that pop into existence without loading indicators."
-              width={2481}
-              height={2336}
-            />
-            <span className="caption">
-              Our old search results experience. Notice the long lines of text that users would have
-              to read across large screens. Loading was also a disjointed experience-sections would
-              pop into existence without any indication.
-            </span>
-          </div>
-        </div>
+                prevalent in our original design."
+          type="list"
+          listNumber="03"
+        />
+        <Image
+          src="/clair-search-results/old-clair.png"
+          className="w-full rounded-xl"
+          alt="The old Clair search results experience, showing long lines of text spanning across a wide screen and sections that pop into existence without loading indicators."
+          width={2481}
+          height={2336}
+          sizes="100vw"
+        />
+        <span className="caption">
+          Our old search results experience. Notice the long lines of text that users would have to
+          read across large screens. Loading was also a disjointed experience-sections would pop
+          into existence without any indication.
+        </span>
       </section>
       <SectionHeader text="Approach" />
       <section className="portfolio-section">
@@ -85,9 +88,7 @@ export default function Page() {
             of minimizing layout shift and creating motivation around free plan signup.
           </span>
         </p>
-        <h3 className="text-xl font-semibold">
-          Tackling Problems: 'A Lack of Signup Incentive' & 'Vertical & Horizontal Exhaustion'
-        </h3>
+        <EmphasizeText header="Tackling Problems: 'A Lack of Signup Incentive' & 'Vertical & Horizontal Exhaustion'" />
         <p>To start out, I tacked down some potential ideas for us to incentivize signup:</p>
         <Image
           src="/clair-search-results/ideation-board.png"
@@ -95,6 +96,7 @@ export default function Page() {
           alt="Ideation board showing multiple design concepts for incentivizing user signup on Clair."
           width={3040}
           height={2464}
+          sizes="100vw"
         />
         <p>
           Our main objective here was to pick some low-hanging fruit: efforts that would be easy to
@@ -106,43 +108,39 @@ export default function Page() {
           </span>{' '}
           After a conversation with leadership, we picked two efforts from the bunch:
         </p>
-        <ul className="ml-8 list-decimal">
-          <li>
-            <span className="font-bold">Tooltip Keywords</span>: When authenticated users search,
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+          <EmphasizeText
+            header="Tooltip Keywords"
+            description="When authenticated users search,
             the result will populate highlighted words that, when hovered over, provide tooltips
-            with definitions.
-            <ul className="ml-8 list-disc">
-              <li>
-                This way, users can exit their Google tab and stay on Clair for any necessary
-                definitions.
-              </li>
-            </ul>
-          </li>
-          <li>
-            <span className="font-bold">Follow-Up Questions</span>: When authenticated users search,
+            with definitions. This way, users can exit their Google tab and stay on Clair for any necessary
+                definitions."
+            type="list"
+            listNumber="01"
+          />
+          <EmphasizeText
+            header="Follow-Up Questions"
+            description="When authenticated users search,
             a few follow-up questions appear that add depth to the user's search. Upon clicking one
-            of these follow-up questions, a new tab will populate its search result.
-            <ul className="ml-8 list-disc">
-              <li>
-                Both professionals and non-professionals can utilize this feature to dig deep into a
+            of these follow-up questions, a new tab will populate its search result. Both professionals and non-professionals can utilize this feature to dig deep into a
                 topic. This is helpful when the user isn't 100% sure what to search for when they
-                query Clair.
-              </li>
-            </ul>
-          </li>
-        </ul>
+                query Clair."
+            type="list"
+            listNumber="02"
+          />
+        </div>
         <p>
           After our designer finished up her revamp of the search result layout, I got to work
           designing for the above two efforts.
         </p>
         <p>All in all, we landed on the below design:</p>
-
         <Image
           src="/clair-search-results/new-clair.png"
           className="w-full"
           alt="The redesigned Clair search results layout featuring a sidebar navigation, tooltip keywords, and follow-up questions."
           width={2481}
           height={2955}
+          sizes="100vw"
         />
         <span className="caption">
           The new layout from our designer (Solution to #3, "Vertical & Horizontal Exhaustion") with
@@ -164,6 +162,7 @@ export default function Page() {
             alt="Unauthenticated Clair search result showing a signup prompt with query limit messaging."
             width={1644}
             height={1546}
+            sizes="66vw"
           />
           <Image
             src="/clair-search-results/new-clair-unauth-sidebar.png"
@@ -171,6 +170,7 @@ export default function Page() {
             alt="Unauthenticated Clair sidebar showing signup incentives for free-tier users."
             width={785}
             height={1542}
+            sizes="33vw"
           />
         </div>
         <span className="caption">
@@ -178,8 +178,7 @@ export default function Page() {
           right, incentives for signup were added (Solution to #2, "A Lack of Signup Incentive") to
           our current query limit on the left.
         </span>
-
-        <h3 className="text-xl font-semibold">Tackling Problem: 'Major Layout Shift'</h3>
+        <EmphasizeText header="Tackling Problem: 'Major Layout Shift'" />
         <p>
           With the solutions to issues #2 and #3 designed and approved, all that was left was to
           tackle issue #1: the layout shift apparent with multiple API requests. To add to the
@@ -206,7 +205,7 @@ export default function Page() {
         </p>
         <div className="portfolio-image relative p-[33%]">
           <iframe
-            src="https://player.vimeo.com/video/1068973155?h=2262c53451&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+            src="https://player.vimeo.com/video/1068973155?h=2262c53451&badge=0&autopause=0&player_id=0&app_id=58479"
             allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
             className="absolute left-0 top-0 h-full w-full"
             title="Bridget Larcher | Clair Search Results Revamp"
@@ -225,15 +224,16 @@ export default function Page() {
           front-end code. This fact made conversations more streamlined and tasks more efficient,
           and as a result, we were able to ship far more quickly.
         </p>
-        <div className="portfolio-image grid grid-cols-1 gap-4 md:grid-cols-2">
-          <StatCard stat="+34%" label="Free plan signups over the next two months" />
-          <StatCard stat="−10%" label="Drop-off from the search result page" />
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+          <EmphasizeCard stat="+34%" label="Free plan signups over the next two months" />
+          <EmphasizeCard stat="−10%" label="Drop-off from the search result page" />
         </div>
-        <p className="power-underline">
+        <EmphasizeText
+          header="
           Our overhaul of the search results section was a major success; free plan signup increased
           34% over the next two months and drop off from the search result page decreased about 10%.
-          This meant that those who visited stayed.
-        </p>
+          This meant that those who visited stayed."
+        />
         <p>
           I'm very thankful for the chance to work on this initiative — Clair is an awesome tool
           that I use in my daily life (WebMD, who?), and owning a piece of it end to end is the kind

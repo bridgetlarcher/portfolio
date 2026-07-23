@@ -59,6 +59,7 @@ export default function Page() {
               alt="Account Setup modal with a 'Set Spending Preferences' section added at the bottom."
               width={422}
               height={813}
+              sizes="(min-width: 768px) 48vw, 100vw"
             />
             <span className="caption">
               After a customer enrolls a card, they are shown the Account Setup modal above. We
@@ -71,6 +72,7 @@ export default function Page() {
               alt="Budget preferences screen where customers can set spending budgets by category."
               width={422}
               height={813}
+              sizes="(min-width: 768px) 48vw, 100vw"
             />
             <span className="caption">
               After tapping 'Set Spending Preferences', the customer is able to set their budget and
@@ -113,6 +115,7 @@ export default function Page() {
               alt="Card transactions view showing a spending habits graph with a 'Show More' button."
               width={375}
               height={1142}
+              sizes="(min-width: 768px) 48vw, 100vw"
             />
             <span className="caption">
               When the customer views their card transactions, we show them a graph of their
@@ -126,6 +129,7 @@ export default function Page() {
               alt="Detailed spending breakdown screen showing budget categories and a 'Change Your Spend View' toggle."
               width={580}
               height={1766}
+              sizes="(min-width: 768px) 48vw, 100vw"
             />
             <span className="caption">
               After clicking on the 'Show More' button, the customer is able to see a detailed
