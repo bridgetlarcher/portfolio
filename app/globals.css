@@ -8,10 +8,6 @@
   --background-end-rgb: 19, 38, 46; /* primary-950 */
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb)))
@@ -36,11 +32,11 @@ a {
 }
 
 :focus-visible {
-  @apply outline-primary-300 outline outline-2 outline-offset-2;
+  @apply outline outline-2 outline-offset-2 outline-primary-300;
 }
 
 .power-underline {
-  @apply decoration-primary-300/20 underline decoration-2 underline-offset-2;
+  @apply underline decoration-primary-300/20 decoration-2 underline-offset-2;
 }
 
 .caption {
@@ -64,8 +60,8 @@ a {
 }
 
 .link-underline {
-  background: linear-gradient(theme("colors.primary.300"), theme("colors.primary.300")) left
-    bottom / 0% 2px no-repeat;
+  background: linear-gradient(theme("colors.primary.300"), theme("colors.primary.300")) left bottom /
+    0% 2px no-repeat;
   padding-bottom: 3px;
   text-decoration: none;
   transition:

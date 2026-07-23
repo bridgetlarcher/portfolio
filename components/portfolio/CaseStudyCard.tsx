@@ -12,7 +12,7 @@ export function CaseStudyCard({ item }: Props) {
   return (
     <Link
       href={item.link}
-      className="border-hairline bg-surface-card hover:border-primary-300/40 hover:shadow-lift group flex flex-col overflow-hidden rounded-xl border font-normal text-slate-400 no-underline transition duration-300 ease-in-out hover:-translate-y-[3px]"
+      className="border-hairline bg-surface-card hover:shadow-lift group flex flex-col overflow-hidden rounded-xl border font-normal text-slate-400 no-underline transition duration-300 ease-in-out hover:-translate-y-[3px] hover:border-primary-300/40"
     >
       <div className="relative h-[210px] w-full">
         <Image
@@ -20,6 +20,7 @@ export function CaseStudyCard({ item }: Props) {
           alt={item.img.alt}
           fill
           className="object-cover"
+          priority
           sizes="(min-width: 768px) 50vw, 100vw"
         />
       </div>
@@ -32,7 +33,7 @@ export function CaseStudyCard({ item }: Props) {
             <Pill key={pill} text={pill} />
           ))}
         </div>
-        <span className="group-hover:text-primary-300 mt-2 inline-flex items-center gap-2 text-[13px] font-bold text-slate-300 transition duration-300 ease-in-out">
+        <span className="mt-2 inline-flex items-center gap-2 text-[13px] font-bold text-slate-300 transition duration-300 ease-in-out group-hover:text-primary-300">
           Case study <ArrowForward fontSize="inherit" aria-hidden="true" />
         </span>
       </div>

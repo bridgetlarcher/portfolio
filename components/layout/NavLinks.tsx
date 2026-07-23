@@ -1,5 +1,6 @@
 'use client'
 
+import { scrollToSection } from '@/lib/scrollHelper'
 import { usePathname } from 'next/navigation'
 
 const linkClass =
@@ -12,10 +13,10 @@ export function NavLinks() {
   if (pathname?.startsWith('/portfolio')) return null
   return (
     <>
-      <a href="#about" className={linkClass}>
+      <a href="#about" className={linkClass} onClick={(e) => scrollToSection(e, '#about')}>
         About
       </a>
-      <a href="#contact" className={linkClass}>
+      <a href="#contact" className={linkClass} onClick={(e) => scrollToSection(e, '#contact')}>
         Contact
       </a>
     </>

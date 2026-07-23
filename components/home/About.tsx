@@ -32,7 +32,7 @@ export function About() {
         <div className="relative">
           <div
             aria-hidden="true"
-            className="bg-secondary-800 pointer-events-none absolute -left-40 bottom-10 -z-10 hidden h-[300px] w-[300px] rounded-full opacity-30 blur-3xl lg:block"
+            className="bg-secondary-800 pointer-events-none absolute -left-40 bottom-8 -z-10 hidden h-[300px] w-[300px] rounded-full opacity-30 blur-3xl lg:block"
           />
           <Card className="!bg-primary-950/90 shadow-glow z-10 w-full divide-y-2 divide-slate-700 md:w-[350px]">
             {employers.map((employer) => (

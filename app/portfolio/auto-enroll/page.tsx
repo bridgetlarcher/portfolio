@@ -54,16 +54,16 @@ export default function Page() {
         </p>
       </Section>
       <Section title="The Approach" type="portfolio">
+        <p>
+          I met with my product partners to outline a design strategy based on our objectives. When
+          existing customers are logged into their account, and want to apply for another card, they
+          run into some pain points that make their experience cumbersome. Designing a solution to
+          these pain points would help customers enroll in a more streamlined way, satisfying
+          customers while increasing our enrollment rates.
+        </p>
+        <p>We settled on a few features to rid customers of these pain points:</p>
         <div className="flex flex-col-reverse gap-6 md:flex-row">
           <div className="flex flex-col gap-6 md:w-1/2">
-            <p>
-              I met with my product partners to outline a design strategy based on our objectives.
-              When existing customers are logged into their account, and want to apply for another
-              card, they run into some pain points that make their experience cumbersome. Designing
-              a solution to these pain points would help customers enroll in a more streamlined way,
-              satisfying customers while increasing our enrollment rates.
-            </p>
-            <p>We settled on a few features to rid customers of these pain points:</p>
             <Callout
               header="Prefill"
               description="A feature that appears on an existing

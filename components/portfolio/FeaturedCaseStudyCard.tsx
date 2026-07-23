@@ -16,6 +16,7 @@ export function FeaturedCaseStudyCard({ item }: Props) {
       alt={item.img.alt}
       width={640}
       height={300}
+      priority
       className="h-[300px] w-full object-cover opacity-[.85]"
     />
   )
@@ -32,7 +33,7 @@ export function FeaturedCaseStudyCard({ item }: Props) {
               <CalloutCard
                 key={stat.label}
                 size="sm"
-                className="shadow-glow border-primary-300/30 flex-1"
+                className="shadow-glow flex-1 border-primary-300/30"
                 stat={stat.stat}
                 label={stat.label}
               />
@@ -58,7 +59,7 @@ export function FeaturedCaseStudyCard({ item }: Props) {
           >
             {poster}
             <span className="absolute inset-0 flex items-center justify-center">
-              <span className="border-primary-300/40 bg-primary-950/85 text-primary-300 inline-flex items-center gap-3 rounded-full border px-5 py-3 text-sm font-bold">
+              <span className="bg-primary-950/85 inline-flex items-center gap-3 rounded-full border border-primary-300/40 px-5 py-3 text-sm font-bold text-primary-300">
                 <PlayArrow fontSize="small" aria-hidden="true" />
                 Play walkthrough
               </span>
