@@ -8,7 +8,7 @@ export function TopNav() {
   return (
     <nav
       aria-label="Site"
-      className="border-hairline bg-secondary-950/90 sticky top-0 z-10 border-b backdrop-blur"
+      className="border-hairline bg-secondary-950/90 sticky top-0 z-50 border-b backdrop-blur"
     >
       <div className="container-page flex items-center justify-between py-4">
         <Link href="/" aria-label="Home" className="flex items-center gap-3 no-underline">

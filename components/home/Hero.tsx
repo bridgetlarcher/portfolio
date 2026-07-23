@@ -28,7 +28,7 @@ function StatTeaser({
       href={href}
       className="border-secondary-800 bg-surface-card hover:bg-surface-card-hover inline-flex flex-wrap items-baseline gap-x-3 gap-y-1 self-start rounded-r-lg border-l-2 px-4 py-3 text-sm no-underline transition duration-300 ease-in-out"
     >
-      <span className="text-primary-300 font-bold">{stat}</span>
+      <span className="font-bold text-primary-300">{stat}</span>
       <span className="text-slate-400">{children}</span>
     </a>
   )
@@ -39,11 +39,11 @@ export function Hero() {
     <header className="relative flex flex-col gap-14 py-10 md:flex-row lg:items-center lg:py-20">
       <div
         aria-hidden="true"
-        className="bg-secondary-800 -z-1 absolute bottom-0 left-[650px] right-0 top-0 hidden rounded-full opacity-15 blur-3xl lg:block"
+        className="bg-secondary-800 -z-1 pointer-events-none absolute bottom-0 left-[650px] right-0 top-0 hidden rounded-full opacity-15 blur-3xl lg:block"
       />
       <div
         aria-hidden="true"
-        className="-z-1 dot-grid absolute bottom-0 right-0 top-0 hidden w-[700px] lg:block"
+        className="-z-1 dot-grid pointer-events-none absolute bottom-0 right-0 top-0 hidden w-[700px] lg:block"
       />
       <section className="flex flex-col gap-5" aria-label="Introduction">
         <span className="eyebrow !leading-5">
