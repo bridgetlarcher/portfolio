@@ -8,35 +8,44 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      animation: {
-        text: 'text 5s ease infinite',
-      },
-      keyframes: {
-        text: {
-          '0%, 100%': {
-            'background-size': '300% 300%',
-            'background-position': 'left center',
-          },
-          '50%': {
-            'background-size': '300% 300%',
-            'background-position': 'right center',
-          },
-        },
+      boxShadow: {
+        glow: '0 0 34px rgba(108, 212, 255, 0.13)',
+        lift: '0 14px 36px rgba(0, 0, 0, 0.4)',
       },
       colors: {
         transparent: 'transparent',
         current: 'currentColor',
         primary: {
-          100: '#9084A0',
-          200: '#836EA0',
-          300: '#7759A0',
-          400: '#653D9D',
-          500: '#57269B',
-          600: '#5217A4',
-          700: '#201D34',
+          50: '#EFFAFF',
+          100: '#DCF3FE',
+          200: '#B4E7FF',
+          300: '#6CD4FF',
+          400: '#04C0F7',
+          500: '#00A9D9',
+          600: '#0289B1',
+          700: '#026D8E',
+          800: '#015C78',
+          900: '#004D65',
+          950: '#13262E',
         },
-        secondary: '#13262e',
-        accent: '#6CD4FF',
+        secondary: {
+          50: '#F8F6FE',
+          100: '#EFEAFC',
+          200: '#E3D9FA',
+          300: '#CEBBF5',
+          400: '#B291ED',
+          500: '#996AE1',
+          600: '#8650D1',
+          700: '#7340B7',
+          800: '#653D9D',
+          900: '#57269B',
+          950: '#201D34',
+        },
+        surface: {
+          card: 'rgba(255, 255, 255, 0.04)',
+          'card-hover': 'rgba(255, 255, 255, 0.06)',
+        },
+        hairline: 'rgba(255, 255, 255, 0.08)',
       },
     },
   },
