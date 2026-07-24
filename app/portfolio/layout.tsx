@@ -4,7 +4,6 @@ import { projects } from '../../types/projects'
 import { usePathname } from 'next/navigation'
 import { Pill } from '@/components/ui/Pill'
 import { TldrSection } from '@/components/portfolio/TldrSection'
-import { scrollToTop } from '@/lib/scrollHelper'
 
 export default function PortfolioLayout({ children }: { children: React.ReactNode }) {
   const path = usePathname()
@@ -21,7 +20,6 @@ export default function PortfolioLayout({ children }: { children: React.ReactNod
       </div>
       {project?.tldr && <TldrSection tldr={project.tldr} />}
       {children}
-      {scrollToTop()}
     </main>
   )
 }

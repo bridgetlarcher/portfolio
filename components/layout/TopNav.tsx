@@ -2,7 +2,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Button } from '@/components/ui/Button'
 import { socialLinks } from '@/lib/socialLinks'
-import { NavLinks } from '@/components/layout/NavLinks'
 
 export function TopNav() {
   return (
@@ -21,7 +20,6 @@ export function TopNav() {
           <span className="text-[15px] font-bold text-slate-200">Bridget Larcher</span>
         </Link>
         <div className="flex items-center gap-5 sm:gap-8">
-          <NavLinks />
           <Button href={socialLinks.resume.href} external>
             Resume
           </Button>
