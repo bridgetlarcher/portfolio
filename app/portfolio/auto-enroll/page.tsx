@@ -1,7 +1,38 @@
+import type { Metadata } from 'next'
 import { CalloutCard } from '@/components/ui/CalloutCard'
 import { Callout } from '@/components/ui/Callout'
 import { Section } from '@/components/ui/Section'
 import Image from 'next/image'
+
+const title = 'Capital One Auto Enroll'
+const description =
+  'Built a feature to automatically enroll existing Capital One customers signing up for a new card. Used by roughly 10% of enrolling customers, it cut average application time from 13 minutes to 6.'
+
+export const metadata: Metadata = {
+  title: title,
+  description: description,
+  openGraph: {
+    type: 'article',
+    url: 'https://www.bridgetlarcher.com/portfolio/auto-enroll',
+    title: title,
+    description: description,
+    siteName: 'Bridget Larcher',
+    images: [
+      {
+        url: '/auto-enroll/og.png',
+        width: 2400,
+        height: 1260,
+        alt: 'Capital One Auto Enroll — a case study on streamlining credit card enrollment for existing customers',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: title,
+    description: description,
+    images: ['/auto-enroll/og.png'],
+  },
+}
 
 export default function Page() {
   return (

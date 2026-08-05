@@ -1,7 +1,38 @@
+import type { Metadata } from 'next'
 import { Callout } from '@/components/ui/Callout'
 import { Section } from '@/components/ui/Section'
 import { CalloutCard } from '@/components/ui/CalloutCard'
 import Image from 'next/image'
+
+const title = 'Clair Search Results Revamp'
+const description =
+  "Proposed, designed, and built an end-to-end revamp of Clair's clinical search interface, focused on signup incentive and loading states. Free-plan signups rose 34% and drop-off fell 10%."
+
+export const metadata: Metadata = {
+  title: title,
+  description: description,
+  openGraph: {
+    type: 'article',
+    url: 'https://www.bridgetlarcher.com/portfolio/clair-search-results',
+    title: title,
+    description: description,
+    siteName: 'Bridget Larcher',
+    images: [
+      {
+        url: '/clair-search-results/og.png',
+        width: 2400,
+        height: 1260,
+        alt: "Clair Search Results Revamp — a case study on redesigning Clair's clinical search interface",
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: title,
+    description: description,
+    images: ['/clair-search-results/og.png'],
+  },
+}
 
 export default function Page() {
   return (

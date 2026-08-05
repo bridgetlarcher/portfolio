@@ -1,7 +1,38 @@
+import type { Metadata } from 'next'
 import { CalloutCard } from '@/components/ui/CalloutCard'
 import { Callout } from '@/components/ui/Callout'
 import { Section } from '@/components/ui/Section'
 import Image from 'next/image'
+
+const title = 'CaryHealth Brand Identity'
+const description =
+  "Led design and development of CaryHealth's brand from the ground up: the brand site, product logos, and company-wide marketing collateral."
+
+export const metadata: Metadata = {
+  title: title,
+  description: description,
+  openGraph: {
+    type: 'article',
+    url: 'https://www.bridgetlarcher.com/portfolio/caryhealth-brand',
+    title: title,
+    description: description,
+    siteName: 'Bridget Larcher',
+    images: [
+      {
+        url: '/caryhealth-brand/og.png',
+        width: 2400,
+        height: 1260,
+        alt: "CaryHealth Brand Identity — a case study on building CaryHealth's brand from the ground up",
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: title,
+    description: description,
+    images: ['/caryhealth-brand/og.png'],
+  },
+}
 
 export default function Page() {
   return (
