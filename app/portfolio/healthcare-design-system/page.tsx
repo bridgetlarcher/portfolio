@@ -56,8 +56,9 @@ export default function Page() {
           design and development at once."
         />
         <p>
-          We needed real standard for our brand: one global system everything else could draw from,
-          without giving up the per-client and per-product customization that our business runs on.
+          We needed a real standard for our brand: one global system everything else could draw
+          from, without giving up the per-client and per-product customization that our business
+          runs on.
         </p>
       </Section>
       <Section title="Approach" type="portfolio">
@@ -146,7 +147,7 @@ export default function Page() {
             only great for dev handoff, but also for internal demos, proofs of concept, and
             ideation.
           </p>
-          <p>On both sides: out robust brand is what makes speed safe.</p>
+          <p>On both sides: our robust brand is what makes speed safe.</p>
         </Callout>
         <hr className="h-px border-0 bg-slate-700" />
         <Callout header="Drove adoption deliberately." type="list" listNumber="06">
