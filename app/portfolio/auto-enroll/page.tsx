@@ -95,26 +95,18 @@ export default function Page() {
         <p>We settled on a few features to rid customers of these pain points:</p>
         <div className="flex flex-col-reverse gap-6 md:flex-row">
           <div className="flex flex-col gap-6 md:w-1/2">
-            <Callout
-              header="Prefill"
-              description="A feature that appears on an existing
-                customer's credit card application page. When clicked, it prefills some of the
-                customer's information to avoid replication. This solution also reduces application
-                time while increasing submission rates."
-              type="list"
-              listNumber="01"
-            />
-            <Callout
-              header="Auto Enroll"
-              description="When an existing customer prefills
-                their application, they qualify to be auto enrolled. On approval, we automatically
-                enroll their new credit card. This helps customize and streamline the customer's
-                experience."
-              type="list"
-              listNumber="02"
-            />
+            <Callout header="Prefill" type="list" listNumber="01">
+              A feature that appears on an existing customer's credit card application page. When
+              clicked, it prefills some of the customer's information to avoid replication. This
+              solution also reduces application time while increasing submission rates.
+            </Callout>
+            <Callout header="Auto Enroll" type="list" listNumber="02">
+              When an existing customer prefills their application, they qualify to be auto
+              enrolled. On approval, we automatically enroll their new credit card. This helps
+              customize and streamline the customer's experience.
+            </Callout>
           </div>
-          <div className="flex flex-col items-center justify-center gap-4 md:w-1/2">
+          <figure className="flex flex-col items-center justify-center gap-4 md:w-1/2">
             <Image
               src="/auto-enroll/key.png"
               alt="The auto enroll page. Users see this when they successfully Auto Enroll."
@@ -122,11 +114,11 @@ export default function Page() {
               height={706}
               sizes="(min-width: 768px) 50vw, 100vw"
             />
-            <span className="caption">
+            <figcaption className="caption">
               Above is the finalized design for when a customer is successfully Auto Enrolled. After
               clicking the "Continue Online Setup" button, they are redirected to their account.
-            </span>
-          </div>
+            </figcaption>
+          </figure>
         </div>
       </Section>
       <Section title="Outcomes" type="portfolio">

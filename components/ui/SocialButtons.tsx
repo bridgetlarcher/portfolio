@@ -12,6 +12,9 @@ export function SocialButtons({ links, size, variant = 'ghost' }: Props) {
     <>
       {links.map((key) => {
         const { href, label, icon: Icon, aria } = socialLinks[key]
+        // socialLinks.resume.href comes from an env var; skip rather than render
+        // an <a> with no href, which is unfocusable and not announced as a link.
+        if (!href) return null
         return (
           <Button
             key={key}

@@ -22,6 +22,7 @@ export function TextLink({ href, children, external, variant = 'inline', classNa
       className={`${variants[variant]}${className ? ` ${className}` : ''}`}
     >
       {children}
+      {external && <span className="sr-only"> (opens in a new tab)</span>}
     </Link>
   )
 }

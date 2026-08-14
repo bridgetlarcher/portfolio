@@ -32,13 +32,17 @@ export function About() {
         <div className="relative">
           <div
             aria-hidden="true"
-            className="bg-secondary-800 pointer-events-none absolute -left-40 bottom-8 -z-10 hidden h-[300px] w-[300px] rounded-full opacity-30 blur-3xl lg:block"
+            className="pointer-events-none absolute -left-40 bottom-8 -z-10 hidden h-[300px] w-[300px] rounded-full bg-secondary-800 opacity-30 blur-3xl lg:block"
           />
-          <Card className="!bg-primary-950/90 shadow-glow z-10 w-full divide-y-2 divide-slate-700 md:w-[350px]">
+          <Card
+            as="dl"
+            aria-label="Where I've worked"
+            className="z-10 w-full divide-y-2 divide-slate-700 !bg-primary-950/90 shadow-glow md:w-[350px]"
+          >
             {employers.map((employer) => (
               <div key={employer.name} className="flex flex-col gap-1 py-4">
-                <span className="subtitle">{employer.name}</span>
-                <span className="text-sm">{employer.role}</span>
+                <dt className="subtitle">{employer.name}</dt>
+                <dd className="text-sm">{employer.role}</dd>
               </div>
             ))}
           </Card>

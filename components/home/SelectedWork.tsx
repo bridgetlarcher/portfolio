@@ -7,18 +7,24 @@ export function SelectedWork() {
   return (
     <Section id="work" title="Selected Work" type="home">
       <div className="grid grid-cols-1 gap-6 py-10">
-        {projects
-          .filter((project) => project.type === 'featured')
-          .map((project) => (
-            <FeaturedCaseStudyCard key={project.title} item={project} />
-          ))}
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+        <ul className="grid grid-cols-1 gap-6">
+          {projects
+            .filter((project) => project.type === 'featured')
+            .map((project) => (
+              <li key={project.title}>
+                <FeaturedCaseStudyCard item={project} />
+              </li>
+            ))}
+        </ul>
+        <ul className="grid grid-cols-1 gap-6 md:grid-cols-2">
           {projects
             .filter((project) => project.type === 'card')
             .map((project) => (
-              <CaseStudyCard key={project.title} item={project} />
+              <li key={project.title} className="grid">
+                <CaseStudyCard item={project} />
+              </li>
             ))}
-        </div>
+        </ul>
       </div>
     </Section>
   )

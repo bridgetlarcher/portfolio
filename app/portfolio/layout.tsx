@@ -19,10 +19,10 @@ export default function PortfolioLayout({ children }: { children: React.ReactNod
       <div className="flex flex-col gap-4">
         <span className="eyebrow">{project?.eyebrow}</span>
         <h1 className="text-4xl font-bold text-slate-200">{project?.title}</h1>
-        <span className="text-base text-slate-300">{project?.description}</span>
-        <div className="flex flex-row flex-wrap gap-2">
+        <p className="text-base text-slate-300">{project?.description}</p>
+        <ul aria-label="Skills and focus areas" className="flex flex-row flex-wrap gap-2">
           {project?.pills.map((pill) => <Pill key={pill} text={pill} />)}
-        </div>
+        </ul>
       </div>
       {project?.tldr && <TldrSection tldr={project.tldr} />}
       {children}

@@ -17,7 +17,7 @@ const sizes: Record<ButtonSize, string> = {
 }
 
 type Props = {
-  href?: string
+  href: string
   children: React.ReactNode
   variant?: ButtonVariant
   size?: ButtonSize
@@ -35,14 +35,17 @@ export function Button({
   ariaLabel,
   className,
 }: Props) {
+  const label = ariaLabel && external ? `${ariaLabel} (opens in a new tab)` : ariaLabel
+
   return (
     <a
       href={href}
-      aria-label={ariaLabel}
+      aria-label={label}
       {...(external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
       className={`${base} ${variants[variant]} ${sizes[size]}${className ? ` ${className}` : ''}`}
     >
       {children}
+      {external && !ariaLabel && <span className="sr-only"> (opens in a new tab)</span>}
     </a>
   )
 }

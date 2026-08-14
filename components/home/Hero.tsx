@@ -8,8 +8,8 @@ import { socialLinks } from '@/lib/socialLinks'
 function Capability({ label, children }: { label: string; children: React.ReactNode }) {
   return (
     <div className="flex flex-col gap-1 py-5">
-      <span className="eyebrow">{label}</span>
-      <span className="text-sm text-slate-300">{children}</span>
+      <dt className="eyebrow">{label}</dt>
+      <dd className="text-sm text-slate-300">{children}</dd>
     </div>
   )
 }
@@ -26,7 +26,7 @@ function StatTeaser({
   return (
     <a
       href={href}
-      className="border-secondary-800 bg-surface-card hover:bg-surface-card-hover inline-flex flex-wrap items-baseline gap-x-3 gap-y-1 self-start rounded-r-lg border-l-2 px-4 py-3 text-sm no-underline transition duration-300 ease-in-out"
+      className="inline-flex flex-wrap items-baseline gap-x-3 gap-y-1 self-start rounded-r-lg border-l-2 border-secondary-800 bg-surface-card px-4 py-3 text-sm no-underline transition duration-300 ease-in-out hover:bg-surface-card-hover"
     >
       <span className="font-bold text-primary-300">{stat}</span>
       <span className="text-slate-400">{children}</span>
@@ -39,7 +39,7 @@ export function Hero() {
     <header className="relative flex flex-col gap-14 py-10 md:flex-row lg:items-center lg:py-20">
       <div
         aria-hidden="true"
-        className="bg-secondary-800 -z-1 pointer-events-none absolute bottom-0 left-[650px] right-0 top-0 hidden rounded-full opacity-15 blur-3xl lg:block"
+        className="-z-1 pointer-events-none absolute bottom-0 left-[650px] right-0 top-0 hidden rounded-full bg-secondary-800 opacity-15 blur-3xl lg:block"
       />
       <div
         aria-hidden="true"
@@ -66,14 +66,20 @@ export function Hero() {
           <ArrowDownward fontSize="small" />
         </StatTeaser>
         <div className="flex items-center gap-4">
-          <Button href={socialLinks.resume.href} external variant="solid" size="lg">
-            <Description fontSize="small" aria-hidden="true" />
-            Resume
-          </Button>
+          {socialLinks.resume.href && (
+            <Button href={socialLinks.resume.href} external variant="solid" size="lg">
+              <Description fontSize="small" aria-hidden="true" />
+              Resume
+            </Button>
+          )}
           <SocialButtons links={['github', 'linkedin']} size="icon" />
         </div>
       </section>
-      <Card className="divide-hairline !bg-secondary-950/90 shadow-glow z-10 divide-y border">
+      <Card
+        as="dl"
+        aria-label="What I do"
+        className="z-10 divide-y divide-hairline border !bg-secondary-950/90 shadow-glow"
+      >
         <Capability label="Design">
           Product design end-to-end: research, prototyping, and high-fidelity UI.
         </Capability>

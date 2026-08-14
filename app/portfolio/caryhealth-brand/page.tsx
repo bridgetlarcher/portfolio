@@ -42,8 +42,9 @@ export default function Page() {
           (Want a sneak peek of the final brand site? I get it! You can check it out{' '}
           <a href="https://www.cary.health/" target="_blank" rel="noopener noreferrer">
             here
+            <span className="sr-only"> — visit the CaryHealth brand site (opens in a new tab)</span>
           </a>{' '}
-          😉)
+          <span aria-hidden="true">😉</span>)
         </p>
         <p>A central goal for CaryHealth's 2025 year could be summed up by one word: sales.</p>
         <Callout
@@ -79,61 +80,40 @@ export default function Page() {
           As a result of these problems, we set aside our main objectives for the three months we
           had before 2025:
         </p>
-        <Callout
-          header="A Brand Identity"
-          description={
-            <>
-              <p>
-                First and foremost, we needed to tack down a distinctive way for us to present
-                ourselves.
-              </p>
-              <p>Are we happy? Serious? Playful?</p>
-              <p>
-                Is our brand loud and colorful, or thoughtful and deliberate? Once we found our
-                footing here, the transition into #2 and #3 would be seamless.
-              </p>
-            </>
-          }
-          type="list"
-          listNumber="01"
-        />
+        <Callout header="A Brand Identity" type="list" listNumber="01">
+          <p>
+            First and foremost, we needed to tack down a distinctive way for us to present
+            ourselves.
+          </p>
+          <p>Are we happy? Serious? Playful?</p>
+          <p>
+            Is our brand loud and colorful, or thoughtful and deliberate? Once we found our footing
+            here, the transition into #2 and #3 would be seamless.
+          </p>
+        </Callout>
 
-        <Callout
-          header="A Brand Site Facelift"
-          description={
-            <>
-              <p>
-                Without a clear identity, we found our current site to be a mix of text and imagery
-                that didn't fit the bill.
-              </p>
-              <p>
-                Once we found our brand's niche, we needed to upgrade the site to reflect the
-                colors, descriptive words, and feeling of those newfound brand guidelines. (See
-                below for a sneak peek of "before" and "after" photos!)
-              </p>
-            </>
-          }
-          type="list"
-          listNumber="02"
-        />
-        <Callout
-          header="A Shiny Logo Suite"
-          description={
-            <>
-              <p>
-                There are currently five products the company has built out so far, some of which
-                had mismatching logos and others with no logos at all.
-              </p>
-              <p>
-                Our goal was to align our products in such a way that followed our brand guidelines
-                while allowing each of them a bit of breathing room to showcase their own unique
-                flare. This was the finishing piece of the suite.
-              </p>
-            </>
-          }
-          type="list"
-          listNumber="03"
-        />
+        <Callout header="A Brand Site Facelift" type="list" listNumber="02">
+          <p>
+            Without a clear identity, we found our current site to be a mix of text and imagery that
+            didn't fit the bill.
+          </p>
+          <p>
+            Once we found our brand's niche, we needed to upgrade the site to reflect the colors,
+            descriptive words, and feeling of those newfound brand guidelines. (See below for a
+            sneak peek of "before" and "after" photos!)
+          </p>
+        </Callout>
+        <Callout header="A Shiny Logo Suite" type="list" listNumber="03">
+          <p>
+            There are currently five products the company has built out so far, some of which had
+            mismatching logos and others with no logos at all.
+          </p>
+          <p>
+            Our goal was to align our products in such a way that followed our brand guidelines
+            while allowing each of them a bit of breathing room to showcase their own unique flare.
+            This was the finishing piece of the suite.
+          </p>
+        </Callout>
         <p>
           With these three objectives in mind and only three months to accomplish such tasks, we
           wasted no time in finding the right approach.
@@ -262,21 +242,21 @@ export default function Page() {
           Bringing five very different products under one identity was the part I enjoyed most. How
           a company presents itself can make or break not just how it's seen, but how it sells.
         </p>
-        <Callout
-          header="The rebrand landed!"
-          description="We heard unprompted compliments on the new brand and site from people
-          we met at conferences, and the identity finally gave sales the materials it had been
-          missing -- decks, one-pagers, trade-show backdrops, social graphics, even merch."
-        />
+        <Callout header="The rebrand landed!">
+          We heard unprompted compliments on the new brand and site from people we met at
+          conferences, and the identity finally gave sales the materials it had been missing --
+          decks, one-pagers, trade-show backdrops, social graphics, even merch.
+        </Callout>
 
         <p>
           Brand, it turned out, was product work, not decoration. I thoroughly enjoyed this exercise
           in bringing five very different products together to form one brand identity.
         </p>
         <p>
-          And of course, the grand reveal! You can check it out CaryHealth's brand site{' '}
+          And of course, the grand reveal! You can check out CaryHealth's brand site{' '}
           <a href="https://www.cary.health/" target="_blank" rel="noopener noreferrer">
             here
+            <span className="sr-only"> — visit the CaryHealth brand site (opens in a new tab)</span>
           </a>
           !
         </p>

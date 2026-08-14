@@ -41,7 +41,7 @@ export default function Page() {
         <p>
           At CaryHealth, we have a product called{' '}
           <a href="https://askclair.ai/" target="_blank" rel="noopener noreferrer">
-            Clair
+            Clair<span className="sr-only"> (opens in a new tab)</span>
           </a>{' '}
           that harnesses clinical AI. Clair's mission is to make intelligently sourced clinical data
           accessible to the general public and easy to retrieve without digging for answers.
@@ -69,44 +69,35 @@ export default function Page() {
           for a couple of months:
         </p>
 
-        <Callout
-          header="Major Layout Shift"
-          description="Our API doesn't come back
-                with a search result immediately — as to be expected! Within our original design,
-                though, we didn't capture well enough the different UI states that come with
-                multiple levels of loading."
-          type="list"
-          listNumber="01"
-        />
-        <Callout
-          header="A Lack of Signup Incentive"
-          description="To drive outcomes, we
-                needed to add more free-tier perks as well as market them to unauthenticated users."
-          type="list"
-          listNumber="02"
-        />
-        <Callout
-          header="Vertical & Horizontal Exhaustion"
-          description="There are two
-                things a user hates: having to scroll too much and having to read across a large
-                horizontal space such as a desktop screen. Unfortunately, both of these issues were
-                prevalent in our original design."
-          type="list"
-          listNumber="03"
-        />
-        <Image
-          src="/clair-search-results/old-clair.png"
-          className="w-full rounded-xl"
-          alt="The old Clair search results experience, showing long lines of text spanning across a wide screen and sections that pop into existence without loading indicators."
-          width={2481}
-          height={2336}
-          sizes="100vw"
-        />
-        <span className="caption">
-          Our old search results experience. Notice the long lines of text that users would have to
-          read across large screens. Loading was also a disjointed experience-sections would pop
-          into existence without any indication.
-        </span>
+        <Callout header="Major Layout Shift" type="list" listNumber="01">
+          Our API doesn't come back with a search result immediately — as to be expected! Within our
+          original design, though, we didn't capture well enough the different UI states that come
+          with multiple levels of loading.
+        </Callout>
+        <Callout header="A Lack of Signup Incentive" type="list" listNumber="02">
+          To drive outcomes, we needed to add more free-tier perks as well as market them to
+          unauthenticated users.
+        </Callout>
+        <Callout header="Vertical & Horizontal Exhaustion" type="list" listNumber="03">
+          There are two things a user hates: having to scroll too much and having to read across a
+          large horizontal space such as a desktop screen. Unfortunately, both of these issues were
+          prevalent in our original design.
+        </Callout>
+        <figure className="flex flex-col gap-6">
+          <Image
+            src="/clair-search-results/old-clair.png"
+            className="w-full rounded-xl"
+            alt="The old Clair search results experience, showing long lines of text spanning across a wide screen and sections that pop into existence without loading indicators."
+            width={2481}
+            height={2336}
+            sizes="100vw"
+          />
+          <figcaption className="caption">
+            Our old search results experience. Notice the long lines of text that users would have
+            to read across large screens. Loading was also a disjointed experience-sections would
+            pop into existence without any indication.
+          </figcaption>
+        </figure>
       </Section>
       <Section title="Approach" type="portfolio">
         <p>
@@ -138,43 +129,38 @@ export default function Page() {
           After a conversation with leadership, we picked two efforts from the bunch:
         </p>
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-          <Callout
-            header="Tooltip Keywords"
-            description="When authenticated users search,
-            the result will populate highlighted words that, when hovered over, provide tooltips
-            with definitions. This way, users can exit their Google tab and stay on Clair for any necessary
-                definitions."
-            type="list"
-            listNumber="01"
-          />
-          <Callout
-            header="Follow-Up Questions"
-            description="When authenticated users search,
-            a few follow-up questions appear that add depth to the user's search. Upon clicking one
-            of these follow-up questions, a new tab will populate its search result. Both professionals and non-professionals can utilize this feature to dig deep into a
-                topic. This is helpful when the user isn't 100% sure what to search for when they
-                query Clair."
-            type="list"
-            listNumber="02"
-          />
+          <Callout header="Tooltip Keywords" type="list" listNumber="01">
+            When authenticated users search, the result will populate highlighted words that, when
+            hovered over, provide tooltips with definitions. This way, users can exit their Google
+            tab and stay on Clair for any necessary definitions.
+          </Callout>
+          <Callout header="Follow-Up Questions" type="list" listNumber="02">
+            When authenticated users search, a few follow-up questions appear that add depth to the
+            user's search. Upon clicking one of these follow-up questions, a new tab will populate
+            its search result. Both professionals and non-professionals can utilize this feature to
+            dig deep into a topic. This is helpful when the user isn't 100% sure what to search for
+            when they query Clair.
+          </Callout>
         </div>
         <p>
           After our designer finished up her revamp of the search result layout, I got to work
           designing for the above two efforts.
         </p>
         <p>All in all, we landed on the below design:</p>
-        <Image
-          src="/clair-search-results/new-clair.png"
-          className="w-full"
-          alt="The redesigned Clair search results layout featuring a sidebar navigation, tooltip keywords, and follow-up questions."
-          width={2481}
-          height={2955}
-          sizes="100vw"
-        />
-        <span className="caption">
-          The new layout from our designer (Solution to #3, "Vertical & Horizontal Exhaustion") with
-          my follow-up questions and tooltip keyword initiatives added to the mix.
-        </span>
+        <figure className="flex flex-col gap-6">
+          <Image
+            src="/clair-search-results/new-clair.png"
+            className="w-full"
+            alt="The redesigned Clair search results layout featuring a sidebar navigation, tooltip keywords, and follow-up questions."
+            width={2481}
+            height={2955}
+            sizes="100vw"
+          />
+          <figcaption className="caption">
+            The new layout from our designer (Solution to #3, "Vertical & Horizontal Exhaustion")
+            with my follow-up questions and tooltip keyword initiatives added to the mix.
+          </figcaption>
+        </figure>
         <p>
           The Problem "Vertical & Horizontal Exhaustion" was a tricky one. In order to decrease on
           horizontal reading fatigue, more vertical space would be needed. Our solution was to add a
@@ -184,29 +170,31 @@ export default function Page() {
           navigation tool to use.
         </p>
         <p>Above, you can also see the Tooltip Keywords and Follow-Up questions in action.</p>
-        <div className="flex justify-center gap-3">
-          <Image
-            src="/clair-search-results/new-clair-unauth-form.png"
-            className="flex w-2/3"
-            alt="Unauthenticated Clair search result showing a signup prompt with query limit messaging."
-            width={1644}
-            height={1546}
-            sizes="66vw"
-          />
-          <Image
-            src="/clair-search-results/new-clair-unauth-sidebar.png"
-            className="flex w-1/3"
-            alt="Unauthenticated Clair sidebar showing signup incentives for free-tier users."
-            width={785}
-            height={1542}
-            sizes="33vw"
-          />
-        </div>
-        <span className="caption">
-          The images on the right and left encapsulate the unauthenticated user's experience. On the
-          right, incentives for signup were added (Solution to #2, "A Lack of Signup Incentive") to
-          our current query limit on the left.
-        </span>
+        <figure className="flex flex-col gap-6">
+          <div className="flex justify-center gap-3">
+            <Image
+              src="/clair-search-results/new-clair-unauth-form.png"
+              className="flex w-2/3"
+              alt="Unauthenticated Clair search result showing a signup prompt with query limit messaging."
+              width={1644}
+              height={1546}
+              sizes="66vw"
+            />
+            <Image
+              src="/clair-search-results/new-clair-unauth-sidebar.png"
+              className="flex w-1/3"
+              alt="Unauthenticated Clair sidebar showing signup incentives for free-tier users."
+              width={785}
+              height={1542}
+              sizes="33vw"
+            />
+          </div>
+          <figcaption className="caption">
+            The images on the right and left encapsulate the unauthenticated user's experience. On
+            the right, incentives for signup were added (Solution to #2, "A Lack of Signup
+            Incentive") to our current query limit on the left.
+          </figcaption>
+        </figure>
         <Callout header="Tackling Problem: 'Major Layout Shift'" />
         <p>
           With the solutions to issues #2 and #3 designed and approved, all that was left was to
@@ -269,7 +257,7 @@ export default function Page() {
         <p>
           Check out Clair{' '}
           <a href="https://askclair.ai/" target="_blank" rel="noopener noreferrer">
-            here
+            here<span className="sr-only"> — visit Clair (opens in a new tab)</span>
           </a>
           !
         </p>

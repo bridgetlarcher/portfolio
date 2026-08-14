@@ -25,12 +25,50 @@ export interface ProjectItem {
 export const projects: ProjectItem[] = [
   {
     type: 'featured',
+    title: 'Healthcare Design System',
+    description:
+      "Architected and led the build of a healthcare technology company's design system from zero: a Figma global design system, componentized into a React and TypeScript library and shipped as a private npm package. Now the single source of truth across six products.",
+    img: {
+      src: '/healthcare-design-system/designsystem.png',
+      alt: 'A Figma design system page showing many button styles for different products and clients.',
+    },
+    link: '/portfolio/healthcare-design-system',
+    eyebrow: 'Architected, led, & facilitated adoption',
+    stats: [
+      { stat: '6 products', label: 'on one shared component library' },
+      { stat: '4 months', label: 'Design system to component library adoption' },
+    ],
+    footnote: 'Six products, with rollout underway to a second, larger monorepo.',
+    pills: [
+      'Design System',
+      '0-to-1',
+      'Design Tokens',
+      'React / Typescript',
+      'Figma',
+      'Claude Design',
+      'Claude Code',
+    ],
+    tldr: {
+      role: 'Architected the system; led design and engineering through build-out and adoption.',
+      secondaryLabel: 'Scope',
+      secondaryValue: 'Six products, including ones within a Turborepo monorepo',
+      outcomes: [
+        'One robust, heavily tested source of truth across all internal products and clients',
+        'Figma to live adoption in ~4 months; now scaling to a second, larger monorepo',
+      ],
+    },
+  },
+  {
+    type: 'featured',
     title: 'Clair Search Results Revamp',
     description:
       "Proposed, designed, and built an end-to-end revamp of Clair's clinical search interface, focused on signup incentive and loading states. Free-plan signups rose 34% and drop-off fell 10%.",
-    img: { src: '/clair.png', alt: "Poster frame: Clair's clinical search results interface" },
+    img: {
+      src: '/clair-search-results/clair.png',
+      alt: "Clair's clinical search results interface.",
+    },
     link: '/portfolio/clair-search-results',
-    eyebrow: 'Featured · Proposed, designed & built',
+    eyebrow: 'Proposed, designed, & built',
     stats: [
       { stat: '+34%', label: 'Free plan signups' },
       { stat: '−10%', label: 'Drop-off' },
@@ -54,6 +92,7 @@ export const projects: ProjectItem[] = [
       </TextLink>
     ),
   },
+
   {
     type: 'card',
     title: 'CaryHealth Brand Identity',
@@ -63,7 +102,7 @@ export const projects: ProjectItem[] = [
 
     img: {
       src: '/caryhealth-brand/site-homepage-slice.png',
-      alt: "Poster frame: CaryHealth's brand site",
+      alt: "CaryHealth's brand site homepage.",
     },
     link: '/portfolio/caryhealth-brand',
     pills: [
@@ -91,7 +130,7 @@ export const projects: ProjectItem[] = [
     eyebrow: 'Built',
     img: {
       src: '/auto-enroll/key.png',
-      alt: 'Poster frame: The auto enroll page. Users see this when they successfully Auto Enroll.',
+      alt: 'The Auto Enroll confirmation page customers see after successfully auto-enrolling.',
     },
     link: '/portfolio/auto-enroll',
     pills: ['React', 'Axios', 'Jest', 'AWS', 'Docker'],

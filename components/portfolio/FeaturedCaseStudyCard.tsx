@@ -9,6 +9,9 @@ type Props = {
   item: ProjectItem
 }
 
+const mediaFrame =
+  'relative block overflow-hidden rounded-xl border border-hairline bg-secondary-950'
+
 export function FeaturedCaseStudyCard({ item }: Props) {
   const poster = (
     <Image
@@ -17,13 +20,14 @@ export function FeaturedCaseStudyCard({ item }: Props) {
       width={640}
       height={300}
       priority
+      sizes="(min-width: 768px) 50vw, 100vw"
       className="h-[300px] w-full object-cover opacity-[.85]"
     />
   )
 
   return (
     <Card className="flex flex-col gap-6 p-6 md:flex-row md:gap-8 md:p-11 lg:justify-between lg:gap-12">
-      <div className="flex flex-col gap-4">
+      <div className="flex min-w-0 flex-1 flex-col gap-4">
         <span className="eyebrow">{item.eyebrow}</span>
         <h3 className="text-2xl font-black text-slate-200 lg:text-4xl">{item.title}</h3>
         <p>{item.description}</p>
@@ -33,7 +37,7 @@ export function FeaturedCaseStudyCard({ item }: Props) {
               <CalloutCard
                 key={stat.label}
                 size="sm"
-                className="shadow-glow flex-1 border-primary-300/30"
+                className="flex-1 border-primary-300/30 shadow-glow"
                 stat={stat.stat}
                 label={stat.label}
               />
@@ -45,30 +49,29 @@ export function FeaturedCaseStudyCard({ item }: Props) {
           {item.additionalActions}
           <TextLink href={item.link} variant="action">
             Read the case study <ArrowForward fontSize="inherit" aria-hidden="true" />
+            <span className="sr-only">— {item.title}</span>
           </TextLink>
         </div>
       </div>
-      <figure className="flex flex-col gap-3 lg:w-[1000px]">
+      <figure className="flex flex-col justify-center gap-3 md:w-1/2 md:shrink-0">
         {item.video ? (
           <a
             href={item.video.href}
             target="_blank"
             rel="noopener noreferrer"
             aria-label={item.video.label}
-            className="hover:bg-primary-900 group relative block overflow-hidden rounded-xl border transition duration-300 ease-in-out"
+            className={`group ${mediaFrame} transition duration-300 ease-in-out hover:bg-primary-900`}
           >
             {poster}
             <span className="absolute inset-0 flex items-center justify-center">
-              <span className="bg-primary-950/85 inline-flex items-center gap-3 rounded-full border border-primary-300/40 px-5 py-3 text-sm font-bold text-primary-300">
+              <span className="inline-flex items-center gap-3 rounded-full border border-primary-300/40 bg-primary-950/85 px-5 py-3 text-sm font-bold text-primary-300">
                 <PlayArrow fontSize="small" aria-hidden="true" />
                 Play walkthrough
               </span>
             </span>
           </a>
         ) : (
-          <div className="border-hairline bg-secondary-950 relative overflow-hidden rounded-xl border">
-            {poster}
-          </div>
+          <div className={mediaFrame}>{poster}</div>
         )}
         {item.caption && (
           <figcaption className="text-xs italic text-slate-500">{item.caption}</figcaption>

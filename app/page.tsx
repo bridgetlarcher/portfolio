@@ -9,8 +9,8 @@ export default function Home() {
       <div className="noise-overlay" aria-hidden="true"></div>
       <div className="vignette" aria-hidden="true"></div>
       <div className="container-page">
-        <Hero />
         <main id="main-content">
+          <Hero />
           <SelectedWork />
           <About />
           <Contact />
