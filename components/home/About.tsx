@@ -20,11 +20,11 @@ export function About() {
             ships it, and now the team that does both.
           </p>
           <p>
-            Today I'm Manager of User Experiences at CaryHealth, where I founded the design
-            function, stood up a five-person team of designers and front-end developers, and
-            architected and led the company's design system, all while staying hands-on in design
-            and code. Before that: sole front-end engineer at Tinyhood, UX engineer at MITRE, and
-            software engineer at Capital One, on an enrollment platform reaching millions of
+            Most recently, I've been the Manager of User Experiences at CaryHealth, where I founded
+            the design function, stood up a five-person team of designers and front-end developers,
+            and architected and led the company's design system, all while staying hands-on in
+            design and code. Before that: sole front-end engineer at Tinyhood, UX engineer at MITRE,
+            and software engineer at Capital One, on an enrollment platform reaching millions of
             customers a day.
           </p>
           <Callout header="I'm most useful in the messy middle, where design becomes code." />
